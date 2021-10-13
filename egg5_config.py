@@ -8,8 +8,8 @@ from dias_dynamic_files import (
     genepanels_file,
 )
 
-assay_name = "TWE" # Twist Whole Exome
-assay_version = "v1.0.5"
+assay_name = "CEN" # Core Endo Neuro
+assay_version = "v1.0.0"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
