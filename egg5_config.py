@@ -34,7 +34,7 @@ ss_beds_inputs = {
     "stage-Fy6fvYQ40vZV1y8p9GYKPYyQ.bed ID": "file-Fpz2X0Q433GVK5xxPvzqvVPB",
     "stage-Fy6fvYQ40vZV1y8p9GYKPYyQ.bed": "",
     # picard
-    "stage-Fy6fx2Q40vZbFVxZ283xXGVY.bedfile ID": "file-G5jjzG0433GgkQ093K2p8PxQ",  # Twist Capture Bed
+    "stage-Fy6fx2Q40vZbFVxZ283xXGVY.bedfile ID": "file-G5jjzG0433GgkQ093K2p8PxQ",  # CEN Capture Bed
     "stage-Fy6fx2Q40vZbFVxZ283xXGVY.bedfile": ""
 }
 
@@ -45,8 +45,8 @@ happy_stage_id = "stage-Fq1BPKj433Gx3K4Y8J35j0fv"
 
 happy_stage_prefix = "{}.prefix".format(happy_stage_id)
 happy_stage_bed = {
-    "{}.panel_bed ID".format(happy_stage_id): "file-G2V8k90433GVQ7v07gfj0ggX",
-    "{}.panel_bed".format(happy_stage_id): "file-G2V8k90433GVQ7v07gfj0ggX"
+    "{}.panel_bed ID".format(happy_stage_id): "file-G620390433GYGY34Jq6Zq1Xf",
+    "{}.panel_bed".format(happy_stage_id): "file-G620390433GYGY34Jq6Zq1Xf"
 }
 
 multi_stage_input_dict = {
