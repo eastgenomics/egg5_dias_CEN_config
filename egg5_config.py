@@ -34,7 +34,7 @@ ss_beds_inputs = {
     "stage-Fy6fvYQ40vZV1y8p9GYKPYyQ.bed ID": "file-Fpz2X0Q433GVK5xxPvzqvVPB",
     "stage-Fy6fvYQ40vZV1y8p9GYKPYyQ.bed": "",
     # picard
-    "stage-Fy6fx2Q40vZbFVxZ283xXGVY.bedfile ID": "file-G2J5ZV0433GQJz7860vb4PB1",  # Twist Capture Bed
+    "stage-Fy6fx2Q40vZbFVxZ283xXGVY.bedfile ID": "file-G5jjzG0433GgkQ093K2p8PxQ",  # Twist Capture Bed
     "stage-Fy6fx2Q40vZbFVxZ283xXGVY.bedfile": ""
 }
 
