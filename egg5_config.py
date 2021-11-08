@@ -49,6 +49,11 @@ happy_stage_bed = {
     "{}.panel_bed".format(happy_stage_id): "file-G620390433GYGY34Jq6Zq1Xf"
 }
 
+female_threshold = 50
+male_threshold = 1
+
+somalier_relate_stage_id = "stage-G5j1jJj433GpFY3v0JZQ2ZZ0"
+
 multi_stage_input_dict = {
     "stage-Fybykxj433GV7vJKFGf3yVkK.SampleSheet": {
         "app": None, "subdir": "", "pattern": "SampleSheet.csv$",
@@ -56,6 +61,10 @@ multi_stage_input_dict = {
     "{}.query_vcf".format(happy_stage_id): {
         "app": "sentieon-dnaseq", "subdir": "",
         "pattern": "^NA12878-.*-EGG4_markdup_recalibrated_Haplotyper.vcf.gz$",
+    },
+    "{}.somalier_extract_file".format(somalier_relate_stage_id): {
+        "app": "somalier_extract", "subdir": "",
+        "pattern": "-E '(.*).somalier$'"
     },
 }
 
