@@ -60,7 +60,7 @@ multi_stage_input_dict = {
     },
     "{}.query_vcf".format(happy_stage_id): {
         "app": "sentieon-dnaseq", "subdir": "",
-        "pattern": "^NA12878-.*-EGG4_markdup_recalibrated_Haplotyper.vcf.gz$",
+        "pattern": "^NA12878-.*-EGG5_markdup_recalibrated_Haplotyper.vcf.gz$",
     },
     "{}.somalier_extract_file".format(somalier_relate_stage_id): {
         "app": "somalier_extract", "subdir": "",
