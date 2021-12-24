@@ -91,7 +91,7 @@ rpt_workflow_id = "project-G72k7b046jqxQqqY24yX8v8k:workflow-G72y4B846jqjJQG78yY
 
 rpt_stage_input_dict = {
     # vcf2xls
-    "{}.annotated_vcf".format(vcf_annotator_stage_id): {
+    "{}.dest_vcf".format(vcf_annotator_stage_id): {
         "app": "nirvana2vcf", "subdir": "",
         "pattern": "-E '{}(.*).annotated.vcf$'"
     },
