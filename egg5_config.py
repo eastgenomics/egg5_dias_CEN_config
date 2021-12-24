@@ -9,7 +9,7 @@ from dias_dynamic_files import (
 )
 
 assay_name = "CEN" # Core Endo Neuro
-assay_version = "v1.0.0"
+assay_version = "v1.0.1"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
@@ -81,6 +81,7 @@ xlsx_flanks = 95
 
 exons_nirvana = "{}:file-Fq18Yp0433GjB7172630p9Yv".format(ref_project_id) 
 
+vcf_annotator_stage_id = "stage-G72pJpj46jqgk1y3Kbb1KBxY"
 generate_bed_xlsx_stage_id = "stage-G4BJkJQ4JxJvBv5vJq50vJZ8"
 vcf2xls_stage_id = "stage-Fyq5ypj433GzxPK360B8Qfg5"
 generate_bed_stage_id = "stage-Fyq5yy0433GXxz691bKyvjPJ"
@@ -90,7 +91,7 @@ rpt_workflow_id = "{}:workflow-G5xy050433GfXjqq84ZjY7v0".format(ref_project_id)
 
 rpt_stage_input_dict = {
     # vcf2xls
-    "{}.annotated_vcf".format(vcf2xls_stage_id): {
+    "{}.annotated_vcf".format(vcf_annotator_stage_id): {
         "app": "nirvana2vcf", "subdir": "",
         "pattern": "-E '{}(.*).annotated.vcf$'"
     },
