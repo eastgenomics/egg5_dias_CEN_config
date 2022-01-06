@@ -159,7 +159,7 @@ rpt_dynamic_files = {
 
 rea_stage_input_dict = {
     # vcf2xls
-    "{}.annotated_vcf".format(vcf_annotator_stage_id): {
+    "{}.dest_vcf".format(vcf_annotator_stage_id): {
         "app": "nirvana2vcf", "subdir": "",
         "pattern": "-E '{}(.*).annotated.vcf$'"
     },
