@@ -72,8 +72,8 @@ ms_workflow_id = "{}:workflow-G5j1j28433GYkv4gPpPG8g11".format(ref_project_id)
 
 # MultiQC
 
-mqc_applet_id = "{}:applet-G5xxBxj433Gjfx25JP2XZ5Z2".format(ref_project_id)
-mqc_config_file = "{}:file-G62fJ68433Gb5z09F8VKBq36".format(ref_project_id)
+mqc_applet_id = "app-G6FyybQ4f4xqqpFfGqg34y2Y"
+mqc_config_file = "{}:file-G82027Q433Gfx69zGvjq7PqQ".format(ref_project_id)
 
 # Reports
 
