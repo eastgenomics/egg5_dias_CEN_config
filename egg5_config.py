@@ -49,7 +49,7 @@ happy_stage_bed = {
     "{}.panel_bed".format(happy_stage_id): "file-G620390433GYGY34Jq6Zq1Xf"
 }
 
-female_threshold = 50
+female_threshold = 3
 male_threshold = 1
 
 somalier_relate_stage_id = "stage-G5j1jJj433GpFY3v0JZQ2ZZ0"
