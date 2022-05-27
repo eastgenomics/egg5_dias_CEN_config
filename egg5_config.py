@@ -77,7 +77,7 @@ mqc_config_file = "{}:file-G82027Q433Gfx69zGvjq7PqQ".format(ref_project_id)
 
 # Reports
 
-xlsx_flanks = 95
+xlsx_flanks = 495
 
 cds_file = "{}:file-GB7p8x8433GVkY6F36Qx06z2".format(ref_project_id)
 cds_file_for_athena = "{}:file-GB7pXZ0433GX1YJKF5382bbX".format(ref_project_id)
