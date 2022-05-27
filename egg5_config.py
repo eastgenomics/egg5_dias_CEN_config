@@ -79,8 +79,8 @@ mqc_config_file = "{}:file-G82027Q433Gfx69zGvjq7PqQ".format(ref_project_id)
 
 xlsx_flanks = 95
 
-cds_file = "{}:file-GB2Pk10433Gp62yK4Qk2yFXQ".format(ref_project_id)
-cds_file_for_athena = "{}:file-GB5pqz8433GXf5gP49y3xJJB".format(ref_project_id)
+cds_file = "{}:file-GB7p8x8433GVkY6F36Qx06z2".format(ref_project_id)
+cds_file_for_athena = "{}:file-GB7pXZ0433GX1YJKF5382bbX".format(ref_project_id)
 vep_config = "{}:file-GB69B1j43Vx9f0ZYGbKf9xQ1".format(ref_project_id)
 
 generate_bed_vep_stage_id = "stage-G9P8p104vyJJGy6y86FQBxkv"
@@ -89,7 +89,7 @@ generate_workbook_stage_id = "stage-G9P8VQj4vyJBJ0kg50vzVPxY"
 generate_bed_athena_stage_id = "stage-Fyq5yy0433GXxz691bKyvjPJ"
 athena_stage_id = "stage-Fyq5z18433GfYZbp3vX1KqjB"
 
-rpt_workflow_id = "{}:workflow-GB727K8433GxkG4XFy1k6KYq".format(ref_project_id)
+rpt_workflow_id = "{}:workflow-GB8BBKQ433GXKXzkFYVqVJp5".format(ref_project_id)
 
 rpt_stage_input_dict = {
     # generate_bed
