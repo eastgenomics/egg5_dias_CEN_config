@@ -9,7 +9,7 @@ from dias_dynamic_files import (
 )
 
 assay_name = "CEN" # Core Endo Neuro
-assay_version = "v1.1.2"
+assay_version = "v1.1.3"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
@@ -89,7 +89,7 @@ generate_workbook_stage_id = "stage-G9P8VQj4vyJBJ0kg50vzVPxY"
 generate_bed_athena_stage_id = "stage-Fyq5yy0433GXxz691bKyvjPJ"
 athena_stage_id = "stage-Fyq5z18433GfYZbp3vX1KqjB"
 
-rpt_workflow_id = "{}:workflow-GBB7X8j433GX1YJKF538kQV5".format(ref_project_id)
+rpt_workflow_id = "{}:workflow-GBF2890433GZ0Kv20ByzKVXF".format(ref_project_id)
 
 rpt_stage_input_dict = {
     # generate_bed
