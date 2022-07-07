@@ -78,15 +78,13 @@ mqc_config_file = "{}:file-G97Jf0j433GgfGj12xKJ8Zf6".format(ref_project_id)
 
 # CNV calling
 
-cnvcall_applet_id = "applet-G9FKfxj4Z5qY6YFX155g2vQg"
+cnvcall_applet_id = "applet-GByGy184xVp539QfGGf0GX86"
 cnvcalling_fixed_inputs = {
     # GATK Docker image tar
-    "gatk_docker": "project-FzyfP204Z5qXBp6696jG5g10:file-G8KKgQQ4Z5qqk6344z2Xyq8Y",
+    "gatk_docker": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GBBP9JQ433GxV97xBpQkzYZx",
     # CEN intervals for CNV calling and its annotation
-    "interval_list": "file-G8p3kJQ4Gxz2BfjpJb9679j4",
-    "annotation_tsv": "file-G8p3kK84Gxz847Yk4XJGFjYB",
-    # exon annotation file
-    "exon_list": "file-G8y9BvQ4Z5qq7Xf67KpV5j1X"
+    "interval_list": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF25v184pPF97zV91JBv0vXB",
+    "annotation_tsv": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF25v284pPF03q004pvvGXbf",
 }
 
 cnvcalling_input_dict = {
