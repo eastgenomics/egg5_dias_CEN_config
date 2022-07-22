@@ -9,7 +9,9 @@ from dias_dynamic_files import (
 )
 
 assay_name = "CEN" # Core Endo Neuro
+<<<<<<< HEAD
 assay_version = "v1.1.5"
+>>>>>>> 22ef879ec32e9912f002c5ddba1b07cc908e9d9d
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
@@ -74,6 +76,24 @@ ms_workflow_id = "{}:workflow-G5j1j28433GYkv4gPpPG8g11".format(ref_project_id)
 
 mqc_applet_id = "app-G6FyybQ4f4xqqpFfGqg34y2Y"
 mqc_config_file = "{}:file-G82027Q433Gfx69zGvjq7PqQ".format(ref_project_id)
+
+
+# CNV calling
+
+cnvcall_applet_id = "applet-GByGy184xVp539QfGGf0GX86"
+cnvcalling_fixed_inputs = {
+    # GATK Docker image tar
+    "gatk_docker": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GBBP9JQ433GxV97xBpQkzYZx",
+    # CEN intervals for CNV calling and its annotation
+    "interval_list": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF25v184pPF97zV91JBv0vXB",
+    "annotation_tsv": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF25v284pPF03q004pvvGXbf",
+}
+
+cnvcalling_input_dict = {
+    "app": "sentieon-dnaseq",
+    "patterns": ["-E '(.*).bam$'", "-E '(.*).bai$'"]
+}
+
 
 # Reports
 
