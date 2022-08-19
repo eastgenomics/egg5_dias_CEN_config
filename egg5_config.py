@@ -81,10 +81,10 @@ mqc_config_file = "{}:file-G82027Q433Gfx69zGvjq7PqQ".format(ref_project_id)
 cnvcall_app_id = "app-GF3J3Kj4jq2VZkJ2P46fJ9vv"
 cnvcalling_fixed_inputs = {
     # GATK Docker image tar
-    "gatk_docker": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GBBP9JQ433GxV97xBpQkzYZx",
+    "gatk_docker": "{}:file-GBBP9JQ433GxV97xBpQkzYZx".format(ref_project_id),
     # CEN intervals for CNV calling and its annotation
-    "interval_list": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF25v184pPF97zV91JBv0vXB",
-    "annotation_tsv": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF25v284pPF03q004pvvGXbf",
+    "interval_list": "{}:file-GFPxzKj4V50pJX3F4vV58yyg".format(ref_project_id),
+    "annotation_tsv": "{}:file-GFPxzPQ4V50z4pv230p82G0q".format(ref_project_id),
 }
 
 cnvcalling_input_dict = {
