@@ -191,3 +191,60 @@ rea_dynamic_files = {
     "{}.exons_file ID".format(athena_stage_id): cds_file_for_athena,
     "{}.exons_file".format(athena_stage_id): ""
 }
+
+
+# CNV Reports
+
+cnv_rpt_workflow_id = "project-GFQQyVQ4qq8j6kXG1Xkfy3G3:workflow-GFYvJ804qq8kBgY9BV5q2BXG"
+
+cnv_generate_vep_stage_id = "stage-GFZQB7Q4qq8X6yjKG2pFQ58x"
+cnv_annotate_excluded_regions_stage_id = "stage-GG1qYz84qq8yKzF1J2X48q62"
+cnv_vep_stage_id = "stage-GFYvJF04qq8VKgq34j30pZZ3"
+cnv_generate_workbook_stage_id = "stage-GFfYY9j4qq8ZxpFpP8zKG7G0"
+
+cnv_vep_config = "project-GFQQyVQ4qq8j6kXG1Xkfy3G3:file-GFBgJg84xVp3X4q3BX7jXbbZ "
+
+cnv_rpt_stage_input_dict = {
+    # generate_bed
+    "{}.sample_file".format(cnv_generate_vep_stage_id): {
+        "app": "mosdepth", "subdir": "",
+        "pattern": "-E '{}(.*).per-base.bed.gz.csi$'"
+    },
+    # vep
+    "{}.vcf".format(cnv_vep_stage_id): {
+        "app": "sentieon-dnaseq", "subdir": "",
+        "pattern": "-E '{}(.*)[^g].vcf.gz$'"
+    }
+}
+
+rpt_dynamic_files = {
+    # inputs for generate bed for vep
+    "{}.exons_nirvana ID".format(cnv_generate_vep_stage_id): cds_file,
+    "{}.exons_nirvana".format(cnv_generate_vep_stage_id): "",
+    "{}.nirvana_genes2transcripts ID".format(cnv_generate_vep_stage_id): genes2transcripts,
+    "{}.nirvana_genes2transcripts".format(cnv_generate_vep_stage_id): "",
+    "{}.gene_panels ID".format(cnv_generate_vep_stage_id): genepanels_file,
+    "{}.gene_panels".format(cnv_generate_vep_stage_id): "",
+    "{}.manifest ID".format(cnv_generate_vep_stage_id): bioinformatic_manifest,
+    "{}.manifest".format(cnv_generate_vep_stage_id): ""
+}
+
+# CNV reanalysis
+
+rea_stage_input_dict = {
+    # vep
+    "{}.vcf".format(cnv_vep_stage_id): {
+        "app": "sentieon-dnaseq", "subdir": "",
+        "pattern": "-E '{}(.*)[^g].vcf.gz$'"
+    },
+}
+
+rea_dynamic_files = {
+    # inputs for generate bed for vep
+    "{}.exons_nirvana ID".format(cnv_generate_vep_stage_id): cds_file,
+    "{}.exons_nirvana".format(cnv_generate_vep_stage_id): "",
+    "{}.nirvana_genes2transcripts ID".format(cnv_generate_vep_stage_id): genes2transcripts,
+    "{}.nirvana_genes2transcripts".format(cnv_generate_vep_stage_id): "",
+    "{}.gene_panels ID".format(cnv_generate_vep_stage_id): genepanels_file,
+    "{}.gene_panels".format(cnv_generate_vep_stage_id): ""
+}
