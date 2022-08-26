@@ -197,7 +197,9 @@ rea_dynamic_files = {
 
 cnv_rpt_workflow_id = "project-GFQQyVQ4qq8j6kXG1Xkfy3G3:workflow-GFYvJ804qq8kBgY9BV5q2BXG"
 
-cnv_generate_vep_stage_id = "stage-GFZQB7Q4qq8X6yjKG2pFQ58x"
+
+cnv_generate_bed_excluded_stage_id = "stage-GFZQB7Q4qq8X6yjKG2pFQ58x"
+cnv_generate_bed_vep_stage_id = "stage-GG39Gq04qq8ZkfgV31yQy93v"
 cnv_annotate_excluded_regions_stage_id = "stage-GG1qYz84qq8yKzF1J2X48q62"
 cnv_vep_stage_id = "stage-GFYvJF04qq8VKgq34j30pZZ3"
 cnv_generate_workbook_stage_id = "stage-GFfYY9j4qq8ZxpFpP8zKG7G0"
@@ -206,7 +208,7 @@ cnv_vep_config = "project-GFQQyVQ4qq8j6kXG1Xkfy3G3:file-GFBgJg84xVp3X4q3BX7jXbbZ
 
 cnv_rpt_stage_input_dict = {
     # generate_bed
-    "{}.sample_file".format(cnv_generate_vep_stage_id): {
+    "{}.sample_file".format(cnv_generate_bed_vep_stage_id): {
         "app": "mosdepth", "subdir": "",
         "pattern": "-E '{}(.*).per-base.bed.gz.csi$'"
     },
@@ -214,24 +216,29 @@ cnv_rpt_stage_input_dict = {
     "{}.vcf".format(cnv_vep_stage_id): {
         "app": "sentieon-dnaseq", "subdir": "",
         "pattern": "-E '{}(.*)[^g].vcf.gz$'"
+    },
+    # excluded_annotate
+    "{}.excluded_regions".format(cnv_annotate_excluded_regions_stage_id): {
+        "app": "eggd_GATKgCNV_call", "subdir": "",
+        "pattern": "-E '(.*)_CNV_dias_batch_integration_excluded_intervals.bed$'"
     }
 }
 
-rpt_dynamic_files = {
+cnv_rpt_dynamic_files = {
     # inputs for generate bed for vep
-    "{}.exons_nirvana ID".format(cnv_generate_vep_stage_id): cds_file,
-    "{}.exons_nirvana".format(cnv_generate_vep_stage_id): "",
-    "{}.nirvana_genes2transcripts ID".format(cnv_generate_vep_stage_id): genes2transcripts,
-    "{}.nirvana_genes2transcripts".format(cnv_generate_vep_stage_id): "",
-    "{}.gene_panels ID".format(cnv_generate_vep_stage_id): genepanels_file,
-    "{}.gene_panels".format(cnv_generate_vep_stage_id): "",
-    "{}.manifest ID".format(cnv_generate_vep_stage_id): bioinformatic_manifest,
-    "{}.manifest".format(cnv_generate_vep_stage_id): ""
+    "{}.exons_nirvana ID".format(cnv_generate_bed_vep_stage_id): cds_file,
+    "{}.exons_nirvana".format(cnv_generate_bed_vep_stage_id): "",
+    "{}.nirvana_genes2transcripts ID".format(cnv_generate_bed_vep_stage_id): genes2transcripts,
+    "{}.nirvana_genes2transcripts".format(cnv_generate_bed_vep_stage_id): "",
+    "{}.gene_panels ID".format(cnv_generate_bed_vep_stage_id): genepanels_file,
+    "{}.gene_panels".format(cnv_generate_bed_vep_stage_id): "",
+    "{}.manifest ID".format(cnv_generate_bed_vep_stage_id): bioinformatic_manifest,
+    "{}.manifest".format(cnv_generate_bed_vep_stage_id): ""
 }
 
 # CNV reanalysis
 
-rea_stage_input_dict = {
+cnv_rea_stage_input_dict = {
     # vep
     "{}.vcf".format(cnv_vep_stage_id): {
         "app": "sentieon-dnaseq", "subdir": "",
@@ -239,12 +246,12 @@ rea_stage_input_dict = {
     },
 }
 
-rea_dynamic_files = {
+cvn_rea_dynamic_files = {
     # inputs for generate bed for vep
-    "{}.exons_nirvana ID".format(cnv_generate_vep_stage_id): cds_file,
-    "{}.exons_nirvana".format(cnv_generate_vep_stage_id): "",
-    "{}.nirvana_genes2transcripts ID".format(cnv_generate_vep_stage_id): genes2transcripts,
-    "{}.nirvana_genes2transcripts".format(cnv_generate_vep_stage_id): "",
-    "{}.gene_panels ID".format(cnv_generate_vep_stage_id): genepanels_file,
-    "{}.gene_panels".format(cnv_generate_vep_stage_id): ""
+    "{}.exons_nirvana ID".format(cnv_generate_bed_vep_stage_id): cds_file,
+    "{}.exons_nirvana".format(cnv_generate_bed_vep_stage_id): "",
+    "{}.nirvana_genes2transcripts ID".format(cnv_generate_bed_vep_stage_id): genes2transcripts,
+    "{}.nirvana_genes2transcripts".format(cnv_generate_bed_vep_stage_id): "",
+    "{}.gene_panels ID".format(cnv_generate_bed_vep_stage_id): genepanels_file,
+    "{}.gene_panels".format(cnv_generate_bed_vep_stage_id): ""
 }
