@@ -197,7 +197,6 @@ rea_dynamic_files = {
 
 cnv_rpt_workflow_id = "project-GFQQyVQ4qq8j6kXG1Xkfy3G3:workflow-GFYvJ804qq8kBgY9BV5q2BXG"
 
-
 cnv_generate_bed_excluded_stage_id = "stage-GFZQB7Q4qq8X6yjKG2pFQ58x"
 cnv_generate_bed_vep_stage_id = "stage-GG39Gq04qq8ZkfgV31yQy93v"
 cnv_annotate_excluded_regions_stage_id = "stage-GG1qYz84qq8yKzF1J2X48q62"
@@ -242,7 +241,10 @@ cnv_rpt_dynamic_files = {
     "{}.gene_panels ID".format(cnv_generate_bed_excluded_stage_id): genepanels_file,
     "{}.gene_panels".format(cnv_generate_bed_excluded_stage_id): "",
     "{}.manifest ID".format(cnv_generate_bed_excluded_stage_id): bioinformatic_manifest,
-    "{}.manifest".format(cnv_generate_bed_excluded_stage_id): ""
+    "{}.manifest".format(cnv_generate_bed_excluded_stage_id): "",
+    # inputs for excluded app
+    "{}.cds_hgnc".format(cnv_annotate_excluded_regions_stage_id): cds_file,
+    "{}.cds_gene".format(cnv_annotate_excluded_regions_stage_id): cds_file_for_athena
 }
 
 # CNV reanalysis
