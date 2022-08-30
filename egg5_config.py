@@ -233,7 +233,16 @@ cnv_rpt_dynamic_files = {
     "{}.gene_panels ID".format(cnv_generate_bed_vep_stage_id): genepanels_file,
     "{}.gene_panels".format(cnv_generate_bed_vep_stage_id): "",
     "{}.manifest ID".format(cnv_generate_bed_vep_stage_id): bioinformatic_manifest,
-    "{}.manifest".format(cnv_generate_bed_vep_stage_id): ""
+    "{}.manifest".format(cnv_generate_bed_vep_stage_id): "",
+    # inputs for generate bed for excluded app
+    "{}.exons_nirvana ID".format(cnv_generate_bed_excluded_stage_id): cds_file,
+    "{}.exons_nirvana".format(cnv_generate_bed_excluded_stage_id): "",
+    "{}.nirvana_genes2transcripts ID".format(cnv_generate_bed_excluded_stage_id): genes2transcripts,
+    "{}.nirvana_genes2transcripts".format(cnv_generate_bed_excluded_stage_id): "",
+    "{}.gene_panels ID".format(cnv_generate_bed_excluded_stage_id): genepanels_file,
+    "{}.gene_panels".format(cnv_generate_bed_excluded_stage_id): "",
+    "{}.manifest ID".format(cnv_generate_bed_excluded_stage_id): bioinformatic_manifest,
+    "{}.manifest".format(cnv_generate_bed_excluded_stage_id): ""
 }
 
 # CNV reanalysis
@@ -253,5 +262,14 @@ cvn_rea_dynamic_files = {
     "{}.nirvana_genes2transcripts ID".format(cnv_generate_bed_vep_stage_id): genes2transcripts,
     "{}.nirvana_genes2transcripts".format(cnv_generate_bed_vep_stage_id): "",
     "{}.gene_panels ID".format(cnv_generate_bed_vep_stage_id): genepanels_file,
-    "{}.gene_panels".format(cnv_generate_bed_vep_stage_id): ""
+    "{}.gene_panels".format(cnv_generate_bed_vep_stage_id): "",
+    # inputs for generate bed for excluded app
+    "{}.exons_nirvana ID".format(cnv_generate_bed_excluded_stage_id): cds_file,
+    "{}.exons_nirvana".format(cnv_generate_bed_excluded_stage_id): "",
+    "{}.nirvana_genes2transcripts ID".format(cnv_generate_bed_excluded_stage_id): genes2transcripts,
+    "{}.nirvana_genes2transcripts".format(cnv_generate_bed_excluded_stage_id): "",
+    "{}.gene_panels ID".format(cnv_generate_bed_excluded_stage_id): genepanels_file,
+    "{}.gene_panels".format(cnv_generate_bed_excluded_stage_id): "",
+    "{}.manifest ID".format(cnv_generate_bed_excluded_stage_id): bioinformatic_manifest,
+    "{}.manifest".format(cnv_generate_bed_excluded_stage_id): ""
 }
