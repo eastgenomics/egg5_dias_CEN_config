@@ -206,8 +206,13 @@ cnv_generate_workbook_stage_id = "stage-GFfYY9j4qq8ZxpFpP8zKG7G0"
 cnv_vep_config = "project-GFQQyVQ4qq8j6kXG1Xkfy3G3:file-GFBgJg84xVp3X4q3BX7jXbbZ "
 
 cnv_rpt_stage_input_dict = {
-    # generate_bed
+    # generate_bed for vep generate bed
     "{}.sample_file".format(cnv_generate_bed_vep_stage_id): {
+        "app": "mosdepth", "subdir": "",
+        "pattern": "-E '{}(.*).per-base.bed.gz.csi$'"
+    },
+    # generate_bed for excluded generate bed
+    "{}.sample_file".format(cnv_generate_bed_excluded_stage_id): {
         "app": "mosdepth", "subdir": "",
         "pattern": "-E '{}(.*).per-base.bed.gz.csi$'"
     },
@@ -219,7 +224,7 @@ cnv_rpt_stage_input_dict = {
     # excluded_annotate
     "{}.excluded_regions".format(cnv_annotate_excluded_regions_stage_id): {
         "app": "eggd_GATKgCNV_call", "subdir": "",
-        "pattern": "-E '{}(.*)_CNV_dias_batch_integration_excluded_intervals.bed$'"
+        "pattern": "-E '{}(.*)excluded_intervals.bed$'"
     },
 }
 
