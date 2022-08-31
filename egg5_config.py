@@ -251,19 +251,23 @@ cnv_rpt_dynamic_files = {
     "{}.cds_hgnc ID".format(cnv_annotate_excluded_regions_stage_id): cds_file,
     "{}.cds_hgnc".format(cnv_annotate_excluded_regions_stage_id): "",
     "{}.cds_gene ID".format(cnv_annotate_excluded_regions_stage_id): cds_file_for_athena,
-    "{}.cds_gene".format(cnv_annotate_excluded_regions_stage_id): "",
+    "{}.cds_gene".format(cnv_annotate_excluded_regions_stage_id): ""
 }
 
 # CNV reanalysis
 
-cnv_rea_stage_input_dict = {
+cnv_rea_stage_input_dict  = {
     # vep
     "{}.vcf".format(cnv_vep_stage_id): {
-        "app": "sentieon-dnaseq", "subdir": "",
-        "pattern": "-E '{}(.*)[^g].vcf.gz$'"
+        "app": "eggd_GATKgCNV_call", "subdir": "",
+        "pattern": "-E '{}(.*)[^g]_segments.vcf.gz$'"
+    },
+    # excluded_annotate
+    "{}.excluded_regions".format(cnv_annotate_excluded_regions_stage_id): {
+        "app": "eggd_GATKgCNV_call", "subdir": "",
+        "pattern": "-E '{}(.*)excluded_intervals.bed$'"
     },
 }
-
 cvn_rea_dynamic_files = {
     # inputs for generate bed for vep
     "{}.exons_nirvana ID".format(cnv_generate_bed_vep_stage_id): cds_file,
