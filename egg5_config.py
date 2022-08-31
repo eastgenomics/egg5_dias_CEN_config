@@ -243,8 +243,10 @@ cnv_rpt_dynamic_files = {
     "{}.manifest ID".format(cnv_generate_bed_excluded_stage_id): bioinformatic_manifest,
     "{}.manifest".format(cnv_generate_bed_excluded_stage_id): "",
     # inputs for excluded app
-    "{}.cds_hgnc".format(cnv_annotate_excluded_regions_stage_id): cds_file,
-    "{}.cds_gene".format(cnv_annotate_excluded_regions_stage_id): cds_file_for_athena
+    "{}.cds_hgnc ID".format(cnv_annotate_excluded_regions_stage_id): cds_file,
+    "{}.cds_hgnc".format(cnv_annotate_excluded_regions_stage_id): "",
+    "{}.cds_gene ID".format(cnv_annotate_excluded_regions_stage_id): cds_file_for_athena,
+    "{}.cds_gene".format(cnv_annotate_excluded_regions_stage_id): "",
 }
 
 # CNV reanalysis
