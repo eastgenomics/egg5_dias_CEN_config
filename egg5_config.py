@@ -218,7 +218,7 @@ cnv_rpt_stage_input_dict = {
     },
     # excluded_annotate
     "{}.excluded_regions".format(cnv_annotate_excluded_regions_stage_id): {
-        "app": "eggd_GATKgCNV_call", "subdir": "",
+        "app": "eggd_GATKgCNV_call", "subdir": "CNV_summary",
         "pattern": "-E '{}(.*)_CNV_dias_batch_integration_excluded_intervals.bed$'"
     }
 }
