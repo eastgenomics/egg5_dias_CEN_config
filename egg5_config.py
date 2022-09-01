@@ -272,7 +272,7 @@ cnv_rea_stage_input_dict  = {
         "pattern": "-E '(.*)_excluded_intervals.bed$'"
     },
 }
-cvn_rea_dynamic_files = {
+cnv_rea_dynamic_files = {
     # inputs for generate bed for vep
     "{}.exons_nirvana ID".format(cnv_generate_bed_vep_stage_id): cds_file,
     "{}.exons_nirvana".format(cnv_generate_bed_vep_stage_id): "",
