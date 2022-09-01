@@ -217,13 +217,15 @@ cnv_rpt_stage_input_dict = {
         "pattern": "-E '{}(.*).per-base.bed.gz.csi$'"
     },
     # vep
+    # subdirectories always require the backward dash
     "{}.vcf".format(cnv_vep_stage_id): {
-        "app": "eggd_GATKgCNV_call", "subdir": "CNV_vcfs",
-        "pattern": "-E '{}(.*)[^g]_segments.vcf.gz$'"
+        "app": "eggd_GATKgCNV_call", "subdir": "CNV_vcfs/",
+        "pattern": "-E '{}(.*)_segments.vcf$'"
     },
     # excluded_annotate
+     # subdirectories always require the backward dash
     "{}.excluded_regions".format(cnv_annotate_excluded_regions_stage_id): {
-        "app": "eggd_GATKgCNV_call", "subdir": "CNV_summary",
+        "app": "eggd_GATKgCNV_call", "subdir": "CNV_summary/",
         "pattern": "-E '{}(.*)_excluded_intervals.bed$'"
     },
 }
