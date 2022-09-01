@@ -218,13 +218,13 @@ cnv_rpt_stage_input_dict = {
     },
     # vep
     "{}.vcf".format(cnv_vep_stage_id): {
-        "app": "eggd_GATKgCNV_call", "subdir": "",
+        "app": "eggd_GATKgCNV_call", "subdir": "CNV_vcfs",
         "pattern": "-E '{}(.*)[^g]_segments.vcf.gz$'"
     },
     # excluded_annotate
     "{}.excluded_regions".format(cnv_annotate_excluded_regions_stage_id): {
-        "app": "eggd_GATKgCNV_call", "subdir": "",
-        "pattern": "-E '{}(.*)excluded_intervals.bed$'"
+        "app": "eggd_GATKgCNV_call", "subdir": "CNV_summary",
+        "pattern": "-E '{}(.*)_excluded_intervals.bed$'"
     },
 }
 
