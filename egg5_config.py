@@ -296,5 +296,7 @@ cnv_rea_dynamic_files = {
     "{}.cds_hgnc ID".format(cnv_annotate_excluded_regions_stage_id): cds_file,
     "{}.cds_hgnc".format(cnv_annotate_excluded_regions_stage_id): "",
     "{}.cds_gene ID".format(cnv_annotate_excluded_regions_stage_id): cds_file_for_athena,
-    "{}.cds_gene".format(cnv_annotate_excluded_regions_stage_id): ""
+    "{}.cds_gene".format(cnv_annotate_excluded_regions_stage_id): "",
+    "{}.additional_regions ID".format(cnv_annotate_excluded_regions_stage_id): additional_regions,
+    "{}.additional_regions".format(cnv_annotate_excluded_regions_stage_id): ""
 }
