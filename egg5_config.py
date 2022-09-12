@@ -204,6 +204,7 @@ cnv_vep_stage_id = "stage-GFYvJF04qq8VKgq34j30pZZ3"
 cnv_generate_workbook_stage_id = "stage-GFfYY9j4qq8ZxpFpP8zKG7G0"
 
 cnv_vep_config = "project-GFQQyVQ4qq8j6kXG1Xkfy3G3:file-GFBgJg84xVp3X4q3BX7jXbbZ "
+additional_regions = "project-GFQQyVQ4qq8j6kXG1Xkfy3G3:file-GG4J0P04qq8QJjKKFv68yzGX"
 
 cnv_rpt_stage_input_dict = {
     # generate_bed for vep generate bed
@@ -253,7 +254,9 @@ cnv_rpt_dynamic_files = {
     "{}.cds_hgnc ID".format(cnv_annotate_excluded_regions_stage_id): cds_file,
     "{}.cds_hgnc".format(cnv_annotate_excluded_regions_stage_id): "",
     "{}.cds_gene ID".format(cnv_annotate_excluded_regions_stage_id): cds_file_for_athena,
-    "{}.cds_gene".format(cnv_annotate_excluded_regions_stage_id): ""
+    "{}.cds_gene".format(cnv_annotate_excluded_regions_stage_id): "",
+    "{}.additional_regions ID".format(cnv_annotate_excluded_regions_stage_id): additional_regions,
+    "{}.additional_regions".format(cnv_annotate_excluded_regions_stage_id): ""
 }
 
 # CNV reanalysis
