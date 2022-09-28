@@ -203,7 +203,7 @@ cnv_annotate_excluded_regions_stage_id = "stage-GG1qYz84qq8yKzF1J2X48q62"
 cnv_vep_stage_id = "stage-GFYvJF04qq8VKgq34j30pZZ3"
 cnv_generate_workbook_stage_id = "stage-GFfYY9j4qq8ZxpFpP8zKG7G0"
 
-cnv_vep_config = "project-GFQQyVQ4qq8j6kXG1Xkfy3G3:file-GFBgJg84xVp3X4q3BX7jXbbZ "
+cnv_vep_config =  "{}:file-GGkJqk84GVVGqG6VFz60gkFF".format(ref_project_id)
 additional_regions = "project-GFQQyVQ4qq8j6kXG1Xkfy3G3:file-GG4J0P04qq8QJjKKFv68yzGX"
 
 cnv_rpt_stage_input_dict = {
