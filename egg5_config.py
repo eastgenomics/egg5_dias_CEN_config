@@ -292,7 +292,7 @@ cnv_rea_dynamic_files = {
     "{}.gene_panels".format(cnv_generate_bed_excluded_stage_id): "",
     "{}.manifest ID".format(cnv_generate_bed_excluded_stage_id): bioinformatic_manifest,
     "{}.manifest".format(cnv_generate_bed_excluded_stage_id): "",
-        # inputs for excluded app
+    # inputs for excluded app
     "{}.cds_hgnc ID".format(cnv_annotate_excluded_regions_stage_id): cds_file,
     "{}.cds_hgnc".format(cnv_annotate_excluded_regions_stage_id): "",
     "{}.cds_gene ID".format(cnv_annotate_excluded_regions_stage_id): cds_file_for_athena,
