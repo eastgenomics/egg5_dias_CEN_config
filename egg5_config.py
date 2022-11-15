@@ -195,7 +195,7 @@ rea_dynamic_files = {
 
 # CNV Reports
 
-cnv_rpt_workflow_id =  "{}:workflow-GGpkk40433GQqXQj4j2FyV36".format(ref_project_id)
+cnv_rpt_workflow_id =  "{}:workflow-GJk5VXQ433GbPgPY4gGY262z".format(ref_project_id)
 
 cnv_generate_bed_excluded_stage_id = "stage-GFZQB7Q4qq8X6yjKG2pFQ58x"
 cnv_generate_bed_vep_stage_id = "stage-GG39Gq04qq8ZkfgV31yQy93v"
