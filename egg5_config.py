@@ -204,7 +204,7 @@ cnv_vep_stage_id = "stage-GFYvJF04qq8VKgq34j30pZZ3"
 cnv_generate_workbook_stage_id = "stage-GFfYY9j4qq8ZxpFpP8zKG7G0"
 
 cnv_vep_config =  "{}:file-GGkJqk84GVVGqG6VFz60gkFF".format(ref_project_id)
-additional_regions = "{}:file-GGkz5B84GVV4KbX64gzBXqZ2".format(ref_project_id)
+additional_regions = "{}:file-GJZQvg0433GkyFZg13K6VV6p".format(ref_project_id)
 
 cnv_rpt_stage_input_dict = {
     # generate_bed for vep generate bed
