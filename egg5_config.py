@@ -78,7 +78,7 @@ mqc_config_file = "{}:file-G82027Q433Gfx69zGvjq7PqQ".format(ref_project_id)
 
 # CNV calling
 
-cnvcall_app_id = "app-GF3J3Kj4jq2VZkJ2P46fJ9vv"
+cnvcall_app_id = "app-GJZVB2840KK0kxX998QjgXF0"
 cnvcalling_fixed_inputs = {
     # GATK Docker image tar
     "gatk_docker": "{}:file-GBBP9JQ433GxV97xBpQkzYZx".format(ref_project_id),
