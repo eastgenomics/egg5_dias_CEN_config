@@ -9,7 +9,7 @@ from dias_dynamic_files import (
 )
 
 assay_name = "CEN" # Core Endo Neuro
-assay_version = "v1.2.0"
+assay_version = "v1.2.1"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
@@ -78,7 +78,7 @@ mqc_config_file = "{}:file-G82027Q433Gfx69zGvjq7PqQ".format(ref_project_id)
 
 # CNV calling
 
-cnvcall_app_id = "app-GF3J3Kj4jq2VZkJ2P46fJ9vv"
+cnvcall_app_id = "app-GJZVB2840KK0kxX998QjgXF0"
 cnvcalling_fixed_inputs = {
     # GATK Docker image tar
     "gatk_docker": "{}:file-GBBP9JQ433GxV97xBpQkzYZx".format(ref_project_id),
@@ -195,7 +195,7 @@ rea_dynamic_files = {
 
 # CNV Reports
 
-cnv_rpt_workflow_id =  "{}:workflow-GGpkk40433GQqXQj4j2FyV36".format(ref_project_id)
+cnv_rpt_workflow_id =  "{}:workflow-GJk5VXQ433GbPgPY4gGY262z".format(ref_project_id)
 
 cnv_generate_bed_excluded_stage_id = "stage-GFZQB7Q4qq8X6yjKG2pFQ58x"
 cnv_generate_bed_vep_stage_id = "stage-GG39Gq04qq8ZkfgV31yQy93v"
@@ -204,7 +204,7 @@ cnv_vep_stage_id = "stage-GFYvJF04qq8VKgq34j30pZZ3"
 cnv_generate_workbook_stage_id = "stage-GFfYY9j4qq8ZxpFpP8zKG7G0"
 
 cnv_vep_config =  "{}:file-GGkJqk84GVVGqG6VFz60gkFF".format(ref_project_id)
-additional_regions = "{}:file-GGkz5B84GVV4KbX64gzBXqZ2".format(ref_project_id)
+additional_regions = "{}:file-GJZQvg0433GkyFZg13K6VV6p".format(ref_project_id)
 
 cnv_rpt_stage_input_dict = {
     # generate_bed for vep generate bed
