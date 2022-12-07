@@ -9,7 +9,7 @@ from dias_dynamic_files import (
 )
 
 assay_name = "CEN" # Core Endo Neuro
-assay_version = "v1.2.1"
+assay_version = "v1.2.2"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
@@ -241,6 +241,8 @@ cnv_rpt_dynamic_files = {
     "{}.gene_panels".format(cnv_generate_bed_vep_stage_id): "",
     "{}.manifest ID".format(cnv_generate_bed_vep_stage_id): bioinformatic_manifest,
     "{}.manifest".format(cnv_generate_bed_vep_stage_id): "",
+    "{}.additional_regions ID".format(cnv_generate_bed_vep_stage_id): additional_regions,
+    "{}.additional_regions".format(cnv_generate_bed_vep_stage_id): "",
     # inputs for generate bed for excluded app
     "{}.exons_nirvana ID".format(cnv_generate_bed_excluded_stage_id): cds_file,
     "{}.exons_nirvana".format(cnv_generate_bed_excluded_stage_id): "",
@@ -250,6 +252,8 @@ cnv_rpt_dynamic_files = {
     "{}.gene_panels".format(cnv_generate_bed_excluded_stage_id): "",
     "{}.manifest ID".format(cnv_generate_bed_excluded_stage_id): bioinformatic_manifest,
     "{}.manifest".format(cnv_generate_bed_excluded_stage_id): "",
+    "{}.additional_regions ID".format(cnv_generate_bed_excluded_stage_id): additional_regions,
+    "{}.additional_regions".format(cnv_generate_bed_excluded_stage_id): "",
     # inputs for excluded app
     "{}.cds_hgnc ID".format(cnv_annotate_excluded_regions_stage_id): cds_file,
     "{}.cds_hgnc".format(cnv_annotate_excluded_regions_stage_id): "",
@@ -283,7 +287,9 @@ cnv_rea_dynamic_files = {
     "{}.nirvana_genes2transcripts".format(cnv_generate_bed_vep_stage_id): "",
     "{}.gene_panels ID".format(cnv_generate_bed_vep_stage_id): genepanels_file,
     "{}.gene_panels".format(cnv_generate_bed_vep_stage_id): "",
-    # inputs for generate bed for excluded app
+    "{}.additional_regions ID".format(cnv_generate_bed_vep_stage_id): additional_regions,
+    "{}.additional_regions".format(cnv_generate_bed_vep_stage_id): "",
+# inputs for generate bed for excluded app
     "{}.exons_nirvana ID".format(cnv_generate_bed_excluded_stage_id): cds_file,
     "{}.exons_nirvana".format(cnv_generate_bed_excluded_stage_id): "",
     "{}.nirvana_genes2transcripts ID".format(cnv_generate_bed_excluded_stage_id): genes2transcripts,
@@ -292,6 +298,8 @@ cnv_rea_dynamic_files = {
     "{}.gene_panels".format(cnv_generate_bed_excluded_stage_id): "",
     "{}.manifest ID".format(cnv_generate_bed_excluded_stage_id): bioinformatic_manifest,
     "{}.manifest".format(cnv_generate_bed_excluded_stage_id): "",
+    "{}.additional_regions ID".format(cnv_generate_bed_vep_stage_id): additional_regions,
+    "{}.additional_regions".format(cnv_generate_bed_vep_stage_id): "",
     # inputs for excluded app
     "{}.cds_hgnc ID".format(cnv_annotate_excluded_regions_stage_id): cds_file,
     "{}.cds_hgnc".format(cnv_annotate_excluded_regions_stage_id): "",
