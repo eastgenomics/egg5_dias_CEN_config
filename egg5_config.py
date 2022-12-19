@@ -9,7 +9,7 @@ from dias_dynamic_files import (
 )
 
 assay_name = "CEN" # Core Endo Neuro
-assay_version = "v1.2.2"
+assay_version = "v1.3.0"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
