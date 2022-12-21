@@ -9,7 +9,7 @@ from dias_dynamic_files import (
 )
 
 assay_name = "CEN" # Core Endo Neuro
-assay_version = "v1.2.2"
+assay_version = "v1.3.0"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
@@ -73,7 +73,7 @@ ms_workflow_id = "{}:workflow-G5j1j28433GYkv4gPpPG8g11".format(ref_project_id)
 # MultiQC
 
 mqc_applet_id = "app-G6FyybQ4f4xqqpFfGqg34y2Y"
-mqc_config_file = "{}:file-G82027Q433Gfx69zGvjq7PqQ".format(ref_project_id)
+mqc_config_file = "{}:file-G97Jf0j433GgfGj12xKJ8Zf6".format(ref_project_id)
 
 
 # CNV calling
