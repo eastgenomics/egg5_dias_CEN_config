@@ -9,7 +9,7 @@ from dias_dynamic_files import (
 )
 
 assay_name = "CEN" # Core Endo Neuro
-assay_version = "v1.3.2"
+assay_version = "v1.3.3"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
@@ -99,7 +99,7 @@ xlsx_flanks = 495
 
 cds_file = "{}:file-GF611Z8433Gk7gZ47gypK7ZZ".format(ref_project_id)
 cds_file_for_athena = "{}:file-GF611Z8433Gf99pBPbJkV7bq".format(ref_project_id)
-vep_config = "{}:file-GPV504Q44F7kYy1q0zjYKg0x".format(ref_project_id)
+vep_config = "{}:file-GQ2yZ7j45fVVVBJ86XBfz4x6".format(ref_project_id)
 
 generate_bed_vep_stage_id = "stage-G9P8p104vyJJGy6y86FQBxkv"
 vep_stage_id = "stage-G9Q0jzQ4vyJ3x37X4KBKXZ5v"
