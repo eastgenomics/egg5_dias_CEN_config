@@ -13,70 +13,6 @@ assay_version = "v1.4.0"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
-# Single workflow
-# Workflow ID to be updated once signed off
-ss_workflow_id = "{}:workflow-GQK96zj4P1gbgFPzKyB1fQZz".format(ref_project_id)
-
-# Declare inputs to specific stages
-fastqc_fastqs_input_stage = "stage-Fy6fpV840vZZ0v6J8qBQYqZF.fastqs"
-
-sentieon_stage_id = "stage-Fy6fpk040vZZPPbq96Jb2KfK"
-sentieon_R1_input_stage = "{}.reads_fastqgzs".format(sentieon_stage_id)
-sentieon_R2_input_stage = "{}.reads2_fastqgzs".format(sentieon_stage_id)
-sentieon_sample_input_stage = "{}.sample".format(sentieon_stage_id)
-
-ss_beds_inputs = {
-    # vcf_qc
-    "stage-Fy6fqy040vZV3Gj24vppvJgZ.bed_file ID": "file-Fpz2X0Q433GVK5xxPvzqvVPB",
-    "stage-Fy6fqy040vZV3Gj24vppvJgZ.bed_file": "",
-    # mosdepth
-    "stage-Fy6fvYQ40vZV1y8p9GYKPYyQ.bed ID": "file-Fpz2X0Q433GVK5xxPvzqvVPB",
-    "stage-Fy6fvYQ40vZV1y8p9GYKPYyQ.bed": "",
-    # picard: CEN Capture Bed
-    "stage-Fy6fx2Q40vZbFVxZ283xXGVY.bedfile ID": "file-G5jjzG0433GgkQ093K2p8PxQ",
-    "stage-Fy6fx2Q40vZbFVxZ283xXGVY.bedfile": "",
-}
-
-
-# Multi workflow
-
-ms_workflow_id = "{}:workflow-G5j1j28433GYkv4gPpPG8g11".format(ref_project_id)
-
-happy_stage_id = "stage-Fq1BPKj433Gx3K4Y8J35j0fv"
-
-happy_stage_prefix = "{}.prefix".format(happy_stage_id)
-happy_stage_bed = {
-    "{}.panel_bed ID".format(happy_stage_id): "file-G620390433GYGY34Jq6Zq1Xf",
-    "{}.panel_bed".format(happy_stage_id): "file-G620390433GYGY34Jq6Zq1Xf"
-}
-
-female_threshold = 3
-male_threshold = 1
-
-somalier_relate_stage_id = "stage-G5j1jJj433GpFY3v0JZQ2ZZ0"
-
-multi_stage_input_dict = {
-    "stage-Fybykxj433GV7vJKFGf3yVkK.SampleSheet": {
-        "app": None, "subdir": "", "pattern": "SampleSheet.csv$",
-    },
-    "{}.query_vcf".format(happy_stage_id): {
-        "app": "sentieon-dnaseq", "subdir": "",
-        "pattern": "^NA12878-.*-EGG5_markdup_recalibrated_Haplotyper.vcf.gz$",
-    },
-    "{}.somalier_extract_file".format(somalier_relate_stage_id): {
-        "app": "somalier_extract", "subdir": "",
-        "pattern": "-E '(.*).somalier$'"
-    },
-}
-
-
-# MultiQC
-
-mqc_applet_id = "app-G6FyybQ4f4xqqpFfGqg34y2Y"
-multiqc_docker = "file-G61JxF84g59YVK4G43FzGzGp" # not yet in 001 project
-mqc_config_file = "{}:file-G97Jf0j433GgfGj12xKJ8Zf6".format(ref_project_id)
-
-
 # CNV calling
 
 cnvcall_app_id = "app-GJZVB2840KK0kxX998QjgXF0"
@@ -225,7 +161,7 @@ cnv_rpt_stage_input_dict = {
         "pattern": "-E '{}(.*)_segments.vcf$'"
     },
     # excluded_annotate
-     # subdirectories always require the backward dash
+    # subdirectories always require the backward dash
     "{}.excluded_regions".format(cnv_annotate_excluded_regions_stage_id): {
         "app": "eggd_GATKgCNV_call", "subdir": "CNV_summary/",
         "pattern": "-E '(.*)_excluded_intervals.bed$'"
@@ -274,7 +210,7 @@ cnv_rea_stage_input_dict  = {
         "pattern": "-E '{}(.*)_segments.vcf$'"
     },
     # excluded_annotate
-     # subdirectories always require the backward dash
+    # subdirectories always require the backward dash
     "{}.excluded_regions".format(cnv_annotate_excluded_regions_stage_id): {
         "app": "eggd_GATKgCNV_call", "subdir": "CNV_summary/",
         "pattern": "-E '(.*)_excluded_intervals.bed$'"
