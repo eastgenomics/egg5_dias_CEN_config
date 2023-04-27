@@ -31,9 +31,12 @@ additional_regions = "{}:file-GJZQvg0433GkyFZg13K6VV6p".format(ref_project_id)
 
 
 
-# CNV calling
+### Apps and workflows:
 
+# GATKgCNV_call
+# v1.0.1
 cnvcall_app_id = "app-GJZVB2840KK0kxX998QjgXF0"
+
 cnvcalling_fixed_inputs = {
     # GATK Docker image tar
     "gatk_docker": "{}:file-GBBP9JQ433GxV97xBpQkzYZx".format(ref_project_id),
