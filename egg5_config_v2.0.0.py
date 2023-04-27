@@ -1,17 +1,35 @@
-import sys
-
-sys.path.append("/mnt/storage/apps/software/dias_config")
-
-from dias_dynamic_files import (
-    genes2transcripts,
-    bioinformatic_manifest,
-    genepanels_file,
-)
-
 assay_name = "CEN" # Core Endo Neuro
 assay_version = "v1.4.0"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
+
+### Dynamic files:
+
+## for generate_bed
+# genepanels 221027
+genepanels_file = "{}:file-GJJ7Vx8433Gz96yp8V98X74f".format(ref_project_id)
+# g2t 230123
+genes2transcripts = "{}:file-GP7FY50433GZX7x0JqfgBB4q".format(ref_project_id)
+# GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv
+exons_nirvana = "{}:file-GF611Z8433Gk7gZ47gypK7ZZ".format(ref_project_id)
+
+# for generate_bed_for_VEP
+vep_bed_flank = 495
+
+## for eggd_Athena
+# GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv
+exons_file = "{}:file-GF611Z8433Gf99pBPbJkV7bq".format(ref_project_id)
+
+## for eggd_VEP
+# VEP config file for SNV reports
+vep_config = "{}:file-GQ2yZ7j45fVVVBJ86XBfz4x6".format(ref_project_id)
+# VEP config file for CNV reports
+cnv_vep_config =  "{}:file-GGkJqk84GVVGqG6VFz60gkFF".format(ref_project_id)
+
+# additional regions TSV for CNV reports
+additional_regions = "{}:file-GJZQvg0433GkyFZg13K6VV6p".format(ref_project_id)
+
+
 
 # CNV calling
 
@@ -31,12 +49,6 @@ cnvcalling_input_dict = {
 
 
 # Reports
-
-xlsx_flanks = 495
-
-cds_file = "{}:file-GF611Z8433Gk7gZ47gypK7ZZ".format(ref_project_id)
-cds_file_for_athena = "{}:file-GF611Z8433Gf99pBPbJkV7bq".format(ref_project_id)
-vep_config = "{}:file-GQ2yZ7j45fVVVBJ86XBfz4x6".format(ref_project_id)
 
 generate_bed_vep_stage_id = "stage-G9P8p104vyJJGy6y86FQBxkv"
 vep_stage_id = "stage-G9Q0jzQ4vyJ3x37X4KBKXZ5v"
@@ -139,9 +151,6 @@ cnv_generate_bed_vep_stage_id = "stage-GG39Gq04qq8ZkfgV31yQy93v"
 cnv_annotate_excluded_regions_stage_id = "stage-GG1qYz84qq8yKzF1J2X48q62"
 cnv_vep_stage_id = "stage-GFYvJF04qq8VKgq34j30pZZ3"
 cnv_generate_workbook_stage_id = "stage-GFfYY9j4qq8ZxpFpP8zKG7G0"
-
-cnv_vep_config =  "{}:file-GGkJqk84GVVGqG6VFz60gkFF".format(ref_project_id)
-additional_regions = "{}:file-GJZQvg0433GkyFZg13K6VV6p".format(ref_project_id)
 
 cnv_rpt_stage_input_dict = {
     # generate_bed for vep generate bed
