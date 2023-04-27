@@ -1,5 +1,5 @@
 assay_name = "CEN" # Core Endo Neuro
-assay_version = "v1.4.0"
+assay_version = "v2.0.0"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
@@ -28,7 +28,6 @@ cnv_vep_config =  "{}:file-GGkJqk84GVVGqG6VFz60gkFF".format(ref_project_id)
 
 # additional regions TSV for CNV reports
 additional_regions = "{}:file-GJZQvg0433GkyFZg13K6VV6p".format(ref_project_id)
-
 
 
 ### Apps and workflows:
@@ -98,6 +97,7 @@ rpt_stage_input_dict = {
         "pattern": "-E '{}(.*)(per-base.bed.gz$|reference)'"
     },
 }
+
 
 # dias_cnvreports
 # vx.y.z
