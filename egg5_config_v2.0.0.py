@@ -6,10 +6,10 @@ ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 ### Dynamic files:
 
 ## for generate_bed
-# genepanels 221027
-genepanels_file = "{}:file-GJJ7Vx8433Gz96yp8V98X74f".format(ref_project_id)
-# g2t 230123
-genes2transcripts = "{}:file-GP7FY50433GZX7x0JqfgBB4q".format(ref_project_id)
+# genepanels 230421
+genepanels_file = "{}:file-GV4PPy8433GZ9bX8kKVkfbX5".format(ref_project_id)
+# g2t 230421
+genes2transcripts = "{}:file-GV4P970433Gj6812zGVBZvB4".format(ref_project_id)
 # GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv
 exons_nirvana = "{}:file-GF611Z8433Gk7gZ47gypK7ZZ".format(ref_project_id)
 
@@ -21,12 +21,12 @@ vep_bed_flank = 495
 exons_file = "{}:file-GF611Z8433Gf99pBPbJkV7bq".format(ref_project_id)
 
 ## for eggd_VEP
-# VEP config file for SNV reports
-vep_config = "{}:file-GQ2yZ7j45fVVVBJ86XBfz4x6".format(ref_project_id)
-# VEP config file for CNV reports
-cnv_vep_config =  "{}:file-GGkJqk84GVVGqG6VFz60gkFF".format(ref_project_id)
+# VEP config file for SNV reports v1.1.2
+vep_config = "{}:file-GVBFp8Q448Z3k3xQkKF3340K".format(ref_project_id)
+# VEP config file for CNV reports v1.1.0
+cnv_vep_config =  "{}:file-GQGJ3Z84xyx0jp1q65K1Q1jY".format(ref_project_id)
 
-# additional regions TSV for CNV reports
+# additional regions TSV for CNV reports v1.0.1
 additional_regions = "{}:file-GJZQvg0433GkyFZg13K6VV6p".format(ref_project_id)
 
 
@@ -37,9 +37,9 @@ additional_regions = "{}:file-GJZQvg0433GkyFZg13K6VV6p".format(ref_project_id)
 cnvcall_app_id = "app-GJZVB2840KK0kxX998QjgXF0"
 
 cnvcalling_fixed_inputs = {
-    # GATK Docker image tar
+    # GATK Docker image tar v4.2.5.0
     "gatk_docker": "{}:file-GBBP9JQ433GxV97xBpQkzYZx".format(ref_project_id),
-    # CEN intervals for CNV calling and its annotation
+    # CEN intervals for CNV calling and its annotation v1.1.0
     "interval_list": "{}:file-GFPxzKj4V50pJX3F4vV58yyg".format(ref_project_id),
     "annotation_tsv": "{}:file-GFPxzPQ4V50z4pv230p82G0q".format(ref_project_id),
 }
@@ -100,7 +100,7 @@ rpt_stage_input_dict = {
 
 
 # dias_cnvreports
-# vx.y.z
+# v1.0.2
 cnv_rpt_workflow_id =  "{}:workflow-GJk5VXQ433GbPgPY4gGY262z".format(ref_project_id)
 
 cnv_generate_bed_excluded_stage_id = "stage-GFZQB7Q4qq8X6yjKG2pFQ58x"
@@ -142,15 +142,14 @@ cnv_rpt_dynamic_files = {
 }
 
 # Sample-specific input files and their search patterns
+# subdirectories always require trailing forward slash
 cnv_rpt_stage_input_dict = {
-    # vep
-    # subdirectories always require the backward dash
+    # eggd_vep
     "{}.vcf".format(cnv_vep_stage_id): {
         "app": "eggd_GATKgCNV_call", "subdir": "CNV_vcfs/",
         "pattern": "-E '{}(.*)_segments.vcf$'"
     },
     # excluded_annotate
-    # subdirectories always require the backward dash
     "{}.excluded_regions".format(cnv_annotate_excluded_regions_stage_id): {
         "app": "eggd_GATKgCNV_call", "subdir": "CNV_summary/",
         "pattern": "-E '(.*)_excluded_intervals.bed$'"
