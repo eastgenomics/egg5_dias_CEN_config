@@ -1,5 +1,5 @@
 assay_name = "CEN" # Core Endo Neuro
-assay_version = "v2.0.0"
+assay_version = "v2.0.1"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
@@ -7,7 +7,7 @@ ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
 ## for generate_bed
 # genepanels 230421
-genepanels_file = "{}:file-GV4PPy8433GZ9bX8kKVkfbX5".format(ref_project_id)
+genepanels_file = "{}:file-GVx0vkQ433Gvq63k1Kj4Y562".format(ref_project_id)
 # g2t 230421
 genes2transcripts = "{}:file-GV4P970433Gj6812zGVBZvB4".format(ref_project_id)
 # GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv
@@ -22,7 +22,7 @@ exons_file = "{}:file-GF611Z8433Gf99pBPbJkV7bq".format(ref_project_id)
 
 ## for eggd_VEP
 # VEP config file for SNV reports v1.1.2
-vep_config = "{}:file-GVBFp8Q448Z3k3xQkKF3340K".format(ref_project_id)
+vep_config = "{}:file-GVgfXJ04Qg8BF8z5QK0kVjq6".format(ref_project_id)
 # VEP config file for CNV reports v1.1.0
 cnv_vep_config =  "{}:file-GQGJ3Z84xyx0jp1q65K1Q1jY".format(ref_project_id)
 
