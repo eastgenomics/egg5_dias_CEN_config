@@ -6,7 +6,7 @@ ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 ### Dynamic files:
 
 ## for generate_bed
-# genepanels 230421
+# genepanels 230602
 genepanels_file = "{}:file-GVx0vkQ433Gvq63k1Kj4Y562".format(ref_project_id)
 # g2t 230421
 genes2transcripts = "{}:file-GV4P970433Gj6812zGVBZvB4".format(ref_project_id)
