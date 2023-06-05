@@ -21,7 +21,7 @@ vep_bed_flank = 495
 exons_file = "{}:file-GF611Z8433Gf99pBPbJkV7bq".format(ref_project_id)
 
 ## for eggd_VEP
-# VEP config file for SNV reports v1.1.2
+# VEP config file for SNV reports v1.1.3
 vep_config = "{}:file-GVgfXJ04Qg8BF8z5QK0kVjq6".format(ref_project_id)
 # VEP config file for CNV reports v1.1.0
 cnv_vep_config =  "{}:file-GQGJ3Z84xyx0jp1q65K1Q1jY".format(ref_project_id)
