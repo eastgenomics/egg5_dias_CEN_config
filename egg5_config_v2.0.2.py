@@ -54,11 +54,11 @@ cnvcalling_input_dict = {
 # v2.1.0
 rpt_workflow_id = "{}:workflow-GBQ985Q433GYJjv0379PJqqg".format(ref_project_id)
 
-generate_bed_vep_stage_id = "stage-G9P8p104vyJJGy6y86FQBxkv"
-vep_stage_id = "stage-G9Q0jzQ4vyJ3x37X4KBKXZ5v"
-generate_workbook_stage_id = "stage-G9P8VQj4vyJBJ0kg50vzVPxY"
-generate_bed_athena_stage_id = "stage-Fyq5yy0433GXxz691bKyvjPJ"
-athena_stage_id = "stage-Fyq5z18433GfYZbp3vX1KqjB"
+generate_bed_vep_stage_id = "stage-rpt_generate_bed_vep"
+vep_stage_id = "stage-rpt_vep"
+generate_workbook_stage_id = "stage-rpt_generate_workbook"
+generate_bed_athena_stage_id = "stage-rpt_generate_bed_athena"
+athena_stage_id = "stage-rpt_athena"
 
 rpt_dynamic_files = {
     # inputs for generate bed for vep
