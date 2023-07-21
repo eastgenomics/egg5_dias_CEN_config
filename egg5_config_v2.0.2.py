@@ -51,7 +51,7 @@ cnvcalling_input_dict = {
 
 
 # dias_reports
-# v2.0.4
+# v2.1.0
 rpt_workflow_id = "{}:workflow-GBQ985Q433GYJjv0379PJqqg".format(ref_project_id)
 
 generate_bed_vep_stage_id = "stage-G9P8p104vyJJGy6y86FQBxkv"
