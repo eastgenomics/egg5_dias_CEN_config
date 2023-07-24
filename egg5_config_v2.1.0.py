@@ -91,7 +91,7 @@ rpt_dynamic_files = {
     # inputs for athena
     "{}.exons_file ID".format(athena_stage_id): exons_file,
     "{}.exons_file".format(athena_stage_id): "",
-    "{}.limit".format(athena_stage_id): 260,
+    "{}.limit".format(athena_stage_id): "260",
     "{}.summary".format(athena_stage_id): "true"
 }
 
