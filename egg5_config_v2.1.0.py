@@ -73,10 +73,10 @@ rpt_dynamic_files = {
     "{}.config_file".format(vep_stage_id): "",
     # inputs for generate_variant_workbook
     "{}.exclude_columns".format(generate_workbook_stage_id): "BaseQRankSum ClippingRankSum DB ExcessHet FS MLEAC MLEAF MQ MQRankSum QD ReadPosRankSum SOR PL QUAL ID FILTER  CSQ_ClinVar_CLNSIGCONF  CSQ_Allele CSQ_HGNC_ID DP AC AF AN CSQ_SpliceAI_pred_DP_AL CSQ_SpliceAI_pred_DP_AG CSQ_SpliceAI_pred_DP_DG CSQ_SpliceAI_pred_DP_DL",
-    "{}.acmg".format(generate_workbook_stage_id): True,
+    "{}.acmg".format(generate_workbook_stage_id): "true",
     "{}.rename_columns".format(generate_workbook_stage_id): "CSQ_Feature=Transcript DP_FMT=DP",
-    "{}.add_comment_column".format(generate_workbook_stage_id): True,
-    "{}.keep_tmp".format(generate_workbook_stage_id): True,
+    "{}.add_comment_column".format(generate_workbook_stage_id): "true",
+    "{}.keep_tmp".format(generate_workbook_stage_id): "true",
     "{}.summary".format(generate_workbook_stage_id): "dias",
     "{}.filter".format(generate_workbook_stage_id): "bcftools filter -e '(CSQ_Consequence==\"synonymous_variant\" | CSQ_Consequence==\"intron_variant\" | CSQ_Consequence==\"upstream_gene_variant\" | CSQ_Consequence==\"downstream_gene_variant\" | CSQ_Consequence==\"intergenic_variant\" | CSQ_Consequence==\"5_prime_UTR_variant\" | CSQ_Consequence==\"3_prime_UTR_variant\" | CSQ_gnomADe_AF>0.01 | CSQ_gnomADg_AF>0.01 | CSQ_TWE_AF>0.05) & CSQ_HGMD_CLASS!~ \"DM\" & CSQ_ClinVar_CLNSIG!~ \"pathogenic\\/i\" & CSQ_ClinVar_CLNSIGCONF!~ \"pathogenic\\/i\"'",
     "{}.human_filter".format(generate_workbook_stage_id): "excluded gnomAD exomes / genomes > 1%, TWE > 5%, synonymous / intronic / intergenic / upstream / downstream / UTRs EXCEPT pathogenic status in ClinVar OR DM in HGMD Class",
@@ -92,7 +92,7 @@ rpt_dynamic_files = {
     "{}.exons_file ID".format(athena_stage_id): exons_file,
     "{}.exons_file".format(athena_stage_id): "",
     "{}.limit".format(athena_stage_id): 260,
-    "{}.summary".format(athena_stage_id): True
+    "{}.summary".format(athena_stage_id): "true"
 }
 
 # Sample-specific input files and their search patterns
