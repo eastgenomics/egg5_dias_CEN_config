@@ -100,7 +100,7 @@ rpt_stage_input_dict = {
 
 
 # dias_cnvreports
-# v1.0.2
+# v1.1.0
 cnv_rpt_workflow_id =  "{}:workflow-GXzvJq84XZB1fJk9fBfG88XJ".format(ref_project_id)
 
 cnv_generate_bed_excluded_stage_id = "stage-cnv_generate_bed_excluded"
