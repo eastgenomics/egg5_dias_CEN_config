@@ -101,7 +101,7 @@ rpt_stage_input_dict = {
 
 # dias_cnvreports
 # v1.0.2
-cnv_rpt_workflow_id =  "{}:workflow-GXz683j4XZB3z2xXkY14zxGK".format(ref_project_id)
+cnv_rpt_workflow_id =  "{}:workflow-GXzk7g84XZB85kBgQ88ffPYJ".format(ref_project_id)
 
 cnv_generate_bed_excluded_stage_id = "stage-cnv_generate_bed_excluded"
 cnv_annotate_excluded_regions_stage_id = "stage-cnv_annotate_excluded_regions"
@@ -123,7 +123,6 @@ cnv_rpt_dynamic_files = {
     # input for eggd_vep
     "{}.config_file ID".format(cnv_vep_stage_id): cnv_vep_config,
     "{}.config_file".format(cnv_vep_stage_id): "",
-    "{}.normalise".format(cnv_vep_stage_id): "false",
     # inputs for generate bed for excluded app
     "{}.exons_nirvana ID".format(cnv_generate_bed_excluded_stage_id): exons_nirvana,
     "{}.exons_nirvana".format(cnv_generate_bed_excluded_stage_id): "",
