@@ -112,15 +112,14 @@ rpt_stage_input_dict = {
 
 
 # dias_cnvreports
-# v1.0.2
-cnv_rpt_workflow_id =  "{}:workflow-GJk5VXQ433GbPgPY4gGY262z".format(ref_project_id)
+# v1.1.0
+cnv_rpt_workflow_id =  "{}:workflow-GXzvJq84XZB1fJk9fBfG88XJ".format(ref_project_id)
 
-cnv_generate_bed_excluded_stage_id = "stage-GFZQB7Q4qq8X6yjKG2pFQ58x"
-cnv_annotate_excluded_regions_stage_id = "stage-GG1qYz84qq8yKzF1J2X48q62"
-cnv_generate_bed_vep_stage_id = "stage-GG39Gq04qq8ZkfgV31yQy93v"
-cnv_vep_stage_id = "stage-GFYvJF04qq8VKgq34j30pZZ3"
-cnv_generate_workbook_stage_id = "stage-GFfYY9j4qq8ZxpFpP8zKG7G0"
-
+cnv_generate_bed_excluded_stage_id = "stage-cnv_generate_bed_excluded"
+cnv_annotate_excluded_regions_stage_id = "stage-cnv_annotate_excluded_regions"
+cnv_generate_bed_vep_stage_id = "stage-cnv_generate_bed_vep"
+cnv_vep_stage_id = "stage-cnv_vep"
+cnv_generate_workbook_stage_id = "stage-cnv_generate_workbook"
 
 cnv_rpt_dynamic_files = {
     # inputs for generate bed for vep
@@ -144,13 +143,20 @@ cnv_rpt_dynamic_files = {
     "{}.gene_panels".format(cnv_generate_bed_excluded_stage_id): "",
     "{}.additional_regions ID".format(cnv_generate_bed_excluded_stage_id): additional_regions,
     "{}.additional_regions".format(cnv_generate_bed_excluded_stage_id): "",
+    "{}.flank".format(cnv_generate_bed_excluded_stage_id): "0",
     # inputs for excluded app
     "{}.cds_hgnc ID".format(cnv_annotate_excluded_regions_stage_id): exons_nirvana,
     "{}.cds_hgnc".format(cnv_annotate_excluded_regions_stage_id): "",
     "{}.cds_gene ID".format(cnv_annotate_excluded_regions_stage_id): exons_file,
     "{}.cds_gene".format(cnv_annotate_excluded_regions_stage_id): "",
     "{}.additional_regions ID".format(cnv_annotate_excluded_regions_stage_id): additional_regions,
-    "{}.additional_regions".format(cnv_annotate_excluded_regions_stage_id): ""
+    "{}.additional_regions".format(cnv_annotate_excluded_regions_stage_id): "",
+    # inputs for generate variant workbook
+    "{}.additional_sheet_names".format(cnv_generate_workbook_stage_id): "ExcludedRegions",
+    "{}.exclude_columns".format(cnv_generate_workbook_stage_id): "REF FILTER CSQ_Allele CSQ_Consequence CSQ_IMPACT",
+    "{}.reorder_columns".format(cnv_generate_workbook_stage_id): "CHROM POS END CNVLEN ID ALT QUAL CSQ_SYMBOL CSQ_Feature CSQ_VARIANT_CLASS CSQ_EXON CSQ_INTRON CSQ_STRAND GT CN NP QA QS QSE QSS",
+    "{}.add_comment_column".format(cnv_generate_workbook_stage_id): "true",
+    "{}.summary".format(cnv_generate_workbook_stage_id): "dias"
 }
 
 # Sample-specific input files and their search patterns
