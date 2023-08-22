@@ -22,7 +22,7 @@ exons_file = "{}:file-GF611Z8433Gf99pBPbJkV7bq".format(ref_project_id)
 
 ## for eggd_VEP
 # VEP config file for SNV reports v1.1.5
-vep_config = "{}:file-GXvYjx04z6jKjvJy191X0511".format(ref_project_id)
+vep_config = "{}:file-GYXBqV84vFPy8P95Y2j7xVXj".format(ref_project_id)
 # VEP config file for CNV reports v1.1.0
 cnv_vep_config =  "{}:file-GQGJ3Z84xyx0jp1q65K1Q1jY".format(ref_project_id)
 
