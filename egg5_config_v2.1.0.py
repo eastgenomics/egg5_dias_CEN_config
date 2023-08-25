@@ -113,7 +113,7 @@ rpt_stage_input_dict = {
 rpt_mosaic_input_dict = {
     # eggd_vep
     "{}.vcf".format(vep_stage_id): {
-        "app": "TNhaplotyper2_b37", "subdir": "",
+        "app": "TNhaplotyper2", "subdir": "",
         "pattern": "-E '{}(.*)[^g].vcf.gz$'"
     },
     # eggd_athena
