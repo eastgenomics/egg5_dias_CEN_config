@@ -21,8 +21,8 @@ vep_bed_flank = 495
 exons_file = "{}:file-GF611Z8433Gf99pBPbJkV7bq".format(ref_project_id)
 
 ## for eggd_VEP
-# VEP config file for SNV reports v1.1.4
-vep_config = "{}:file-GXJP8g84z6j8pKX98qy6XYyf".format(ref_project_id)
+# VEP config file for SNV reports v1.1.6
+vep_config = "{}:file-GYX83Kj4z6jFbKy9fVj44BYK".format(ref_project_id)
 # VEP config file for CNV reports v1.1.0
 cnv_vep_config =  "{}:file-GQGJ3Z84xyx0jp1q65K1Q1jY".format(ref_project_id)
 
@@ -81,6 +81,7 @@ rpt_dynamic_files = {
     "{}.filter".format(generate_workbook_stage_id): "bcftools filter -e '(CSQ_Consequence==\"synonymous_variant\" | CSQ_Consequence==\"intron_variant\" | CSQ_Consequence==\"upstream_gene_variant\" | CSQ_Consequence==\"downstream_gene_variant\" | CSQ_Consequence==\"intergenic_variant\" | CSQ_Consequence==\"5_prime_UTR_variant\" | CSQ_Consequence==\"3_prime_UTR_variant\" | CSQ_gnomADe_AF>0.01 | CSQ_gnomADg_AF>0.01 | CSQ_TWE_AF>0.05) & CSQ_HGMD_CLASS!~ \"DM\" & CSQ_ClinVar_CLNSIG!~ \"pathogenic\\/i\" & CSQ_ClinVar_CLNSIGCONF!~ \"pathogenic\\/i\"'",
     "{}.human_filter".format(generate_workbook_stage_id): "excluded gnomAD exomes / genomes > 1%, TWE > 5%, synonymous / intronic / intergenic / upstream / downstream / UTRs EXCEPT pathogenic status in ClinVar OR DM in HGMD Class",
     "{}.reorder_columns".format(generate_workbook_stage_id): "CHROM POS REF ALT GT GQ DP_FMT AD CSQ_SYMBOL CSQ_EXON CSQ_INTRON CSQ_HGVSc CSQ_HGVSp CSQ_Consequence CSQ_IMPACT CSQ_VARIANT_CLASS CSQ_gnomADe_AF CSQ_gnomADe_Hom CSQ_gnomADe_AC CSQ_gnomADe_AN CSQ_gnomADg_AF CSQ_gnomADg_AC CSQ_gnomADg_AN CSQ_TWE_AF CSQ_TWE_AC_Hom CSQ_TWE_AC_Het CSQ_TWE_AN CSQ_HGMD CSQ_HGMD_CLASS CSQ_HGMD_RANKSCORE CSQ_HGMD_PHEN CSQ_Existing_variation CSQ_ClinVar CSQ_ClinVar_CLNDN CSQ_ClinVar_CLNSIG CSQ_Mastermind_MMID3 CSQ_CADD_PHRED CSQ_REVEL CSQ_SpliceAI_pred_DS_AG CSQ_SpliceAI_pred_DS_AL CSQ_SpliceAI_pred_DS_DG CSQ_SpliceAI_pred_DS_DL CSQ_HGVS_OFFSET CSQ_STRAND CSQ_Feature",
+    "{}.freeze_column".format(generate_workbook_stage_id): "",
     # inputs for generate bed for athena
     "{}.exons_nirvana ID".format(generate_bed_athena_stage_id): exons_nirvana,
     "{}.exons_nirvana".format(generate_bed_athena_stage_id): "",
@@ -156,7 +157,7 @@ cnv_rpt_dynamic_files = {
     "{}.exclude_columns".format(cnv_generate_workbook_stage_id): "REF FILTER CSQ_Allele CSQ_Consequence CSQ_IMPACT",
     "{}.reorder_columns".format(cnv_generate_workbook_stage_id): "CHROM POS END CNVLEN ID ALT QUAL CSQ_SYMBOL CSQ_Feature CSQ_VARIANT_CLASS CSQ_EXON CSQ_INTRON CSQ_STRAND GT CN NP QA QS QSE QSS",
     "{}.add_comment_column".format(cnv_generate_workbook_stage_id): "true",
-    "{}.summary".format(cnv_generate_workbook_stage_id): "dias"
+    "{}.summary".format(cnv_generate_workbook_stage_id): "dias",
 }
 
 # Sample-specific input files and their search patterns
