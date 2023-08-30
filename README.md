@@ -30,13 +30,13 @@ Apps:
 Dynamic files:
 | File      | File name | DNAnexus file ID |
 | --------- | --------- | ---------------- |
-| genepanels | **230602_genepanels.tsv** | `file-GVx0vkQ433Gvq63k1Kj4Y562` |              |
+| genepanels | **230602_genepanels.tsv** | `file-GVx0vkQ433Gvq63k1Kj4Y562` |
 |genes2transcripts | **230421_g2t.tsv** | `file-GV4P970433Gj6812zGVBZvB4` |
-| exons_nirvana | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv**| `file-GF611Z8433Gk7gZ47gypK7ZZ` |
-|exons_file for eggd_athena| **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv**| `file-GF611Z8433Gf99pBPbJkV7bq` |
-| cen_vep_config for SNV reports| **cen_vep_config_v1.1.6.json**| `file-GYX83Kj4z6jFbKy9fVj44BYK` |
-| cen_vep_config for CNV reports| **cen-cnv_config_v1.1.0.json**| `file-GQGJ3Z84xyx0jp1q65K1Q1jY` |
-| additional_regions for CNVs| **CEN_CNV_additional_regions_b37_v1.0.1.tsv**| `file-GJZQvg0433GkyFZg13K6VV6p` |
-| gatk_docker| **GATK_v4.2.5.0.tar.gz**| `file-GBBP9JQ433GxV97xBpQkzYZx` |
-| interval_list for CNV calling| **CEN_CNV_targets_v1.1.0_sorted.interval_list**| `file-GFPxzKj4V50pJX3F4vV58yyg` |
-| annotation of interval_list for CNV calling| **CEN_CNV_targets_v1.1.0_sorted_annotation.tsv**| `file-GFPxzPQ4V50z4pv230p82G0q` |
+| exons_nirvana | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
+|exons_file for eggd_athena| **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
+| cen_vep_config for SNV reports | **cen_vep_config_v1.1.6.json** | `file-GYX83Kj4z6jFbKy9fVj44BYK` |
+| cen_vep_config for CNV reports | **cen-cnv_config_v1.1.0.json** | `file-GQGJ3Z84xyx0jp1q65K1Q1jY` |
+| additional_regions for CNVs | **CEN_CNV_additional_regions_b37_v1.0.1.tsv** | `file-GJZQvg0433GkyFZg13K6VV6p` |
+| gatk_docker | **GATK_v4.2.5.0.tar.gz** | `file-GBBP9JQ433GxV97xBpQkzYZx` |
+| interval_list for CNV calling | **CEN_CNV_targets_v1.1.0_sorted.interval_list** | `file-GFPxzKj4V50pJX3F4vV58yyg` |
+| annotation of interval_list for CNV calling | **CEN_CNV_targets_v1.1.0_sorted_annotation.tsv**| `file-GFPxzPQ4V50z4pv230p82G0q` |
