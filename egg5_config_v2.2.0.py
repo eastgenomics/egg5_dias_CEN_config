@@ -206,6 +206,7 @@ cnv_rpt_dynamic_files = {
     # inputs for generate variant workbook
     "{}.additional_sheet_names".format(cnv_generate_workbook_stage_id): "ExcludedRegions",
     "{}.exclude_columns".format(cnv_generate_workbook_stage_id): "REF FILTER CSQ_Allele CSQ_Consequence CSQ_IMPACT",
+    "{}.acmg".format(generate_workbook_stage_id): "true",
     "{}.reorder_columns".format(cnv_generate_workbook_stage_id): "CHROM POS END CNVLEN ID ALT QUAL CSQ_SYMBOL CSQ_Feature CSQ_VARIANT_CLASS CSQ_EXON CSQ_INTRON CSQ_STRAND GT CN NP QA QS QSE QSS",
     "{}.add_comment_column".format(cnv_generate_workbook_stage_id): "true",
     "{}.summary".format(cnv_generate_workbook_stage_id): "dias",
