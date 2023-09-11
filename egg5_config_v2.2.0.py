@@ -143,6 +143,8 @@ mosaic_rpt_dynamic_files = {
     "{}.exons_file ID".format(athena_stage_id): exons_file,
     "{}.exons_file".format(athena_stage_id): "",
     "{}.limit".format(athena_stage_id): "260",
+    "{}.thresholds".format(athena_stage_id): "100, 250, 500, 1000, 1500",
+    "{}.cutoff_threshold".format(athena_stage_id): "250",
     "{}.summary".format(athena_stage_id): "true"
 }
 
