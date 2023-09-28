@@ -1,5 +1,5 @@
 assay_name = "CEN" # Core Endo Neuro
-assay_version = "v2.2.0"
+assay_version = "v2.3.0"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
@@ -21,8 +21,8 @@ vep_bed_flank = 495
 exons_file = "{}:file-GF611Z8433Gf99pBPbJkV7bq".format(ref_project_id)
 
 ## for eggd_VEP
-# VEP config file for SNV reports v1.1.6
-vep_config = "{}:file-GYX83Kj4z6jFbKy9fVj44BYK".format(ref_project_id)
+# VEP config file for SNV reports v1.1.7
+vep_config = "{}:file-GZ9F1GQ4z6j22q8KXVpBP147".format(ref_project_id)
 # VEP config file for CNV reports v1.1.0
 cnv_vep_config =  "{}:file-GQGJ3Z84xyx0jp1q65K1Q1jY".format(ref_project_id)
 
@@ -33,8 +33,8 @@ additional_regions = "{}:file-GJZQvg0433GkyFZg13K6VV6p".format(ref_project_id)
 ### Apps and workflows:
 
 # GATKgCNV_call
-# v1.0.1
-cnvcall_app_id = "app-GJZVB2840KK0kxX998QjgXF0"
+# v1.0.2
+cnvcall_app_id = "app-GZ4pXxj4xG062Bj5zjgP1Bb0"
 
 cnvcalling_fixed_inputs = {
     # GATK Docker image tar v4.2.5.0
