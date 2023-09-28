@@ -24,8 +24,8 @@ Workflows:
 
 Apps:
 * CNV calling app: **eggd_GATKgCNV_call**
-    * v1.0.1 
-    * DNAnexus app ID: `app-GJZVB2840KK0kxX998QjgXF0`
+    * v1.0.2
+    * DNAnexus app ID: `app-GZ4pXxj4xG062Bj5zjgP1Bb0`
 
 Dynamic files:
 | File      | File name | DNAnexus file ID |
@@ -34,7 +34,7 @@ Dynamic files:
 | genes2transcripts | **230421_g2t.tsv** | `file-GV4P970433Gj6812zGVBZvB4` |
 | exons_nirvana | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
 | exons_file for eggd_athena | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
-| cen_vep_config for SNV reports | **cen_vep_config_v1.1.6.json** | `file-GYX83Kj4z6jFbKy9fVj44BYK` |
+| cen_vep_config for SNV reports | **cen_vep_config_v1.1.7.json** | `file-GZ9F1GQ4z6j22q8KXVpBP147` |
 | cen_vep_config for CNV reports | **cen-cnv_config_v1.1.0.json** | `file-GQGJ3Z84xyx0jp1q65K1Q1jY` |
 | additional_regions for CNVs | **CEN_CNV_additional_regions_b37_v1.0.1.tsv** | `file-GJZQvg0433GkyFZg13K6VV6p` |
 | gatk_docker | **GATK_v4.2.5.0.tar.gz** | `file-GBBP9JQ433GxV97xBpQkzYZx` |
