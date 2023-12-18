@@ -1,6 +1,8 @@
 > [!CAUTION]
 > This repo contains a JSON file (compatible with new eggd_dias_batch - planned to go live in Jan 2024) and a Python script (compatible with old dias_batch - currently being used)
+>
 > The readme.md describes the JSON not the python script
+>
 > When new eggd_dias_batch goes live the python script will be deleted
 
 # dias_CEN_config_GRCh37_v3.0.0.json
