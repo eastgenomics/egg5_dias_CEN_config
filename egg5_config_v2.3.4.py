@@ -1,5 +1,5 @@
 assay_name = "CEN" # Core Endo Neuro
-assay_version = "v2.3.3"
+assay_version = "v2.3.4"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
@@ -21,8 +21,8 @@ vep_bed_flank = 495
 exons_file = "{}:file-GF611Z8433Gf99pBPbJkV7bq".format(ref_project_id)
 
 ## for eggd_VEP
-# VEP config file for SNV reports v1.1.9
-vep_config = "{}:file-GbPYpkQ4z6jBQxkqYBF32821".format(ref_project_id)
+# VEP config file for SNV reports v1.1.10
+vep_config = "{}:file-Gf0jkx84z6j3Gq0VG2Qjz90F".format(ref_project_id)
 # VEP config file for CNV reports v1.1.0
 cnv_vep_config =  "{}:file-GQGJ3Z84xyx0jp1q65K1Q1jY".format(ref_project_id)
 
