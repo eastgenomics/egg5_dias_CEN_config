@@ -5,7 +5,7 @@
 >
 > When new eggd_dias_batch goes live the python script will be deleted
 
-# dias_CEN_config_GRCh37_v3.0.0.json
+# dias_CEN_config_GRCh37_v3.0.1.json
 
 This repo contains a JSON config file which is used with eggd_dias_batch to specify inputs for running the Dias pipeline for CEN data.
 
@@ -51,7 +51,7 @@ Dynamic files:
 | exons_nirvana | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
 | genes2transcripts | **230421_g2t.tsv** | `file-GV4P970433Gj6812zGVBZvB4` |
 | exons_file for eggd_athena | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
-| cen_vep_config for SNV/mosaic reports | **cen_vep_config_v1.1.9.json** | `file-GbPYpkQ4z6jBQxkqYBF32821` |
+| cen_vep_config for SNV/mosaic reports | **cen_vep_config_v1.1.10.json** | `file-Gf0jkx84z6j3Gq0VG2Qjz90F` |
 | cen_vep_config for CNV reports | **cen-cnv_config_v1.1.0.json** | `file-GQGJ3Z84xyx0jp1q65K1Q1jY` |
 | additional_regions for CNVs | **CEN_CNV_additional_regions_b37_v1.0.1.tsv** | `file-GJZQvg0433GkyFZg13K6VV6p` |
 | gatk_docker | **GATK_v4.2.5.0.tar.gz** | `file-GBBP9JQ433GxV97xBpQkzYZx` |
