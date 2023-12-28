@@ -180,6 +180,7 @@
         },
         "artemis": {
             "inputs": {
+                "url_duration": 15811200,
                 "capture_bed": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
