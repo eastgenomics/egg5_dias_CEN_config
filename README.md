@@ -5,7 +5,7 @@
 >
 > When new eggd_dias_batch goes live the python script will be deleted
 
-# dias_CEN_config_GRCh37_v3.0.2.json
+# dias_CEN_config_GRCh37_v3.1.0.json
 
 This repo contains a JSON config file which is used with eggd_dias_batch to specify inputs for running the Dias pipeline for CEN data.
 
