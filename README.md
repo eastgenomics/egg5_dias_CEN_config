@@ -54,7 +54,7 @@ Dynamic files:
 | cen_vep_config for SNV/mosaic reports | **cen_vep_config_v1.1.10.json** | `file-Gf0jkx84z6j3Gq0VG2Qjz90F` |
 | cen_vep_config for CNV reports | **cen-cnv_config_v1.1.0.json** | `file-GQGJ3Z84xyx0jp1q65K1Q1jY` |
 | additional_regions for CNVs | **CEN_CNV_additional_regions_b37_v1.0.1.tsv** | `file-GJZQvg0433GkyFZg13K6VV6p` |
-| gatk_docker | **GATK_v4.2.5.0.tar.gz** | `file-GBBP9JQ433GxV97xBpQkzYZx` |
+| gatk_docker | **GATK_v4.5.0.0.tar.gz** | `file-GfFFv184vB50Pf3Pq27XVYK5` |
 | interval_list for CNV calling | **CEN_CNV_targets_v1.1.0_sorted.interval_list** | `file-GFPxzKj4V50pJX3F4vV58yyg` |
 | annotation of interval_list for CNV calling | **CEN_CNV_targets_v1.1.0_sorted_annotation.tsv**| `file-GFPxzPQ4V50z4pv230p82G0q` |
 | capture_bed for artemis | **CEN_CNV_targets_b37_v1.1.0.bed** | `file-GFPxpJj4GVV0Pfzv4VGYf1pq` |
