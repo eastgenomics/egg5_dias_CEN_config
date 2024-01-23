@@ -1,6 +1,6 @@
 {
     "assay": "CEN",
-    "version": "3.0.2",
+    "version": "3.0.3",
     "cnv_call_app_id": "app-GZ4pXxj4xG062Bj5zjgP1Bb0",
     "artemis_app_id": "app-GZ1X5zj4K5ZxyfYPPq4YgGv3",
     "snv_report_workflow_id": "workflow-GXzkfYj4QPQp9z4Jz4BF09y6",
@@ -111,7 +111,7 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-Gf0jkx84z6j3Gq0VG2Qjz90F"
+                        "id": "file-Gfb45xj4z6j3fpYBqVfgzYPy"
                     }
                 },
                 "stage-rpt_vep.vcf": {
@@ -150,7 +150,7 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-Gf0jkx84z6j3Gq0VG2Qjz90F"
+                        "id": "file-Gfb45xj4z6j3fpYBqVfgzYPy"
                     }
                 },
                 "stage-rpt_vep.vcf": {
