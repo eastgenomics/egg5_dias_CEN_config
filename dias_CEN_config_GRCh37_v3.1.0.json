@@ -135,7 +135,7 @@
                 "stage-rpt_generate_workbook.panel": "INPUT-panels",
                 "stage-rpt_generate_workbook.output_prefix": "INPUT-sample_name",
                 "stage-rpt_generate_workbook.exclude_columns": "BaseQRankSum ClippingRankSum DB ExcessHet FS MLEAC MLEAF MQ MQRankSum QD ReadPosRankSum SOR PL QUAL ID FILTER  CSQ_ClinVar_CLNSIGCONF  CSQ_Allele CSQ_HGNC_ID DP AC AF AN CSQ_SpliceAI_pred_DP_AL CSQ_SpliceAI_pred_DP_AG CSQ_SpliceAI_pred_DP_DG CSQ_SpliceAI_pred_DP_DL CSQ_gnomADe_AC_popmax CSQ_gnomADe_AN_popmax CSQ_gnomADe_nhomalt_popmax CSQ_gnomADe_non_cancer_AC CSQ_gnomADe_non_cancer_AC_popmax CSQ_gnomADe_non_cancer_AF CSQ_gnomADe_non_cancer_AF_popmax CSQ_gnomADe_non_cancer_AN CSQ_gnomADe_non_cancer_AN_popmax CSQ_gnomADe_non_cancer_nhomalt CSQ_gnomADe_non_cancer_nhomalt_popmax CSQ_gnomADe_non_cancer_popmax CSQ_gnomADe_popmax CSQ_gnomADg_AC_popmax CSQ_gnomADg_AN_popmax CSQ_gnomADg_nhomalt_popmax CSQ_gnomADg_popmax",
-                "stage-rpt_generate_workbook.acmg": true,
+                "stage-rpt_generate_workbook.acmg": 0,
                 "stage-rpt_generate_workbook.rename_columns": "CSQ_Feature=Transcript DP_FMT=DP",
                 "stage-rpt_generate_workbook.add_comment_column": true,
                 "stage-rpt_generate_workbook.keep_tmp": true,
