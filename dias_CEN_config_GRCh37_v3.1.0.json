@@ -47,6 +47,8 @@
             "stage_instance_types": {
             },
             "inputs": {
+                "stage-cnv_generate_bed_vep.panel": "INPUT-clinical_indications",
+                "stage-cnv_generate_bed_vep.output_file_prefix": "INPUT-test_codes",
                 "stage-cnv_generate_bed_vep.exons": "INPUT-exons_nirvana",
                 "stage-cnv_generate_bed_vep.genes2transcripts": "INPUT-genes2transcripts",
                 "stage-cnv_generate_bed_vep.gene_panels": "INPUT-genepanels",
