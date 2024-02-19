@@ -6,7 +6,7 @@
     "snv_report_workflow_id": "workflow-Gg9Yvj04z4VvPFF3fygp63jy",
     "cnv_report_workflow_id": "workflow-Gg9Ybq841Ky1xfYgQ2qjqG3F",
     "reference_files": {
-        "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GVx0vkQ433Gvq63k1Kj4Y562",
+        "genepanels": "project-GZ6g3BQ45B5j8YPb8QB8X5kF:file-GfFB9FQ45B5ybYj54P921q57",
         "exons_nirvana": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gk7gZ47gypK7ZZ",
         "genes2transcripts": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GV4P970433Gj6812zGVBZvB4",
         "exonsfile": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gf99pBPbJkV7bq"
@@ -69,6 +69,8 @@
                     "folder": "CNV_vcfs",
                     "name": "_segments.vcf$"
                 },
+                "stage-cnv_generate_bed_excluded.panel": "INPUT-clinical_indications",
+                "stage-cnv_generate_bed_excluded.output_file_prefix": "INPUT-test_codes",
                 "stage-cnv_generate_bed_excluded.exons": "INPUT-exons_nirvana",
                 "stage-cnv_generate_bed_excluded.genes2transcripts": "INPUT-genes2transcripts",
                 "stage-cnv_generate_bed_excluded.gene_panels": "INPUT-genepanels",
