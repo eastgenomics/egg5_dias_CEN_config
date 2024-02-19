@@ -165,6 +165,8 @@
                 "stage-rpt_generate_bed_athena.exons": "INPUT-exons_nirvana",
                 "stage-rpt_generate_bed_athena.genes2transcripts": "INPUT-genes2transcripts",
                 "stage-rpt_generate_bed_athena.gene_panels": "INPUT-genepanels",
+                "stage-rpt_generate_bed_vep.panel": "INPUT-clinical_indications",
+                "stage-rpt_generate_bed_vep.output_file_prefix": "INPUT-test_codes",
                 "stage-rpt_generate_bed_vep.exons": "INPUT-exons_nirvana",
                 "stage-rpt_generate_bed_vep.genes2transcripts": "INPUT-genes2transcripts",
                 "stage-rpt_generate_bed_vep.gene_panels": "INPUT-genepanels",
