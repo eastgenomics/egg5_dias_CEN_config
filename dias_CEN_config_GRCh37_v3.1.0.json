@@ -93,7 +93,7 @@
                 },
                 "stage-cnv_generate_workbook.additional_sheet_names": "ExcludedRegions",
                 "stage-cnv_generate_workbook.exclude_columns": "REF FILTER CSQ_Allele CSQ_Consequence CSQ_IMPACT",
-                "stage-cnv_generate_workbook.acmg": true,
+                "stage-cnv_generate_workbook.acmg": 0,
                 "stage-cnv_generate_workbook.reorder_columns": "CHROM POS END CNVLEN ID ALT QUAL CSQ_SYMBOL CSQ_Feature CSQ_VARIANT_CLASS CSQ_EXON CSQ_INTRON CSQ_STRAND GT CN NP QA QS QSE QSS",
                 "stage-cnv_generate_workbook.add_comment_column": true,
                 "stage-cnv_generate_workbook.summary": "dias"
