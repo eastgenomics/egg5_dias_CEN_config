@@ -69,8 +69,8 @@
                     "folder": "CNV_vcfs",
                     "name": "_segments.vcf$"
                 },
-                "stage-cnv_generate_bed_excluded.exons_nirvana": "INPUT-exons_nirvana",
-                "stage-cnv_generate_bed_excluded.nirvana_genes2transcripts": "INPUT-genes2transcripts", 
+                "stage-cnv_generate_bed_excluded.exons": "INPUT-exons_nirvana",
+                "stage-cnv_generate_bed_excluded.genes2transcripts": "INPUT-genes2transcripts",
                 "stage-cnv_generate_bed_excluded.gene_panels": "INPUT-genepanels",
                 "stage-cnv_generate_bed_excluded.additional_regions": {
                     "$dnanexus_link": {
@@ -79,7 +79,7 @@
                     }
                 },
                 "stage-cnv_generate_bed_excluded.flank": 0,
-                "stage-cnv_annotate_excluded_regions.cds_hgnc": "INPUT-exons_nirvana", 
+                "stage-cnv_annotate_excluded_regions.cds_hgnc": "INPUT-exons_nirvana",
                 "stage-cnv_annotate_excluded_regions.cds_gene": "INPUT-exonsfile",
                 "stage-cnv_annotate_excluded_regions.additional_regions": {
                     "$dnanexus_link": {
