@@ -93,6 +93,9 @@
                     "folder": "CNV_summary",
                     "name": "_excluded_intervals.bed$"
                 },
+                "stage-cnv_generate_workbook.clinical_indication": "INPUT-clinical_indications",
+                "stage-cnv_generate_workbook.output_prefix": "INPUT-sample_name",
+                "stage-cnv_generate_workbook.panel": "INPUT-panels",
                 "stage-cnv_generate_workbook.additional_sheet_names": "ExcludedRegions",
                 "stage-cnv_generate_workbook.exclude_columns": "REF FILTER CSQ_Allele CSQ_Consequence CSQ_IMPACT",
                 "stage-cnv_generate_workbook.acmg": 0,
