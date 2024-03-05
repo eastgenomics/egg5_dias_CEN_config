@@ -3,8 +3,8 @@
     "version": "3.1.0",
     "cnv_call_app_id": "app-GZ4pXxj4xG062Bj5zjgP1Bb0",
     "artemis_app_id": "app-GfKV5204ZF35Z47z31Qzqx90",
-    "snv_report_workflow_id": "workflow-Gg9Yvj04z4VvPFF3fygp63jy",
-    "cnv_report_workflow_id": "workflow-Gg9Ybq841Ky1xfYgQ2qjqG3F",
+    "snv_report_workflow_id": "workflow-GgV037Q4z4VXVqz0j10Q147p",
+    "cnv_report_workflow_id": "workflow-GgXkxj841KyJF6qkPK4Kkyvq",
     "reference_files": {
         "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GgBG75Q433Gk4pY5qpxbgVyz",
         "exons_nirvana": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gk7gZ47gypK7ZZ",
