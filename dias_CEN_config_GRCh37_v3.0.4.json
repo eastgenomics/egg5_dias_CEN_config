@@ -1,10 +1,10 @@
 {
     "assay": "CEN",
-    "version": "3.0.3",
+    "version": "3.0.4",
     "cnv_call_app_id": "app-GZ4pXxj4xG062Bj5zjgP1Bb0",
     "artemis_app_id": "app-GZ1X5zj4K5ZxyfYPPq4YgGv3",
-    "snv_report_workflow_id": "workflow-GXzkfYj4QPQp9z4Jz4BF09y6",
-    "cnv_report_workflow_id": "workflow-GXzvJq84XZB1fJk9fBfG88XJ",
+    "snv_report_workflow_id": "",
+    "cnv_report_workflow_id": "",
     "reference_files": {
         "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GVx0vkQ433Gvq63k1Kj4Y562",
         "exons_nirvana": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gk7gZ47gypK7ZZ",
@@ -89,12 +89,16 @@
                     "folder": "CNV_summary",
                     "name": "_excluded_intervals.bed$"
                 },
+                "stage-rpt_generate_workbook.clinical_indication": "INPUT-clinical_indications",
+                "stage-rpt_generate_workbook.panel": "INPUT-panels",
+                "stage-rpt_generate_workbook.output_prefix": "INPUT-sample_name",
                 "stage-cnv_generate_workbook.additional_sheet_names": "ExcludedRegions",
                 "stage-cnv_generate_workbook.exclude_columns": "REF FILTER CSQ_Allele CSQ_Consequence CSQ_IMPACT",
-                "stage-cnv_generate_workbook.acmg": true,
+                "stage-cnv_generate_workbook.acmg": 3,
                 "stage-cnv_generate_workbook.reorder_columns": "CHROM POS END CNVLEN ID ALT QUAL CSQ_SYMBOL CSQ_Feature CSQ_VARIANT_CLASS CSQ_EXON CSQ_INTRON CSQ_STRAND GT CN NP QA QS QSE QSS",
                 "stage-cnv_generate_workbook.add_comment_column": true,
-                "stage-cnv_generate_workbook.summary": "dias"
+                "stage-cnv_generate_workbook.summary": "dias",
+                "stage-cnv_generate_workbook.lock_sheet": true
             }
         },
         "snv_reports": {
@@ -118,6 +122,9 @@
                     "folder": "sentieon-dnaseq",
                     "name": "^[^\\.]*(?!\\.g)\\.vcf(\\.gz)?$"
                 },
+                "stage-rpt_generate_workbook.clinical_indication": "INPUT-clinical_indications",
+                "stage-rpt_generate_workbook.panel": "INPUT-panels",
+                "stage-rpt_generate_workbook.output_prefix": "INPUT-sample_name",
                 "stage-rpt_generate_workbook.exclude_columns": "BaseQRankSum ClippingRankSum DB ExcessHet FS MLEAC MLEAF MQ MQRankSum QD ReadPosRankSum SOR PL QUAL ID FILTER  CSQ_ClinVar_CLNSIGCONF  CSQ_Allele CSQ_HGNC_ID DP AC AF AN CSQ_SpliceAI_pred_DP_AL CSQ_SpliceAI_pred_DP_AG CSQ_SpliceAI_pred_DP_DG CSQ_SpliceAI_pred_DP_DL CSQ_gnomADe_AC_popmax CSQ_gnomADe_AF_popmax CSQ_gnomADe_AN_popmax CSQ_gnomADe_nhomalt_popmax CSQ_gnomADe_non_cancer_AC CSQ_gnomADe_non_cancer_AC_popmax CSQ_gnomADe_non_cancer_AF CSQ_gnomADe_non_cancer_AF_popmax CSQ_gnomADe_non_cancer_AN CSQ_gnomADe_non_cancer_AN_popmax CSQ_gnomADe_non_cancer_nhomalt CSQ_gnomADe_non_cancer_nhomalt_popmax CSQ_gnomADe_non_cancer_popmax CSQ_gnomADe_popmax CSQ_gnomADg_AC_popmax CSQ_gnomADg_AF_popmax CSQ_gnomADg_AN_popmax CSQ_gnomADg_nhomalt_popmax CSQ_gnomADg_popmax",
                 "stage-rpt_generate_workbook.acmg": true,
                 "stage-rpt_generate_workbook.rename_columns": "CSQ_Feature=Transcript DP_FMT=DP",
@@ -128,6 +135,7 @@
                 "stage-rpt_generate_workbook.human_filter": "excluded gnomAD exomes / genomes > 1%, TWE > 5%, synonymous / intronic / intergenic / upstream / downstream / UTRs EXCEPT pathogenic status in ClinVar OR DM in HGMD Class",
                 "stage-rpt_generate_workbook.reorder_columns": "CHROM POS REF ALT GT GQ DP_FMT AD CSQ_SYMBOL CSQ_EXON CSQ_INTRON CSQ_HGVSc CSQ_HGVSp CSQ_Consequence CSQ_IMPACT CSQ_VARIANT_CLASS CSQ_gnomADe_AF CSQ_gnomADe_Hom CSQ_gnomADe_AC CSQ_gnomADe_AN CSQ_gnomADe_nhomalt CSQ_gnomADg_AF CSQ_gnomADg_AC CSQ_gnomADg_AN CSQ_gnomADg_nhomalt CSQ_TWE_AF CSQ_TWE_AC_Hom CSQ_TWE_AC_Het CSQ_TWE_AN CSQ_HGMD CSQ_HGMD_CLASS CSQ_HGMD_RANKSCORE CSQ_HGMD_PHEN CSQ_Existing_variation CSQ_ClinVar CSQ_ClinVar_CLNDN CSQ_ClinVar_CLNSIG CSQ_Mastermind_MMID3 CSQ_CADD_PHRED CSQ_REVEL CSQ_SpliceAI_pred_DS_AG CSQ_SpliceAI_pred_DS_AL CSQ_SpliceAI_pred_DS_DG CSQ_SpliceAI_pred_DS_DL CSQ_HGVS_OFFSET CSQ_STRAND CSQ_Feature",
                 "stage-rpt_generate_workbook.freeze_column": "N2",
+                "stage-rpt_generate_workbook.lock_sheet": true,
                 "stage-rpt_athena.exons_file": "INPUT-exonsfile",
                 "stage-rpt_athena.limit": 260,
                 "stage-rpt_athena.summary": true,
@@ -157,6 +165,9 @@
                     "folder": "tnhaplotyper",
                     "name": "^[^\\.]*(?!\\.g)\\.vcf(\\.gz)?$"
                 },
+                "stage-rpt_generate_workbook.clinical_indication": "INPUT-clinical_indications",
+                "stage-rpt_generate_workbook.panel": "INPUT-panels",
+                "stage-rpt_generate_workbook.output_prefix": "INPUT-sample_name",
                 "stage-rpt_generate_workbook.exclude_columns": "BaseQRankSum ClippingRankSum DB ExcessHet FS MLEAC MLEAF MQ MQRankSum QD ReadPosRankSum SOR PL QUAL ID FILTER  CSQ_ClinVar_CLNSIGCONF  CSQ_Allele CSQ_HGNC_ID DP AC AF AN CSQ_SpliceAI_pred_DP_AL CSQ_SpliceAI_pred_DP_AG CSQ_SpliceAI_pred_DP_DG CSQ_SpliceAI_pred_DP_DL  AS_FilterStatus AS_SB_TABLE ECNT GERMQ MBQ MFRL MMQ MPOS POPAF ROQ TLOD F1R2 F2R1 SB CSQ_gnomADe_AC_popmax CSQ_gnomADe_AF_popmax CSQ_gnomADe_AN_popmax CSQ_gnomADe_nhomalt CSQ_gnomADe_nhomalt_popmax CSQ_gnomADe_non_cancer_AC CSQ_gnomADe_non_cancer_AC_popmax CSQ_gnomADe_non_cancer_AF CSQ_gnomADe_non_cancer_AF_popmax CSQ_gnomADe_non_cancer_AN CSQ_gnomADe_non_cancer_AN_popmax CSQ_gnomADe_non_cancer_nhomalt CSQ_gnomADe_non_cancer_nhomalt_popmax CSQ_gnomADe_non_cancer_popmax CSQ_gnomADe_popmax CSQ_gnomADg_AC_popmax CSQ_gnomADg_AF_popmax CSQ_gnomADg_AN_popmax CSQ_gnomADg_nhomalt CSQ_gnomADg_nhomalt_popmax CSQ_gnomADg_popmax",
                 "stage-rpt_generate_workbook.acmg": true,
                 "stage-rpt_generate_workbook.rename_columns": "CSQ_Feature=Transcript DP_FMT=DP",
@@ -167,6 +178,7 @@
                 "stage-rpt_generate_workbook.human_filter": "excluded gnomAD exomes / genomes > 1%, TWE > 5%, synonymous / intronic / intergenic / upstream / downstream / UTRs EXCEPT pathogenic status in ClinVar OR DM in HGMD Class",
                 "stage-rpt_generate_workbook.reorder_columns": "CHROM POS REF ALT GT GQ DP_FMT AD CSQ_SYMBOL CSQ_EXON CSQ_INTRON CSQ_HGVSc CSQ_HGVSp CSQ_Consequence CSQ_IMPACT CSQ_VARIANT_CLASS CSQ_gnomADe_AF CSQ_gnomADe_Hom CSQ_gnomADe_AC CSQ_gnomADe_AN CSQ_gnomADe_nhomalt CSQ_gnomADg_AF CSQ_gnomADg_AC CSQ_gnomADg_AN CSQ_gnomADg_nhomalt CSQ_TWE_AF CSQ_TWE_AC_Hom CSQ_TWE_AC_Het CSQ_TWE_AN CSQ_HGMD CSQ_HGMD_CLASS CSQ_HGMD_RANKSCORE CSQ_HGMD_PHEN CSQ_Existing_variation CSQ_ClinVar CSQ_ClinVar_CLNDN CSQ_ClinVar_CLNSIG CSQ_Mastermind_MMID3 CSQ_CADD_PHRED CSQ_REVEL CSQ_SpliceAI_pred_DS_AG CSQ_SpliceAI_pred_DS_AL CSQ_SpliceAI_pred_DS_DG CSQ_SpliceAI_pred_DS_DL CSQ_HGVS_OFFSET CSQ_STRAND CSQ_Feature",
                 "stage-rpt_generate_workbook.freeze_column": "N2",
+                "stage-rpt_generate_workbook.lock_sheet": true,
                 "stage-rpt_athena.exons_file": "INPUT-exonsfile",
                 "stage-rpt_athena.limit": 260,
                 "stage-rpt_athena.summary": true,
