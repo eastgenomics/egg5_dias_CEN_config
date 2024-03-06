@@ -3,8 +3,8 @@
     "version": "3.0.4",
     "cnv_call_app_id": "app-GZ4pXxj4xG062Bj5zjgP1Bb0",
     "artemis_app_id": "app-GZ1X5zj4K5ZxyfYPPq4YgGv3",
-    "snv_report_workflow_id": "",
-    "cnv_report_workflow_id": "",
+    "snv_report_workflow_id": "workflow-GgYZpjj4396yBj512yFQZ1fx",
+    "cnv_report_workflow_id": "workflow-GgZ43pQ4396XGFxyBBjbXbkk",
     "reference_files": {
         "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GVx0vkQ433Gvq63k1Kj4Y562",
         "exons_nirvana": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gk7gZ47gypK7ZZ",
@@ -89,9 +89,9 @@
                     "folder": "CNV_summary",
                     "name": "_excluded_intervals.bed$"
                 },
-                "stage-rpt_generate_workbook.clinical_indication": "INPUT-clinical_indications",
-                "stage-rpt_generate_workbook.panel": "INPUT-panels",
-                "stage-rpt_generate_workbook.output_prefix": "INPUT-sample_name",
+                "stage-cnv_generate_workbook.clinical_indication": "INPUT-clinical_indications",
+                "stage-cnv_generate_workbook.panel": "INPUT-panels",
+                "stage-cnv_generate_workbook.output_prefix": "INPUT-sample_name",
                 "stage-cnv_generate_workbook.additional_sheet_names": "ExcludedRegions",
                 "stage-cnv_generate_workbook.exclude_columns": "REF FILTER CSQ_Allele CSQ_Consequence CSQ_IMPACT",
                 "stage-cnv_generate_workbook.acmg": 3,

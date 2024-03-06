@@ -25,9 +25,9 @@ The `modes` section specifies inputs specific to a running mode:
 ## Versions of workflows, apps, and dynamic files in the config
 Workflows:
 * Dias reports: **dias_reports_v2.1.1**
-    * DNAnexus workflow ID: ``
+    * DNAnexus workflow ID: `workflow-GgYZpjj4396yBj512yFQZ1fx`
 * Dias CNV reports: **dias_cnvreports_v1.1.1**
-    * DNAnexus workflow ID: ``
+    * DNAnexus workflow ID: `workflow-GgZ43pQ4396XGFxyBBjbXbkk`
 
 Apps:
 * CNV calling app: **eggd_GATKgCNV_call**
