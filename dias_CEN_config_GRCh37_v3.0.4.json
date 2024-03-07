@@ -47,6 +47,8 @@
             "stage_instance_types": {
             },
             "inputs": {
+                "stage-cnv_generate_bed_vep.panel": "INPUT-clinical_indications",
+                "stage-cnv_generate_bed_vep.output_file_prefix": "INPUT-test_codes",
                 "stage-cnv_generate_bed_vep.exons_nirvana": "INPUT-exons_nirvana",
                 "stage-cnv_generate_bed_vep.nirvana_genes2transcripts": "INPUT-genes2transcripts",
                 "stage-cnv_generate_bed_vep.gene_panels": "INPUT-genepanels",
@@ -67,6 +69,8 @@
                     "folder": "CNV_vcfs",
                     "name": "_segments.vcf$"
                 },
+                "stage-cnv_generate_bed_excluded.panel": "INPUT-clinical_indications",
+                "stage-cnv_generate_bed_excluded.output_file_prefix": "INPUT-test_codes",
                 "stage-cnv_generate_bed_excluded.exons_nirvana": "INPUT-exons_nirvana",
                 "stage-cnv_generate_bed_excluded.nirvana_genes2transcripts": "INPUT-genes2transcripts", 
                 "stage-cnv_generate_bed_excluded.gene_panels": "INPUT-genepanels",
@@ -110,6 +114,8 @@
                 "stage-rpt_generate_bed_athena.exons_nirvana": "INPUT-exons_nirvana",
                 "stage-rpt_generate_bed_athena.nirvana_genes2transcripts": "INPUT-genes2transcripts",
                 "stage-rpt_generate_bed_athena.gene_panels": "INPUT-genepanels",
+                "stage-rpt_generate_bed_vep.panel": "INPUT-clinical_indications",
+                "stage-rpt_generate_bed_vep.output_file_prefix": "INPUT-test_codes",
                 "stage-rpt_generate_bed_vep.exons_nirvana": "INPUT-exons_nirvana",
                 "stage-rpt_generate_bed_vep.nirvana_genes2transcripts": "INPUT-genes2transcripts",
                 "stage-rpt_generate_bed_vep.gene_panels": "INPUT-genepanels",
@@ -154,6 +160,8 @@
                 "stage-rpt_generate_bed_athena.exons_nirvana": "INPUT-exons_nirvana",
                 "stage-rpt_generate_bed_athena.nirvana_genes2transcripts": "INPUT-genes2transcripts",
                 "stage-rpt_generate_bed_athena.gene_panels": "INPUT-genepanels",
+                "stage-rpt_generate_bed_vep.panel": "INPUT-clinical_indications",
+                "stage-rpt_generate_bed_vep.output_file_prefix": "INPUT-test_codes",
                 "stage-rpt_generate_bed_vep.exons_nirvana": "INPUT-exons_nirvana",
                 "stage-rpt_generate_bed_vep.nirvana_genes2transcripts": "INPUT-genes2transcripts",
                 "stage-rpt_generate_bed_vep.gene_panels": "INPUT-genepanels",
