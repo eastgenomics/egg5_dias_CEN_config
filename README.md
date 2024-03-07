@@ -1,4 +1,4 @@
-# dias_CEN_config_GRCh37_v3.0.3.json
+# dias_CEN_config_GRCh37_v3.0.4.json
 
 This repo contains a JSON config file which is used with eggd_dias_batch to specify inputs for running the Dias pipeline for CEN data.
 
@@ -24,10 +24,10 @@ The `modes` section specifies inputs specific to a running mode:
 
 ## Versions of workflows, apps, and dynamic files in the config
 Workflows:
-* Dias reports: **dias_reports_v2.1.0**
-    * DNAnexus workflow ID: `workflow-GXzkfYj4QPQp9z4Jz4BF09y6`
-* Dias CNV reports: **dias_cnvreports_v1.1.0**
-    * DNAnexus workflow ID: `workflow-GXzvJq84XZB1fJk9fBfG88XJ`
+* Dias reports: **dias_reports_v2.1.1**
+    * DNAnexus workflow ID: `workflow-GgYZpjj4396yBj512yFQZ1fx`
+* Dias CNV reports: **dias_cnvreports_v1.1.1**
+    * DNAnexus workflow ID: `workflow-GgZ43pQ4396XGFxyBBjbXbkk`
 
 Apps:
 * CNV calling app: **eggd_GATKgCNV_call**
