@@ -1,10 +1,10 @@
 {
     "assay": "CEN",
-    "version": "3.1.0",
+    "version": "3.1.1",
     "cnv_call_app_id": "app-GZ4pXxj4xG062Bj5zjgP1Bb0",
     "artemis_app_id": "app-GfKV5204ZF35Z47z31Qzqx90",
-    "snv_report_workflow_id": "workflow-GgV037Q4z4VXVqz0j10Q147p",
-    "cnv_report_workflow_id": "workflow-GgXkxj841KyJF6qkPK4Kkyvq",
+    "snv_report_workflow_id": "workflow-Gj2by604ZxY18BX86Jy0b9Xv",
+    "cnv_report_workflow_id": "workflow-Gj2fqVQ41Ky9BKJjkxB2KbzF",
     "reference_files": {
         "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GgBG75Q433Gk4pY5qpxbgVyz",
         "exons_nirvana": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gk7gZ47gypK7ZZ",
@@ -62,7 +62,7 @@
                 "stage-cnv_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-GQGJ3Z84xyx0jp1q65K1Q1jY"
+                        "id": "file-Ggy5b904z6j5k3Gfb3Kk2gqG"
                     }
                 },
                 "stage-cnv_vep.vcf": {
