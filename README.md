@@ -1,4 +1,4 @@
-# dias_CEN_config_GRCh37_v3.1.0.json
+# dias_CEN_config_GRCh37_v3.1.1.json
 
 This repo contains a JSON config file which is used with eggd_dias_batch to specify inputs for running the Dias pipeline for CEN data.
 
@@ -24,10 +24,10 @@ The `modes` section specifies inputs specific to a running mode:
 
 ## Versions of workflows, apps, and dynamic files in the config
 Workflows:
-* Dias reports: **dias_reports_v2.2.0**
-    * DNAnexus workflow ID: `workflow-GgV037Q4z4VXVqz0j10Q147p`
+* Dias reports: **dias_reports_v2.2.1**
+    * DNAnexus workflow ID: `workflow-Gj766G04ZxY0GVPV0GvXxj9q`
 * Dias CNV reports: **dias_cnvreports_v1.2.0**
-    * DNAnexus workflow ID: `workflow-GgXkxj841KyJF6qkPK4Kkyvq`
+    * DNAnexus workflow ID: `workflow-Gj77F9041Ky3Vp045gpKx0B4`
 
 Apps:
 * CNV calling app: **eggd_GATKgCNV_call**
@@ -40,11 +40,11 @@ Apps:
 Dynamic files:
 | File      | File name | DNAnexus file ID |
 | --------- | --------- | ---------------- |
-| genepanels | **240213_genepanels.tsv** | `file-GgBG75Q433Gk4pY5qpxbgVyz` |
-| exons_nirvana | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
-| genes2transcripts | **240213_g2t.tsv** | `file-GgBG6p8433Gg7XK69fG7P9j7` |
-| exons_file for eggd_athena | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
-| cen_vep_config for SNV/mosaic reports | **cen_vep_config_v1.1.12.json** | `file-GgFbqP84z6jB1870G2Zg450k` |
+| genepanels | **240402_genepanels.tsv** | `file-Gj771Q8433GQQZz0gp966kG5` |
+| exons | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
+| genes2transcripts | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
+| exons_with_symbols for eggd_athena | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
+| cen_vep_config for SNV/mosaic reports | **cen_vep_config_v1.1.13.json** | `file-Ggy5b904z6j5k3Gfb3Kk2gqG` |
 | cen_vep_config for CNV reports | **cen-cnv_config_v1.1.0.json** | `file-GQGJ3Z84xyx0jp1q65K1Q1jY` |
 | panel_dump for eggd_optimised_filtering | **240202_panelapp_dump.json** | `file-Gg35Vf845B5bV08VqJ0qGV5V` |
 | additional_regions for CNVs | **CEN_CNV_additional_regions_b37_v1.0.1.tsv** | `file-GJZQvg0433GkyFZg13K6VV6p` |
