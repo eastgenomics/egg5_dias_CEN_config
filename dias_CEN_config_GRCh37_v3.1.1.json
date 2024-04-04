@@ -82,7 +82,7 @@
                 },
                 "stage-cnv_generate_bed_excluded.flank": 0,
                 "stage-cnv_annotate_excluded_regions.cds_hgnc": "INPUT-exons",
-                "stage-cnv_annotate_excluded_regions.cds_gene": "INPUT-exonsfile",
+                "stage-cnv_annotate_excluded_regions.cds_gene": "INPUT-exons_with_symbols",
                 "stage-cnv_annotate_excluded_regions.additional_regions": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
