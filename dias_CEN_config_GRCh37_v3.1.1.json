@@ -7,9 +7,9 @@
     "cnv_report_workflow_id": "workflow-Gj77F9041Ky3Vp045gpKx0B4",
     "reference_files": {
         "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-Gj771Q8433GQQZz0gp966kG5",
-        "exons_nirvana": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gk7gZ47gypK7ZZ",
+        "exons": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gk7gZ47gypK7ZZ",
         "genes2transcripts": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-Gj770X8433Gb506pjq1PxXG9",
-        "exonsfile": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gf99pBPbJkV7bq"
+        "exons_with_symbols": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gf99pBPbJkV7bq"
     },
     "name_patterns": {
         "Epic": "^[\\d\\w]+-[\\d\\w]+",
@@ -49,7 +49,7 @@
             "inputs": {
                 "stage-cnv_generate_bed_vep.panel": "INPUT-clinical_indications",
                 "stage-cnv_generate_bed_vep.output_file_prefix": "INPUT-test_codes",
-                "stage-cnv_generate_bed_vep.exons": "INPUT-exons_nirvana",
+                "stage-cnv_generate_bed_vep.exons": "INPUT-exons",
                 "stage-cnv_generate_bed_vep.genes2transcripts": "INPUT-genes2transcripts",
                 "stage-cnv_generate_bed_vep.gene_panels": "INPUT-genepanels",
                 "stage-cnv_generate_bed_vep.flank": 495,
@@ -71,7 +71,7 @@
                 },
                 "stage-cnv_generate_bed_excluded.panel": "INPUT-clinical_indications",
                 "stage-cnv_generate_bed_excluded.output_file_prefix": "INPUT-test_codes",
-                "stage-cnv_generate_bed_excluded.exons": "INPUT-exons_nirvana",
+                "stage-cnv_generate_bed_excluded.exons": "INPUT-exons",
                 "stage-cnv_generate_bed_excluded.genes2transcripts": "INPUT-genes2transcripts",
                 "stage-cnv_generate_bed_excluded.gene_panels": "INPUT-genepanels",
                 "stage-cnv_generate_bed_excluded.additional_regions": {
@@ -81,7 +81,7 @@
                     }
                 },
                 "stage-cnv_generate_bed_excluded.flank": 0,
-                "stage-cnv_annotate_excluded_regions.cds_hgnc": "INPUT-exons_nirvana",
+                "stage-cnv_annotate_excluded_regions.cds_hgnc": "INPUT-exons",
                 "stage-cnv_annotate_excluded_regions.cds_gene": "INPUT-exonsfile",
                 "stage-cnv_annotate_excluded_regions.additional_regions": {
                     "$dnanexus_link": {
@@ -111,12 +111,12 @@
             "inputs": {
                 "stage-rpt_generate_bed_athena.panel": "INPUT-clinical_indications",
                 "stage-rpt_generate_bed_athena.output_file_prefix": "INPUT-test_codes",
-                "stage-rpt_generate_bed_athena.exons": "INPUT-exons_nirvana",
+                "stage-rpt_generate_bed_athena.exons": "INPUT-exons",
                 "stage-rpt_generate_bed_athena.genes2transcripts": "INPUT-genes2transcripts",
                 "stage-rpt_generate_bed_athena.gene_panels": "INPUT-genepanels",
                 "stage-rpt_generate_bed_vep.panel": "INPUT-clinical_indications",
                 "stage-rpt_generate_bed_vep.output_file_prefix": "INPUT-test_codes",
-                "stage-rpt_generate_bed_vep.exons": "INPUT-exons_nirvana",
+                "stage-rpt_generate_bed_vep.exons": "INPUT-exons",
                 "stage-rpt_generate_bed_vep.genes2transcripts": "INPUT-genes2transcripts",
                 "stage-rpt_generate_bed_vep.gene_panels": "INPUT-genepanels",
                 "stage-rpt_generate_bed_vep.flank": 495,
@@ -156,7 +156,7 @@
                 "stage-rpt_generate_workbook.lock_sheet": true,
                 "stage-rpt_athena.name": "INPUT-sample_name",
                 "stage-rpt_athena.indication": "INPUT-clinical_indications",
-                "stage-rpt_athena.exons_file": "INPUT-exonsfile",
+                "stage-rpt_athena.exons_file": "INPUT-exons_with_symbols",
                 "stage-rpt_athena.limit": 260,
                 "stage-rpt_athena.summary": true,
                 "stage-rpt_athena.mosdepth_files": {
@@ -171,12 +171,12 @@
             "inputs": {
                 "stage-rpt_generate_bed_athena.panel": "INPUT-clinical_indications",
                 "stage-rpt_generate_bed_athena.output_file_prefix": "INPUT-test_codes",
-                "stage-rpt_generate_bed_athena.exons": "INPUT-exons_nirvana",
+                "stage-rpt_generate_bed_athena.exons": "INPUT-exons",
                 "stage-rpt_generate_bed_athena.genes2transcripts": "INPUT-genes2transcripts",
                 "stage-rpt_generate_bed_athena.gene_panels": "INPUT-genepanels",
                 "stage-rpt_generate_bed_vep.panel": "INPUT-clinical_indications",
                 "stage-rpt_generate_bed_vep.output_file_prefix": "INPUT-test_codes",
-                "stage-rpt_generate_bed_vep.exons": "INPUT-exons_nirvana",
+                "stage-rpt_generate_bed_vep.exons": "INPUT-exons",
                 "stage-rpt_generate_bed_vep.genes2transcripts": "INPUT-genes2transcripts",
                 "stage-rpt_generate_bed_vep.gene_panels": "INPUT-genepanels",
                 "stage-rpt_vep.config_file": {
@@ -215,7 +215,7 @@
                 "stage-rpt_generate_workbook.lock_sheet": true,
                 "stage-rpt_athena.name": "INPUT-sample_name",
                 "stage-rpt_athena.indication": "INPUT-clinical_indications",
-                "stage-rpt_athena.exons_file": "INPUT-exonsfile",
+                "stage-rpt_athena.exons_file": "INPUT-exons_with_symbols",
                 "stage-rpt_athena.limit": 260,
                 "stage-rpt_athena.summary": true,
                 "stage-rpt_athena.thresholds": "100, 250, 500, 1000, 1500",
