@@ -3,12 +3,12 @@
     "version": "3.1.1",
     "cnv_call_app_id": "app-GZ4pXxj4xG062Bj5zjgP1Bb0",
     "artemis_app_id": "app-GfKV5204ZF35Z47z31Qzqx90",
-    "snv_report_workflow_id": "workflow-Gj2by604ZxY18BX86Jy0b9Xv",
-    "cnv_report_workflow_id": "workflow-Gj2fqVQ41Ky9BKJjkxB2KbzF",
+    "snv_report_workflow_id": "workflow-Gj766G04ZxY0GVPV0GvXxj9q",
+    "cnv_report_workflow_id": "workflow-Gj77F9041Ky3Vp045gpKx0B4",
     "reference_files": {
-        "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GgBG75Q433Gk4pY5qpxbgVyz",
+        "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-Gj771Q8433GQQZz0gp966kG5",
         "exons_nirvana": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gk7gZ47gypK7ZZ",
-        "genes2transcripts": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GgBG6p8433Gg7XK69fG7P9j7",
+        "genes2transcripts": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-Gj770X8433Gb506pjq1PxXG9",
         "exonsfile": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gf99pBPbJkV7bq"
     },
     "name_patterns": {

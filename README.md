@@ -40,9 +40,9 @@ Apps:
 Dynamic files:
 | File      | File name | DNAnexus file ID |
 | --------- | --------- | ---------------- |
-| genepanels | **240213_genepanels.tsv** | `file-GgBG75Q433Gk4pY5qpxbgVyz` |
+| genepanels | **240402_genepanels.tsv** | `file-Gj771Q8433GQQZz0gp966kG5` |
 | exons_nirvana | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
-| genes2transcripts | **240213_g2t.tsv** | `file-GgBG6p8433Gg7XK69fG7P9j7` |
+| genes2transcripts | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
 | exons_file for eggd_athena | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
 | cen_vep_config for SNV/mosaic reports | **cen_vep_config_v1.1.13.json** | `file-Ggy5b904z6j5k3Gfb3Kk2gqG` |
 | cen_vep_config for CNV reports | **cen-cnv_config_v1.1.0.json** | `file-GQGJ3Z84xyx0jp1q65K1Q1jY` |
