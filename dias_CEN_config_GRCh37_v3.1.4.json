@@ -1,9 +1,9 @@
 {
     "assay": "CEN",
-    "version": "3.1.3",
+    "version": "3.1.4",
     "cnv_call_app_id": "app-GZ4pXxj4xG062Bj5zjgP1Bb0",
     "artemis_app_id": "app-GfKV5204ZF35Z47z31Qzqx90",
-    "snv_report_workflow_id": "workflow-Gj766G04ZxY0GVPV0GvXxj9q",
+    "snv_report_workflow_id": "workflow-GkbJY284FpfgqF8ggz57fVY2",
     "cnv_report_workflow_id": "workflow-Gj77F9041Ky3Vp045gpKx0B4",
     "reference_files": {
         "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-Gj7ygzj42X4ZBqg9068p1fQ4",
@@ -123,7 +123,7 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-Gk6zz304z6jB2KyFjPvPKqBb"
+                        "id": "file-GkkF90j4z6j9vqqvjJz786jb"
                     }
                 },
                 "stage-rpt_vep.vcf": {
@@ -159,6 +159,7 @@
                 "stage-rpt_athena.exons_file": "INPUT-exons_with_symbols",
                 "stage-rpt_athena.limit": 260,
                 "stage-rpt_athena.summary": true,
+                "stage-rpt_athena.summary_file": true,
                 "stage-rpt_athena.mosdepth_files": {
                     "folder": "eggd_mosdepth",
                     "name": "per-base.bed.gz$|reference_build.txt$"
@@ -182,7 +183,7 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-Ggy5b904z6j5k3Gfb3Kk2gqG"
+                        "id": "file-GkkF90j4z6j9vqqvjJz786jb"
                     }
                 },
                 "stage-rpt_vep.vcf": {
@@ -218,6 +219,7 @@
                 "stage-rpt_athena.exons_file": "INPUT-exons_with_symbols",
                 "stage-rpt_athena.limit": 260,
                 "stage-rpt_athena.summary": true,
+                "stage-rpt_athena.summary_file": true,
                 "stage-rpt_athena.thresholds": "100, 250, 500, 1000, 1500",
                 "stage-rpt_athena.cutoff_threshold": 250,
                 "stage-rpt_athena.mosdepth_files": {
