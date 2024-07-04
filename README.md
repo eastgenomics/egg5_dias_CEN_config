@@ -34,8 +34,8 @@ Apps:
     * v1.0.2
     * DNAnexus app ID: `app-GZ4pXxj4xG062Bj5zjgP1Bb0`
 * Artemis app: **eggd_artemis**
-    * v1.4.0
-    * DNAnexus app ID `app-GfKV5204ZF35Z47z31Qzqx90`
+    * v1.5.0
+    * DNAnexus app ID `app-GkbJ7p0463bjk9VKv3x8G5F8`
 
 Dynamic files:
 | File      | File name | DNAnexus file ID |
