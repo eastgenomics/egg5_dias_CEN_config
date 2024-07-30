@@ -1,6 +1,6 @@
 {
     "assay": "CEN",
-    "version": "3.1.5",
+    "version": "3.1.6",
     "cnv_call_app_id": "app-GZ4pXxj4xG062Bj5zjgP1Bb0",
     "artemis_app_id": "app-GkbJ7p0463bjk9VKv3x8G5F8",
     "snv_report_workflow_id": "workflow-GkbJY284FpfgqF8ggz57fVY2",
@@ -123,7 +123,7 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-GkkF90j4z6j9vqqvjJz786jb"
+                        "id": "file-GpV6G9Q4z6jKJ2qVFGK1v0g2"
                     }
                 },
                 "stage-rpt_vep.vcf": {
