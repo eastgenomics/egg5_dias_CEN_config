@@ -1,0 +1,19 @@
+name: Test dias batch configs
+
+on:
+  pull_request:
+    paths:
+      - '**.json'
+
+jobs:
+  test_config:
+    uses: eastgenomics/GitHub_Actions/.github/workflows/test_changes.yml@release_v1.0.0
+    with:
+      config_path: ${{ vars.CONFIG_PATH }}
+      prod_jobs: ${{ vars.PROD_JOBS }}
+      test_sample_limit: ${{ vars.TEST_SAMPLE_LIMIT }}
+      run_cnv_calling: ${{ vars.RUN_CNV_CALLING }}
+      development: ${{ vars.DEVELOPMENT }}
+      workflow_branch: ${{ vars.WORKFLOW_BRANCH }}
+    secrets:
+      DX_TOKEN: ${{ secrets.DX_TOKEN }}
