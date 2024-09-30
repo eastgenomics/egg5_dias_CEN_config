@@ -114,12 +114,24 @@
                 "stage-rpt_generate_bed_athena.exons": "INPUT-exons",
                 "stage-rpt_generate_bed_athena.genes2transcripts": "INPUT-genes2transcripts",
                 "stage-rpt_generate_bed_athena.gene_panels": "INPUT-genepanels",
+                "stage-rpt_generate_bed_athena.additional_regions": {
+                    "$dnanexus_link": {
+                        "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+                        "id": "file-Gpy96q04PKYjjg9kbQy692bF"
+                    }
+                },
                 "stage-rpt_generate_bed_vep.panel": "INPUT-clinical_indications",
                 "stage-rpt_generate_bed_vep.output_file_prefix": "INPUT-test_codes",
                 "stage-rpt_generate_bed_vep.exons": "INPUT-exons",
                 "stage-rpt_generate_bed_vep.genes2transcripts": "INPUT-genes2transcripts",
                 "stage-rpt_generate_bed_vep.gene_panels": "INPUT-genepanels",
                 "stage-rpt_generate_bed_vep.flank": 495,
+                "stage-rpt_generate_bed_vep.additional_regions": {
+                    "$dnanexus_link": {
+                        "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+                        "id": "file-Gpy96q04PKYjjg9kbQy692bF"
+                    }
+                },
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
