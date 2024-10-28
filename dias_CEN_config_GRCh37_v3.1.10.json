@@ -183,7 +183,7 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-GqbJJ404z6j62Q5X3qp1G4Xf"
+                        "id": "file-GvJ50fQ4z6j0Y26YBVB9Pj06"
                     }
                 },
                 "stage-rpt_vep.vcf": {
