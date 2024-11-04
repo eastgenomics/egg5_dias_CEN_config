@@ -1,12 +1,12 @@
 {
     "assay": "CEN",
-    "version": "3.1.10",
+    "version": "3.2.0",
     "cnv_call_app_id": "app-GZ4pXxj4xG062Bj5zjgP1Bb0",
     "artemis_app_id": "app-GkbJ7p0463bjk9VKv3x8G5F8",
     "snv_report_workflow_id": "workflow-GkbJY284FpfgqF8ggz57fVY2",
     "cnv_report_workflow_id": "workflow-Gj77F9041Ky3Vp045gpKx0B4",
     "reference_files": {
-        "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-Gj7ygzj42X4ZBqg9068p1fQ4",
+        "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GvJ5fbQ4qQYq73gjGyP57zFB",
         "exons": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gk7gZ47gypK7ZZ",
         "genes2transcripts": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-Gj770X8433Gb506pjq1PxXG9",
         "exons_with_symbols": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gf99pBPbJkV7bq"
@@ -120,6 +120,12 @@
                 "stage-rpt_generate_bed_vep.genes2transcripts": "INPUT-genes2transcripts",
                 "stage-rpt_generate_bed_vep.gene_panels": "INPUT-genepanels",
                 "stage-rpt_generate_bed_vep.flank": 495,
+                "stage-rpt_generate_bed_vep.additional_regions": {
+                    "$dnanexus_link": {
+                        "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+                        "id": "file-Gpy96q04PKYjjg9kbQy692bF"
+                    }
+                },
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
@@ -136,7 +142,7 @@
                 "stage-rpt_optimised_filtering.panel_dump": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-Gg35Vf845B5bV08VqJ0qGV5V"
+                        "id": "file-GvVg3qj4Y54jBF8bgX62gkfQ"
                     }
                 },
                 "stage-rpt_generate_workbook.clinical_indication": "INPUT-clinical_indications",
@@ -196,7 +202,7 @@
                 "stage-rpt_optimised_filtering.panel_dump": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-Gg35Vf845B5bV08VqJ0qGV5V"
+                        "id": "file-GvVg3qj4Y54jBF8bgX62gkfQ"
                     }
                 },
                 "stage-rpt_generate_workbook.clinical_indication": "INPUT-clinical_indications",
