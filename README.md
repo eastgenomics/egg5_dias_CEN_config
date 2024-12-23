@@ -1,4 +1,4 @@
-# dias_CEN_config_GRCh37_v3.2.1.json
+# dias_CEN_config_GRCh37_v3.2.2.json
 
 This repo contains a JSON config file which is used with eggd_dias_batch to specify inputs for running the Dias pipeline for CEN data.
 
