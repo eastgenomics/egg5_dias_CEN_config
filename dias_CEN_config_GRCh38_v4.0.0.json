@@ -26,7 +26,7 @@
                 "GATK_docker": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-GBBP9JQ433GxV97xBpQkzYZx"
+                        "id": "file-GpZz87Q4ZbZkxJJGx9b02gyV"
                     }
                 },
                 "annotation_tsv": {
