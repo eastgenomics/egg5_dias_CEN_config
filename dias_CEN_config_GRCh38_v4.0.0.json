@@ -8,7 +8,7 @@
     "reference_files": {
         "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GvJ5fbQ4qQYq73gjGyP57zFB",
         "exons": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GyFfgpQ4fJPv132574bFQfV5",
-        "genes2transcripts": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-Gj770X8433Gb506pjq1PxXG9",
+        "genes2transcripts": "project-Gyp7jY84zqZ20pBKZKGbZg7p:file-Gyy99kj4zqZJ7Qp4145PXv9F",
         "exons_with_symbols": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-Gyb29P84fJPqZJ37pfjz1vZB"
     },
     "name_patterns": {
@@ -61,8 +61,8 @@
                 },
                 "stage-cnv_vep.config_file": {
                     "$dnanexus_link": {
-                        "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-GQGJ3Z84xyx0jp1q65K1Q1jY"
+                        "project": "project-GyXyQKj4Q8Xg40gQfB931B48",
+                        "id": " file-GyXyyp04Q8Xpj5fJ8v45by9k"
                     }
                 },
                 "stage-cnv_vep.vcf": {
@@ -122,14 +122,14 @@
                 "stage-rpt_generate_bed_vep.flank": 495,
                 "stage-rpt_generate_bed_vep.additional_regions": {
                     "$dnanexus_link": {
-                        "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-Gpy96q04PKYjjg9kbQy692bF"
+                        "project": "project-Gz485b04Pp87J1FQgp9Kqj31",
+                        "id": "file-Gz4gg184Pp8FbPxp42VBzF52"
                     }
                 },
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
-                        "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-Gy92x504z6j6xz0F4f1Jbvj0"
+                        "project": "project-GVx0PKQ4z6j7qqKFxzgP48z2",
+                        "id": "file-GyXF5304z6jF9JVxZjQ1Pk2P"
                     }
                 },
                 "stage-rpt_vep.vcf": {
@@ -188,8 +188,8 @@
                 "stage-rpt_generate_bed_vep.gene_panels": "INPUT-genepanels",
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
-                        "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-Gy92x504z6j6xz0F4f1Jbvj0"
+                        "project": "project-GVx0PKQ4z6j7qqKFxzgP48z2",
+                        "id": " file-GyXF5304z6jF9JVxZjQ1Pk2P"
                     }
                 },
                 "stage-rpt_vep.vcf": {
