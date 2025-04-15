@@ -1,4 +1,4 @@
-# dias_CEN_config_GRCh37_v3.2.5.json
+# dias_CEN_config_GRCh37_v3.3.0.json
 
 This repo contains a JSON config file which is used with eggd_dias_batch to specify inputs for running the Dias pipeline for CEN data.
 
@@ -31,8 +31,8 @@ Workflows:
 
 Apps:
 * CNV calling app: **eggd_GATKgCNV_call**
-    * v1.0.2
-    * DNAnexus app ID: `app-GZ4pXxj4xG062Bj5zjgP1Bb0`
+    * v2.0.0
+    * DNAnexus app ID: `app-GvZB5p846Vg69fBg0Fq10938`
 * Artemis app: **eggd_artemis**
     * v1.5.0
     * DNAnexus app ID `app-GkbJ7p0463bjk9VKv3x8G5F8`
@@ -44,12 +44,12 @@ Dynamic files:
 | exons | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
 | genes2transcripts | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
 | exons_with_symbols for eggd_athena | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
-| cen_vep_config for SNV/mosaic reports | **cen_vep_config_v1.1.25.json** | `file-GzGj6f84z6j9bqqq1kP6Xbq0` |
+| cen_vep_config for SNV/mosaic reports | **cen_vep_config_v1.2.0.json** | `file-Gzkq2fQ4z6jJX2jgZFyVF28x` |
 | cen_vep_config for CNV reports | **cen-cnv_config_v1.1.0.json** | `file-GQGJ3Z84xyx0jp1q65K1Q1jY` |
 | panel_dump for eggd_optimised_filtering | **241030_panelapp_dump.json** | `file-GvVg3qj4Y54jBF8bgX62gkfQ` |
 | additional_regions for CNVs | **CEN_CNV_additional_regions_b37_v1.0.1.tsv** | `file-GJZQvg0433GkyFZg13K6VV6p` |
 | additional_regions for SNVs | **CEN_SNV_additional_regions_b37_v1.0.0.tsv** | `file-Gpy96q04PKYjjg9kbQy692bF` |
-| gatk_docker | **GATK_v4.2.5.0.tar.gz** | `file-GBBP9JQ433GxV97xBpQkzYZx` |
+| gatk_docker | **GATK_v4.6.0.0.tar.gz** | `file-GpZz87Q4ZbZkxJJGx9b02gyV` |
 | interval_list for CNV calling | **CEN_CNV_targets_v1.1.0_sorted.interval_list** | `file-GFPxzKj4V50pJX3F4vV58yyg` |
 | annotation of interval_list for CNV calling | **CEN_CNV_targets_v1.1.0_sorted_annotation.tsv**| `file-GFPxzPQ4V50z4pv230p82G0q` |
 | capture_bed for artemis | **CEN_CNV_targets_b37_v1.1.0.bed** | `file-GFPxpJj4GVV0Pfzv4VGYf1pq` |

@@ -1,7 +1,7 @@
 {
     "assay": "CEN",
-    "version": "3.2.5",
-    "cnv_call_app_id": "app-GZ4pXxj4xG062Bj5zjgP1Bb0",
+    "version": "3.3.0",
+    "cnv_call_app_id": "app-GvZB5p846Vg69fBg0Fq10938",
     "artemis_app_id": "app-GkbJ7p0463bjk9VKv3x8G5F8",
     "snv_report_workflow_id": "workflow-GkbJY284FpfgqF8ggz57fVY2",
     "cnv_report_workflow_id": "workflow-Gj77F9041Ky3Vp045gpKx0B4",
@@ -26,7 +26,7 @@
                 "GATK_docker": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-GBBP9JQ433GxV97xBpQkzYZx"
+                        "id": "file-GpZz87Q4ZbZkxJJGx9b02gyV"
                     }
                 },
                 "annotation_tsv": {
@@ -129,14 +129,14 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-GzGj6f84z6j9bqqq1kP6Xbq0"
+                        "id": "file-Gzkq2fQ4z6jJX2jgZFyVF28x"
                     }
                 },
                 "stage-rpt_vep.vcf": {
                     "folder": "sentieon-dnaseq",
                     "name": "^[^\\.]*(?!\\.g)\\.vcf(\\.gz)?$"
                 },
-                "stage-rpt_optimised_filtering.filter_string": "bcftools filter --soft-filter \"EXCLUDE\" -m + -e '(CSQ_ClinVar_CLNSIGCONF!~ \"pathogenic/i\" & CSQ_HGMD_CLASS!= \"DM\" & CSQ_ClinVar_CLNSIG!~\"Pathogenic\" & CSQ_ClinVar_CLNSIG!~\"Likely_pathogenic/i\") & (((MOI=\"AR\" | MOI=\"AD/AR\" | MOI=\"XLR\" | MOI=\"XLD\" | MOI=\"MITOCHONDRIAL\" | MOI=\"UNKNOWN\" | MOI=\"OTHER\" | MOI=\"NONE\") & (CSQ_gnomADg_AF>0.01 | CSQ_gnomADe_AF>0.01)) | (MOI=\"AD\" & (CSQ_gnomADg_AF>0.001 |CSQ_gnomADe_AF>0.001)) | CSQ_TWE_AF>0.05 | ((CSQ_Consequence=\"synonymous_variant\" | CSQ_Consequence=\"intron_variant\" | CSQ_Consequence=\"upstream_gene_variant\" | CSQ_Consequence=\"downstream_gene_variant\" | CSQ_Consequence=\"intergenic_variant\" | CSQ_Consequence=\"5_prime_UTR_variant\" | CSQ_Consequence=\"3_prime_UTR_variant\") & CSQ_HGMD_CLASS!= \"DM?\"))'",
+                "stage-rpt_optimised_filtering.filter_string": "bcftools filter --soft-filter \"EXCLUDE\" -m + -e '(CSQ_ClinVar_CLNSIGCONF!~ \"pathogenic/i\" & CSQ_HGMD_CLASS!= \"DM\" & CSQ_ClinVar_CLNSIG!~\"Pathogenic\" & CSQ_ClinVar_CLNSIG!~\"Likely_pathogenic/i\" & CSQ_IncludeVariant_IncludeList!=\"INCLUDE\") & (((MOI=\"AR\" | MOI=\"AD/AR\" | MOI=\"XLR\" | MOI=\"XLD\" | MOI=\"MITOCHONDRIAL\" | MOI=\"UNKNOWN\" | MOI=\"OTHER\" | MOI=\"NONE\") & (CSQ_gnomADg_AF>0.01 | CSQ_gnomADe_AF>0.01)) | (MOI=\"AD\" & (CSQ_gnomADg_AF>0.001 |CSQ_gnomADe_AF>0.001)) | CSQ_TWE_AF>0.05 | ((CSQ_Consequence=\"synonymous_variant\" | CSQ_Consequence=\"intron_variant\" | CSQ_Consequence=\"upstream_gene_variant\" | CSQ_Consequence=\"downstream_gene_variant\" | CSQ_Consequence=\"intergenic_variant\" | CSQ_Consequence=\"5_prime_UTR_variant\" | CSQ_Consequence=\"3_prime_UTR_variant\") & CSQ_HGMD_CLASS!= \"DM?\")) | CSQ_ExcludeVariant_ExcludeList=\"EXCLUDE\"'",
                 "stage-rpt_optimised_filtering.panel_string": "INPUT-clinical_indications",
                 "stage-rpt_optimised_filtering.genepanels": "INPUT-genepanels",
                 "stage-rpt_optimised_filtering.panel_dump": {
@@ -189,14 +189,14 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-GzGj6f84z6j9bqqq1kP6Xbq0"
+                        "id": "file-Gzkq2fQ4z6jJX2jgZFyVF28x"
                     }
                 },
                 "stage-rpt_vep.vcf": {
                     "folder": "tnhaplotyper",
                     "name": "^[^\\.]*(?!\\.g)\\.vcf(\\.gz)?$"
                 },
-                "stage-rpt_optimised_filtering.filter_string": "bcftools filter --soft-filter \"EXCLUDE\" -m + -e '(CSQ_ClinVar_CLNSIGCONF!~ \"pathogenic/i\" & CSQ_HGMD_CLASS!= \"DM\" & CSQ_ClinVar_CLNSIG!~\"Pathogenic\" & CSQ_ClinVar_CLNSIG!~\"Likely_pathogenic/i\") & (((MOI=\"AR\" | MOI=\"AD/AR\" | MOI=\"XLR\" | MOI=\"XLD\" | MOI=\"MITOCHONDRIAL\" | MOI=\"UNKNOWN\" | MOI=\"OTHER\" | MOI=\"NONE\") & (CSQ_gnomADg_AF>0.01 | CSQ_gnomADe_AF>0.01)) | (MOI=\"AD\" & (CSQ_gnomADg_AF>0.001 |CSQ_gnomADe_AF>0.001)) | CSQ_TWE_AF>0.05 | ((CSQ_Consequence=\"synonymous_variant\" | CSQ_Consequence=\"intron_variant\" | CSQ_Consequence=\"upstream_gene_variant\" | CSQ_Consequence=\"downstream_gene_variant\" | CSQ_Consequence=\"intergenic_variant\" | CSQ_Consequence=\"5_prime_UTR_variant\" | CSQ_Consequence=\"3_prime_UTR_variant\") & CSQ_HGMD_CLASS!= \"DM?\"))'",
+                "stage-rpt_optimised_filtering.filter_string": "bcftools filter --soft-filter \"EXCLUDE\" -m + -e '(CSQ_ClinVar_CLNSIGCONF!~ \"pathogenic/i\" & CSQ_HGMD_CLASS!= \"DM\" & CSQ_ClinVar_CLNSIG!~\"Pathogenic\" & CSQ_ClinVar_CLNSIG!~\"Likely_pathogenic/i\" & CSQ_IncludeVariant_IncludeList!=\"INCLUDE\") & (((MOI=\"AR\" | MOI=\"AD/AR\" | MOI=\"XLR\" | MOI=\"XLD\" | MOI=\"MITOCHONDRIAL\" | MOI=\"UNKNOWN\" | MOI=\"OTHER\" | MOI=\"NONE\") & (CSQ_gnomADg_AF>0.01 | CSQ_gnomADe_AF>0.01)) | (MOI=\"AD\" & (CSQ_gnomADg_AF>0.001 |CSQ_gnomADe_AF>0.001)) | CSQ_TWE_AF>0.05 | ((CSQ_Consequence=\"synonymous_variant\" | CSQ_Consequence=\"intron_variant\" | CSQ_Consequence=\"upstream_gene_variant\" | CSQ_Consequence=\"downstream_gene_variant\" | CSQ_Consequence=\"intergenic_variant\" | CSQ_Consequence=\"5_prime_UTR_variant\" | CSQ_Consequence=\"3_prime_UTR_variant\") & CSQ_HGMD_CLASS!= \"DM?\")) | CSQ_ExcludeVariant_ExcludeList=\"EXCLUDE\"'",
                 "stage-rpt_optimised_filtering.panel_string": "INPUT-clinical_indications",
                 "stage-rpt_optimised_filtering.genepanels": "INPUT-genepanels",
                 "stage-rpt_optimised_filtering.panel_dump": {
