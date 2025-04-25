@@ -1,6 +1,6 @@
 {
     "assay": "CEN",
-    "version": "3.3.0",
+    "version": "3.3.1",
     "cnv_call_app_id": "app-GvZB5p846Vg69fBg0Fq10938",
     "artemis_app_id": "app-GkbJ7p0463bjk9VKv3x8G5F8",
     "snv_report_workflow_id": "workflow-GkbJY284FpfgqF8ggz57fVY2",
@@ -129,7 +129,7 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-Gzkq2fQ4z6jJX2jgZFyVF28x"
+                        "id": "file-J04Kfv04z6j02Jz1Zj9VvK7k"
                     }
                 },
                 "stage-rpt_vep.vcf": {
@@ -155,7 +155,7 @@
                 "stage-rpt_generate_workbook.keep_tmp": true,
                 "stage-rpt_generate_workbook.summary": "dias",
                 "stage-rpt_generate_workbook.filter": "bcftools filter -e 'FILTER==\"EXCLUDE\"'",
-                "stage-rpt_generate_workbook.human_filter": "Variants with ClinVar individual or aggregate classifications of Likely pathogenic/Pathogenic are always included, regardless of any other filtering rules. Variants with an HGMD variant class of DM are always included, regardless of other filtering rules. Variants with gnomAD exomes or genomes AF exceeding the threshold associated with the mode of inheritance of the gene are excluded. These thresholds are 0.1% for monoallelic inheritance, 1.0% for all other modes of inheritance. Variants with TWE cohort AF exceeding 5.0% are excluded. Variants with consequences equal to one of the following Sequence Ontology terms are excluded, unless they also have an HGMD variant class of DM?: synonymous_variant\\intron_variant\\upstream_gene_variant\\downstream_gene_variant\\intergenic_variant\\5_prime_UTR_variant\\3_prime_UTR_variant",
+                "stage-rpt_generate_workbook.human_filter": "Variants with ClinVar individual or aggregate classifications of Likely pathogenic/Pathogenic are always included, regardless of any other filtering rules. Variants with an HGMD variant class of DM are always included, regardless of other filtering rules. Variants with gnomAD exomes or genomes AF exceeding the threshold associated with the mode of inheritance of the gene are excluded. These thresholds are 0.1% for monoallelic inheritance, 1.0% for all other modes of inheritance. Variants with TWE cohort AF exceeding 5.0% are excluded. Variants with consequences equal to one of the following Sequence Ontology terms are excluded, unless they also have an HGMD variant class of DM?: synonymous_variant\\intron_variant\\upstream_gene_variant\\downstream_gene_variant\\intergenic_variant\\5_prime_UTR_variant\\3_prime_UTR_variant. Variants specified in the include list are always included, regardless of other filtering rules. Variants specified in the exclude list are always excluded, regardless of other filtering rules.",
                 "stage-rpt_generate_workbook.reorder_columns": "CHROM POS REF ALT GT GQ DP_FMT AD CSQ_SYMBOL CSQ_EXON CSQ_INTRON CSQ_HGVSc CSQ_HGVSp CSQ_Consequence CSQ_IMPACT CSQ_VARIANT_CLASS CSQ_gnomADe_AF CSQ_gnomADe_AF_popmax CSQ_gnomADe_Hom CSQ_gnomADe_AC CSQ_gnomADe_AN CSQ_gnomADe_nhomalt CSQ_gnomADg_AF CSQ_gnomADg_AF_popmax CSQ_gnomADg_AC CSQ_gnomADg_AN CSQ_gnomADg_nhomalt CSQ_TWE_AF CSQ_TWE_AC_Hom CSQ_TWE_AC_Het CSQ_TWE_AN CSQ_HGMD CSQ_HGMD_CLASS CSQ_HGMD_RANKSCORE CSQ_HGMD_PHEN CSQ_Existing_variation CSQ_ClinVar CSQ_ClinVar_CLNDN CSQ_ClinVar_CLNSIG CSQ_Mastermind_MMID3 CSQ_CADD_PHRED CSQ_REVEL CSQ_SpliceAI_pred_DS_AG CSQ_SpliceAI_pred_DS_AL CSQ_SpliceAI_pred_DS_DG CSQ_SpliceAI_pred_DS_DL CSQ_HGVS_OFFSET CSQ_STRAND CSQ_Feature MOI",
                 "stage-rpt_generate_workbook.keep_filtered": false,
                 "stage-rpt_generate_workbook.freeze_column": "N2",
@@ -189,7 +189,7 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-Gzkq2fQ4z6jJX2jgZFyVF28x"
+                        "id": "file-J04Kfv04z6j02Jz1Zj9VvK7k"
                     }
                 },
                 "stage-rpt_vep.vcf": {
@@ -215,7 +215,7 @@
                 "stage-rpt_generate_workbook.keep_tmp": true,
                 "stage-rpt_generate_workbook.summary": "dias",
                 "stage-rpt_generate_workbook.filter": "bcftools filter -e 'FILTER==\"EXCLUDE\"'",
-                "stage-rpt_generate_workbook.human_filter": "Variants with ClinVar individual or aggregate classifications of Likely pathogenic/Pathogenic are always included, regardless of any other filtering rules. Variants with an HGMD variant class of DM are always included, regardless of other filtering rules. Variants with gnomAD exomes or genomes AF exceeding the threshold associated with the mode of inheritance of the gene are excluded. These thresholds are 0.1% for monoallelic inheritance, 1.0% for all other modes of inheritance. Variants with TWE cohort AF exceeding 5.0% are excluded. Variants with consequences equal to one of the following Sequence Ontology terms are excluded, unless they also have an HGMD variant class of DM?: synonymous_variant\\intron_variant\\upstream_gene_variant\\downstream_gene_variant\\intergenic_variant\\5_prime_UTR_variant\\3_prime_UTR_variant",
+                "stage-rpt_generate_workbook.human_filter": "Variants with ClinVar individual or aggregate classifications of Likely pathogenic/Pathogenic are always included, regardless of any other filtering rules. Variants with an HGMD variant class of DM are always included, regardless of other filtering rules. Variants with gnomAD exomes or genomes AF exceeding the threshold associated with the mode of inheritance of the gene are excluded. These thresholds are 0.1% for monoallelic inheritance, 1.0% for all other modes of inheritance. Variants with TWE cohort AF exceeding 5.0% are excluded. Variants with consequences equal to one of the following Sequence Ontology terms are excluded, unless they also have an HGMD variant class of DM?: synonymous_variant\\intron_variant\\upstream_gene_variant\\downstream_gene_variant\\intergenic_variant\\5_prime_UTR_variant\\3_prime_UTR_variant. Variants specified in the include list are always included, regardless of other filtering rules. Variants specified in the exclude list are always excluded, regardless of other filtering rules.",
                 "stage-rpt_generate_workbook.reorder_columns": "CHROM POS REF ALT GT GQ DP_FMT AD CSQ_SYMBOL CSQ_EXON CSQ_INTRON CSQ_HGVSc CSQ_HGVSp CSQ_Consequence CSQ_IMPACT CSQ_VARIANT_CLASS CSQ_gnomADe_AF CSQ_gnomADe_AF_popmax CSQ_gnomADe_Hom CSQ_gnomADe_AC CSQ_gnomADe_AN CSQ_gnomADe_nhomalt CSQ_gnomADg_AF CSQ_gnomADg_AF_popmax CSQ_gnomADg_AC CSQ_gnomADg_AN CSQ_gnomADg_nhomalt CSQ_TWE_AF CSQ_TWE_AC_Hom CSQ_TWE_AC_Het CSQ_TWE_AN CSQ_HGMD CSQ_HGMD_CLASS CSQ_HGMD_RANKSCORE CSQ_HGMD_PHEN CSQ_Existing_variation CSQ_ClinVar CSQ_ClinVar_CLNDN CSQ_ClinVar_CLNSIG CSQ_Mastermind_MMID3 CSQ_CADD_PHRED CSQ_REVEL CSQ_SpliceAI_pred_DS_AG CSQ_SpliceAI_pred_DS_AL CSQ_SpliceAI_pred_DS_DG CSQ_SpliceAI_pred_DS_DL CSQ_HGVS_OFFSET CSQ_STRAND CSQ_Feature MOI",
                 "stage-rpt_generate_workbook.keep_filtered": false,
                 "stage-rpt_generate_workbook.freeze_column": "N2",
