@@ -1,4 +1,4 @@
-# dias_CEN_config_GRCh37_v3.3.0.json
+# dias_CEN_config_GRCh37_v3.3.1.json
 
 This repo contains a JSON config file which is used with eggd_dias_batch to specify inputs for running the Dias pipeline for CEN data.
 
@@ -44,7 +44,7 @@ Dynamic files:
 | exons | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
 | genes2transcripts | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
 | exons_with_symbols for eggd_athena | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
-| cen_vep_config for SNV/mosaic reports | **cen_vep_config_v1.2.0.json** | `file-Gzkq2fQ4z6jJX2jgZFyVF28x` |
+| cen_vep_config for SNV/mosaic reports | **cen_vep_config_v1.2.1.json** | `file-J04Kfv04z6j02Jz1Zj9VvK7k` |
 | cen_vep_config for CNV reports | **cen-cnv_config_v1.1.0.json** | `file-GQGJ3Z84xyx0jp1q65K1Q1jY` |
 | panel_dump for eggd_optimised_filtering | **241030_panelapp_dump.json** | `file-GvVg3qj4Y54jBF8bgX62gkfQ` |
 | additional_regions for CNVs | **CEN_CNV_additional_regions_b37_v1.0.1.tsv** | `file-GJZQvg0433GkyFZg13K6VV6p` |
