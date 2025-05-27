@@ -31,8 +31,8 @@ Workflows:
 
 Apps:
 * CNV calling app: **eggd_GATKgCNV_call**
-    * v1.0.2
-    * DNAnexus app ID: `app-GZ4pXxj4xG062Bj5zjgP1Bb0`
+    * v2.0.0
+    * DNAnexus app ID: `app-GvZB5p846Vg69fBg0Fq10938`
 * Artemis app: **eggd_artemis**
     * v1.6.0
     * DNAnexus app ID `app-GxVK0bQ4KzQzXkJ3Xg53ypXv`
