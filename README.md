@@ -44,11 +44,11 @@ Dynamic files:
 | exons | **GCF_000001405.39_GRCh38.p13_genomic_20211119.exon_5bp.tsv** | `file-GyFfgpQ4fJPv132574bFQfV5` |
 | genes2transcripts | **g2t_grch38_v2.0.0.tsv** | `file-Gyy99kj4zqZJ7Qp4145PXv9F` |
 | exons_with_symbols for eggd_athena | **GCF_000001405.39_GRCh38.p13_genomic_20211119.symbols.exon_5bp.tsv** | `file-Gyb29P84fJPqZJ37pfjz1vZB` |
-| cen_vep_config for SNV/mosaic reports | **cen_vep_config_GRCh38_v1.0.0.json** | `file-GyXF5304z6jF9JVxZjQ1Pk2P` |
+| cen_vep_config for SNV/mosaic reports | **cen_vep_config_GRCh38_v1.1.1.json** | `file-J0fx2Jj4z6j28KQjbzKgqgV2` |
 | cen_vep_config for CNV reports | **cen-cnv_config_GRCh38_v1.0.0.json** | `file-GyXyyp04Q8Xpj5fJ8v45by9k` |
 | panel_dump for eggd_optimised_filtering | **241030_panelapp_dump.json** | `file-GvVg3qj4Y54jBF8bgX62gkfQ` |
 | additional_regions for CNVs | **CEN_CNV_additional_regions_b38_v1.0.0.tsv** | `file-GfKb08j4679f4jbfxf8XP7JZ` |
-| additional_regions for SNVs | **CEN_SNV_additional_regions_GRCh38_v1.0.0.tsv** | `file-Gz4gg184Pp8FbPxp42VBzF52` |
+| additional_regions for SNVs | **CEN_SNV_additional_regions_GRCh38_v1.0.0.tsv** | `file-GzQbVP84Pp8KVYX605PV7vfp` |
 | gatk_docker | **GATK_v4.6.0.0.tar.gz** | `file-GpZz87Q4ZbZkxJJGx9b02gyV` |
 | interval_list for CNV calling | **CEN_CNV_targets_b38_v1.0.0.interval_list** | `file-GfFGFP04z704bp38ykFvgX03` |
 | annotation of interval_list for CNV calling | **CEN_CNV_targets_b38_v1.0.0_annotation.tsv**| `file-GfFGFPQ4z70JG5VPQP28V1PV` |
