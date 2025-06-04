@@ -21,23 +21,15 @@ The `modes` section specifies inputs specific to a running mode:
 * artemis
     * specifies inputs for [artemis](https://github.com/eastgenomics/eggd_artemis)
 
-
-## Versions of workflows, apps, and dynamic files in the config
-Workflows:
-* Dias reports: **dias_reports_v2.2.2**
-    * DNAnexus workflow ID: `workflow-GkbJY284FpfgqF8ggz57fVY2`
-* Dias CNV reports: **dias_cnvreports_v1.2.0**
-    * DNAnexus workflow ID: `workflow-Gj77F9041Ky3Vp045gpKx0B4`
-
 # Versions of apps, files, and docker images in the config
 The following table lists the versions of apps, files, and docker images used in the config for both GRCh38 and GRCh37. The DNAnexus file IDs are provided for each file.
 
 | Type | File Description | GRCh38 File Name | GRCh38 DNAnexus File ID | GRCh37 File Name | GRCh37 DNAnexus File ID |
 |------|------------------|------------------|--------------------------|------------------|--------------------------|
-| app | dias_reports | **dias_reports_v2.2.2** | `app-GkbJY284FpfgqF8ggz57fVY2` | **dias_reports_v2.2.2** | `app-GkbJY284FpfgqF8ggz57fVY2` |
-| app | dias_cnvreports | **dias_cnvreports_v1.2.0** | `app-Gj77F9041Ky3Vp045gpKx0B4` | **dias_cnvreports_v1.2.0** | `app-Gj77F9041Ky3Vp045gpKx0B4` |
+| workflow | dias_reports | **dias_reports_v2.2.2** | `workflow-GkbJY284FpfgqF8ggz57fVY2` | **dias_reports_v2.2.2** | `workflow-GkbJY284FpfgqF8ggz57fVY2` |
+| workflow | dias_cnvreports | **dias_cnvreports_v1.2.0** | `workflow-Gj77F9041Ky3Vp045gpKx0B4` | **dias_cnvreports_v1.2.0** | `workflow-Gj77F9041Ky3Vp045gpKx0B4` |
 | app | eggd_GATKgCNV_call | **eggd_GATKgCNV_call_v2.0.0** | `app-GvZB5p846Vg69fBg0Fq10938` | **eggd_GATKgCNV_call_v2.0.0** | `app-GvZB5p846Vg69fBg0Fq10938` |
-| app | eggd_artemis | **eggd_artemis_v1.6.0** | `app-Gk1Z0bQ4KzQzXkJ3Xg53ypXv` | **eggd_artemis_v1.5.0** | `app-GkbJ7p0463bjk9VKv3x8G5F8` |
+| app | eggd_artemis | **eggd_artemis_v1.6.0** | `app-GxVK0bQ4KzQzXkJ3Xg53ypXv` | **eggd_artemis_v1.5.0** | `app-GkbJ7p0463bjk9VKv3x8G5F8` |
 | file | genepanels | **250528_genepanels.tsv** | `file-J0qJKv04Kp44F8JB3004390k` | **241024_genepanels.tsv** | `file-GvJ5fbQ4qQYq73gjGyP57zFB` |
 | file | exons | **GCF_000001405.39_GRCh38.p13_genomic_20211119.exon_5bp.tsv** | `file-GyFfgpQ4fJPv132574bFQfV5` | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
 | file | genes2transcripts | **g2t_grch38_v2.0.0.tsv** | `file-J0v6GyQ4zqZJV047q56PqFx5` | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
@@ -46,12 +38,11 @@ The following table lists the versions of apps, files, and docker images used in
 | config | cen_vep_config for CNV reports | **cen-cnv_config_GRCh38_v1.0.0.json** | `file-GyXyyp04Q8Xpj5fJ8v45by9k` | **cen-cnv_config_v1.1.0.json** | `file-GQGJ3Z84xyx0jp1q65K1Q1jY` |
 | file | panel_dump for eggd_optimised_filtering | **250530_panelapp_dump.json** | `file-J0yk3V04VVYxJ9bz3QPPzxPg` | **241030_panelapp_dump.json** | `file-GvVg3qj4Y54jBF8bgX62gkfQ` |
 | file | additional_regions for CNVs | **CEN_CNV_additional_regions_b38_v1.0.0.tsv** | `file-GfKb08j4679f4jbfxf8XP7JZ` | **CEN_CNV_additional_regions_b37_v1.0.1.tsv** | `file-GJZQvg0433GkyFZg13K6VV6p` |
-| file | additional_regions for SNVs | **CEN_SNV_additional_regions_GRCh38_v1.0.0.tsv** | `file-GzQbVP84Pp8KVYX605PV7vfp` | **CEN_SNV_additional_regions_b37_v1.0.0.tsv** | `file-Gpy96q04PKYjjg9kbQy692bF` |
+| file | additional_regions for SNVs | **CEN_SNV_additional_regions_GRCh38_v1.0.0.tsv** | `file-J0zJ06Q4Pp80Q73204yZkzvz` | **CEN_SNV_additional_regions_b37_v1.0.0.tsv** | `file-Gpy96q04PKYjjg9kbQy692bF` |
 | docker | gatk_docker | **GATK_v4.6.0.0.tar.gz** | `file-GpZz87Q4ZbZkxJJGx9b02gyV` | **GATK_v4.6.0.0.tar.gz** | `file-GpZz87Q4ZbZkxJJGx9b02gyV` |
 | file | interval_list for CNV calling | **CEN_CNV_targets_b38_v1.0.0.interval_list** | `file-GfFGFP04z704bp38ykFvgX03` | **CEN_CNV_targets_v1.1.0_sorted.interval_list** | `file-GFPxzKj4V50pJX3F4vV58yyg` |
 | file | annotation of interval_list for CNV calling | **CEN_CNV_targets_b38_v1.0.0_annotation.tsv** | `file-GfFGFPQ4z70JG5VPQP28V1PV` | **CEN_CNV_targets_v1.1.0_sorted_annotation.tsv** | `file-GFPxzPQ4V50z4pv230p82G0q` |
 | file | capture bed for artemis | **CEN_CNV_targets_b38_v1.0.0.bed** | `file-Gf0gX1Q4XGyqKzj4yFJyy0XV` | **CEN_CNV_targets_b37_v1.1.0.bed** | `file-GFPxpJj4GVV0Pfzv4VGYf1pq` |
-
 
 ## Cmd to check the config file ids (not comprehensive)
 ```bash
