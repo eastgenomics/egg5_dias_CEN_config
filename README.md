@@ -38,21 +38,22 @@ Apps:
     * DNAnexus app ID `app-GxVK0bQ4KzQzXkJ3Xg53ypXv`
 
 Dynamic files:
-| File      | File name | DNAnexus file ID |
-| --------- | --------- | ---------------- |
-| genepanels | **250528_genepanels.tsv** | `file-J0qJKv04Kp44F8JB3004390k` |
-| exons | **GCF_000001405.39_GRCh38.p13_genomic_20211119.exon_5bp.tsv** | `file-GyFfgpQ4fJPv132574bFQfV5` |
-| genes2transcripts | **g2t_grch38_v2.0.0.tsv** | `file-J0v6GyQ4zqZJV047q56PqFx5` |
-| exons_with_symbols for eggd_athena | **GCF_000001405.39_GRCh38.p13_genomic_20211119.symbols.exon_5bp.tsv** | `file-Gyb29P84fJPqZJ37pfjz1vZB` |
-| cen_vep_config for SNV/mosaic reports | **cen_vep_config_GRCh38_v1.1.1.json** | `file-J0fx2Jj4z6j28KQjbzKgqgV2` |
-| cen_vep_config for CNV reports | **cen-cnv_config_GRCh38_v1.0.0.json** | `file-GyXyyp04Q8Xpj5fJ8v45by9k` |
-| panel_dump for eggd_optimised_filtering | **250530_panelapp_dump.json** | `file-J0yk3V04VVYxJ9bz3QPPzxPg` |
-| additional_regions for CNVs | **CEN_CNV_additional_regions_b38_v1.0.0.tsv** | `file-GfKb08j4679f4jbfxf8XP7JZ` |
-| additional_regions for SNVs | **CEN_SNV_additional_regions_GRCh38_v1.0.0.tsv** | `file-GzQbVP84Pp8KVYX605PV7vfp` |
-| gatk_docker | **GATK_v4.6.0.0.tar.gz** | `file-GpZz87Q4ZbZkxJJGx9b02gyV` |
-| interval_list for CNV calling | **CEN_CNV_targets_b38_v1.0.0.interval_list** | `file-GfFGFP04z704bp38ykFvgX03` |
-| annotation of interval_list for CNV calling | **CEN_CNV_targets_b38_v1.0.0_annotation.tsv**| `file-GfFGFPQ4z70JG5VPQP28V1PV` |
-| capture `bed_file` for artemis | **CEN_CNV_targets_b38_v1.0.0.bed** | `file-Gf0gX1Q4XGyqKzj4yFJyy0XV` |
+
+| Type | File Description | GRCh38 File Name | GRCh38 DNAnexus File ID | GRCh37 File Name | GRCh37 DNAnexus File ID |
+|------|------------------|------------------|--------------------------|------------------|--------------------------|
+| file | genepanels | **250528_genepanels.tsv** | `file-J0qJKv04Kp44F8JB3004390k` | **241024_genepanels.tsv** | `file-GvJ5fbQ4qQYq73gjGyP57zFB` |
+| file | exons | **GCF_000001405.39_GRCh38.p13_genomic_20211119.exon_5bp.tsv** | `file-GyFfgpQ4fJPv132574bFQfV5` | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
+| file | genes2transcripts | **g2t_grch38_v2.0.0.tsv** | `file-J0v6GyQ4zqZJV047q56PqFx5` | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
+| file | exons_with_symbols for eggd_athena | **GCF_000001405.39_GRCh38.p13_genomic_20211119.symbols.exon_5bp.tsv** | `file-Gyb29P84fJPqZJ37pfjz1vZB` | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
+| config | cen_vep_config for SNV/mosaic reports | **cen_vep_config_GRCh38_v1.1.1.json** | `file-J0fx2Jj4z6j28KQjbzKgqgV2` | **cen_vep_config_v1.2.1.json** | `file-J04Kfv04z6j02Jz1Zj9VvK7k` |
+| config | cen_vep_config for CNV reports | **cen-cnv_config_GRCh38_v1.0.0.json** | `file-GyXyyp04Q8Xpj5fJ8v45by9k` | **cen-cnv_config_v1.1.0.json** | `file-GQGJ3Z84xyx0jp1q65K1Q1jY` |
+| file | panel_dump for eggd_optimised_filtering | **250530_panelapp_dump.json** | `file-J0yk3V04VVYxJ9bz3QPPzxPg` | **241030_panelapp_dump.json** | `file-GvVg3qj4Y54jBF8bgX62gkfQ` |
+| file | additional_regions for CNVs | **CEN_CNV_additional_regions_b38_v1.0.0.tsv** | `file-GfKb08j4679f4jbfxf8XP7JZ` | **CEN_CNV_additional_regions_b37_v1.0.1.tsv** | `file-GJZQvg0433GkyFZg13K6VV6p` |
+| file | additional_regions for SNVs | **CEN_SNV_additional_regions_GRCh38_v1.0.0.tsv** | `file-GzQbVP84Pp8KVYX605PV7vfp` | **CEN_SNV_additional_regions_b37_v1.0.0.tsv** | `file-Gpy96q04PKYjjg9kbQy692bF` |
+| docker | gatk_docker | **GATK_v4.6.0.0.tar.gz** | `file-GpZz87Q4ZbZkxJJGx9b02gyV` | **GATK_v4.6.0.0.tar.gz** | `file-GpZz87Q4ZbZkxJJGx9b02gyV` |
+| file | interval_list for CNV calling | **CEN_CNV_targets_b38_v1.0.0.interval_list** | `file-GfFGFP04z704bp38ykFvgX03` | **CEN_CNV_targets_v1.1.0_sorted.interval_list** | `file-GFPxzKj4V50pJX3F4vV58yyg` |
+| file | annotation of interval_list for CNV calling | **CEN_CNV_targets_b38_v1.0.0_annotation.tsv** | `file-GfFGFPQ4z70JG5VPQP28V1PV` | **CEN_CNV_targets_v1.1.0_sorted_annotation.tsv** | `file-GFPxzPQ4V50z4pv230p82G0q` |
+| file | capture bed for artemis | **CEN_CNV_targets_b38_v1.0.0.bed** | `file-Gf0gX1Q4XGyqKzj4yFJyy0XV` | **CEN_CNV_targets_b37_v1.1.0.bed** | `file-GFPxpJj4GVV0Pfzv4VGYf1pq` |
 
 
 ## Cmd to check the config file ids
