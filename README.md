@@ -1,9 +1,9 @@
-# dias_CEN_config_GRCh37_v3.3.1.json
+# egg5_dias_CEN_config
 
-This repo contains a JSON config file which is used with eggd_dias_batch to specify inputs for running the Dias pipeline for CEN data.
+This repo contains a JSON config files for GRCh37 and GRCh38 which are used with eggd_dias_batch to specify inputs for running the Dias pipeline for CEN data.
 
 ## What does the config do?
-eggd_dias_batch ([https://github.com/eastgenomics/eggd_dias_batch](https://github.com/eastgenomics/eggd_dias_batch)) is a DNAnexus app that runs the Dias pipeline for germline sequence data analysis. The egg5_dias_CEN_config repo contains the dias_CEN_config file that specifies the executables and their input files to be used in the Dias pipeline for analysing CEN data on build GRCh37.
+eggd_dias_batch ([https://github.com/eastgenomics/eggd_dias_batch](https://github.com/eastgenomics/eggd_dias_batch)) is a DNAnexus app that runs the Dias pipeline for germline sequence data analysis. The egg5_dias_CEN_config repo contains the dias_CEN_config file that specifies the executables and their input files to be used in the Dias pipeline for analysing CEN data on build GRCh37/GRCh38.
 
 New versions of apps and app inputs for use in the Dias pipeline can be updated in the config without needing to update the pipeline itself.
 
@@ -29,18 +29,15 @@ Workflows:
 * Dias CNV reports: **dias_cnvreports_v1.2.0**
     * DNAnexus workflow ID: `workflow-Gj77F9041Ky3Vp045gpKx0B4`
 
-Apps:
-* CNV calling app: **eggd_GATKgCNV_call**
-    * v2.0.0
-    * DNAnexus app ID: `app-GvZB5p846Vg69fBg0Fq10938`
-* Artemis app: **eggd_artemis**
-    * v1.6.0
-    * DNAnexus app ID `app-GxVK0bQ4KzQzXkJ3Xg53ypXv`
-
-Dynamic files:
+# Versions of apps, files, and docker images in the config
+The following table lists the versions of apps, files, and docker images used in the config for both GRCh38 and GRCh37. The DNAnexus file IDs are provided for each file.
 
 | Type | File Description | GRCh38 File Name | GRCh38 DNAnexus File ID | GRCh37 File Name | GRCh37 DNAnexus File ID |
 |------|------------------|------------------|--------------------------|------------------|--------------------------|
+| app | dias_reports | **dias_reports_v2.2.2** | `app-GkbJY284FpfgqF8ggz57fVY2` | **dias_reports_v2.2.2** | `app-GkbJY284FpfgqF8ggz57fVY2` |
+| app | dias_cnvreports | **dias_cnvreports_v1.2.0** | `app-Gj77F9041Ky3Vp045gpKx0B4` | **dias_cnvreports_v1.2.0** | `app-Gj77F9041Ky3Vp045gpKx0B4` |
+| app | eggd_GATKgCNV_call | **eggd_GATKgCNV_call_v2.0.0** | `app-GvZB5p846Vg69fBg0Fq10938` | **eggd_GATKgCNV_call_v2.0.0** | `app-GvZB5p846Vg69fBg0Fq10938` |
+| app | eggd_artemis | **eggd_artemis_v1.6.0** | `app-Gk1Z0bQ4KzQzXkJ3Xg53ypXv` | **eggd_artemis_v1.5.0** | `app-GkbJ7p0463bjk9VKv3x8G5F8` |
 | file | genepanels | **250528_genepanels.tsv** | `file-J0qJKv04Kp44F8JB3004390k` | **241024_genepanels.tsv** | `file-GvJ5fbQ4qQYq73gjGyP57zFB` |
 | file | exons | **GCF_000001405.39_GRCh38.p13_genomic_20211119.exon_5bp.tsv** | `file-GyFfgpQ4fJPv132574bFQfV5` | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
 | file | genes2transcripts | **g2t_grch38_v2.0.0.tsv** | `file-J0v6GyQ4zqZJV047q56PqFx5` | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
@@ -56,7 +53,7 @@ Dynamic files:
 | file | capture bed for artemis | **CEN_CNV_targets_b38_v1.0.0.bed** | `file-Gf0gX1Q4XGyqKzj4yFJyy0XV` | **CEN_CNV_targets_b37_v1.1.0.bed** | `file-GFPxpJj4GVV0Pfzv4VGYf1pq` |
 
 
-## Cmd to check the config file ids
+## Cmd to check the config file ids (not comprehensive)
 ```bash
 config_file="dias_CEN_config_GRCh38_v4.0.0.json"
 jq -r '.. | objects | .id? // empty' "${config_file}" | while read -r file_id; do
