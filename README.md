@@ -30,9 +30,9 @@ The following table lists the versions of apps, files, and docker images used in
 | workflow | dias_cnvreports | **dias_cnvreports_v1.2.0** | `workflow-Gj77F9041Ky3Vp045gpKx0B4` | **dias_cnvreports_v1.2.0** | `workflow-Gj77F9041Ky3Vp045gpKx0B4` |
 | app | eggd_GATKgCNV_call | **eggd_GATKgCNV_call_v2.0.0** | `app-GvZB5p846Vg69fBg0Fq10938` | **eggd_GATKgCNV_call_v2.0.0** | `app-GvZB5p846Vg69fBg0Fq10938` |
 | app | eggd_artemis | **eggd_artemis_v1.7.0** | `app-J13z26Q49bJkQvG7VB572x0b` | **eggd_artemis_v1.5.0** | `app-GkbJ7p0463bjk9VKv3x8G5F8` |
-| file | genepanels | **250528_genepanels.tsv** | `file-J0qJKv04Kp44F8JB3004390k` | **241024_genepanels.tsv** | `file-GvJ5fbQ4qQYq73gjGyP57zFB` |
+| file | genepanels | **250711_genepanels.tsv** | `file-J1jXFZj4XG7Qvj0PGZGg96Pg` | **241024_genepanels.tsv** | `file-GvJ5fbQ4qQYq73gjGyP57zFB` |
 | file | exons | **GCF_000001405.39_GRCh38.p13_genomic_20211119.exon_5bp.tsv** | `file-GyFfgpQ4fJPv132574bFQfV5` | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
-| file | genes2transcripts | **g2t_grch38_v2.0.0.tsv** | `file-J0v6GyQ4zqZJV047q56PqFx5` | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
+| file | genes2transcripts | **g2t_grch38_v2.1.0.tsv** | `file-J1q297j4J0b3V741GxbX0Q14` | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
 | file | exons_with_symbols for eggd_athena | **GCF_000001405.39_GRCh38.p13_genomic_20211119.symbols.exon_5bp.tsv** | `file-Gyb29P84fJPqZJ37pfjz1vZB` | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
 | config | cen_vep_config for SNV/mosaic reports | **cen_vep_config_GRCh38_v1.1.3.json** | `file-J20PyVQ4z6jGf0gy11kxQZ1F` | **cen_vep_config_v1.2.1.json** | `file-J04Kfv04z6j02Jz1Zj9VvK7k` |
 | config | cen_vep_config for CNV reports | **cen-cnv_config_GRCh38_v1.0.0.json** | `file-GyXyyp04Q8Xpj5fJ8v45by9k` | **cen-cnv_config_v1.1.0.json** | `file-GQGJ3Z84xyx0jp1q65K1Q1jY` |
