@@ -1,8 +1,8 @@
 {
     "assay": "CEN",
-    "version": "4.3.0",
+    "version": "4.4.0",
     "cnv_call_app_id": "app-GvZB5p846Vg69fBg0Fq10938",
-    "artemis_app_id": "app-J13z26Q49bJkQvG7VB572x0b",
+    "artemis_app_id": "app-J2pjgJQ4Qg0gk1pQJqqQ6KPz",
     "snv_report_workflow_id": "workflow-GkbJY284FpfgqF8ggz57fVY2",
     "cnv_report_workflow_id": "workflow-Gj77F9041Ky3Vp045gpKx0B4",
     "reference_files": {
