@@ -46,7 +46,7 @@ The following table lists the versions of apps, files, and docker images used in
 
 ## Cmd to check the config file ids (not comprehensive)
 ```bash
-config_file="dias_CEN_config_GRCh38_v4.2.0.json"
+config_file="dias_CEN_config_GRCh38_v4.4.0.json"
 jq -r '.. | objects | .id? // empty' "${config_file}" | while read -r file_id; do
    dx describe "$file_id" --json | jq -r '"\(.id) \(.name)"';
 done
