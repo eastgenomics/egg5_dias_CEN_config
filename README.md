@@ -29,7 +29,7 @@ The following table lists the versions of apps, files, and docker images used in
 | workflow | dias_reports | **dias_reports_v2.2.2** | `workflow-GkbJY284FpfgqF8ggz57fVY2` | **dias_reports_v2.2.2** | `workflow-GkbJY284FpfgqF8ggz57fVY2` |
 | workflow | dias_cnvreports | **dias_cnvreports_v1.2.0** | `workflow-Gj77F9041Ky3Vp045gpKx0B4` | **dias_cnvreports_v1.2.0** | `workflow-Gj77F9041Ky3Vp045gpKx0B4` |
 | app | eggd_GATKgCNV_call | **eggd_GATKgCNV_call_v2.0.0** | `app-GvZB5p846Vg69fBg0Fq10938` | **eggd_GATKgCNV_call_v2.0.0** | `app-GvZB5p846Vg69fBg0Fq10938` |
-| app | eggd_artemis | **eggd_artemis_v1.7.0** | `app-J13z26Q49bJkQvG7VB572x0b` | **eggd_artemis_v1.5.0** | `app-GkbJ7p0463bjk9VKv3x8G5F8` |
+| app | eggd_artemis | **eggd_artemis_v1.7.1** | `app-J2pjgJQ4Qg0gk1pQJqqQ6KPz` | **eggd_artemis_v1.5.0** | `app-GkbJ7p0463bjk9VKv3x8G5F8` |
 | file | genepanels | **250711_genepanels.tsv** | `file-J1jXFZj4XG7Qvj0PGZGg96Pg` | **241024_genepanels.tsv** | `file-GvJ5fbQ4qQYq73gjGyP57zFB` |
 | file | exons | **GCF_000001405.39_GRCh38.p13_genomic_20211119.exon_5bp.tsv** | `file-GyFfgpQ4fJPv132574bFQfV5` | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
 | file | genes2transcripts | **g2t_grch38_v2.1.0.tsv** | `file-J1q297j4J0b3V741GxbX0Q14` | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
@@ -46,7 +46,7 @@ The following table lists the versions of apps, files, and docker images used in
 
 ## Cmd to check the config file ids (not comprehensive)
 ```bash
-config_file="dias_CEN_config_GRCh38_v4.2.0.json"
+config_file="dias_CEN_config_GRCh38_v4.4.0.json"
 jq -r '.. | objects | .id? // empty' "${config_file}" | while read -r file_id; do
    dx describe "$file_id" --json | jq -r '"\(.id) \(.name)"';
 done
