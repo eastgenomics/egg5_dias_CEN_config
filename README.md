@@ -26,8 +26,8 @@ The following table lists the versions of apps, files, and docker images used in
 
 | Type | File Description | GRCh38 File Name | GRCh38 DNAnexus File ID | GRCh37 File Name | GRCh37 DNAnexus File ID |
 |------|------------------|------------------|--------------------------|------------------|--------------------------|
-| workflow | dias_reports | **dias_reports_v2.2.2** | `workflow-GkbJY284FpfgqF8ggz57fVY2` | **dias_reports_v2.2.2** | `workflow-GkbJY284FpfgqF8ggz57fVY2` |
-| workflow | dias_cnvreports | **dias_cnvreports_v1.2.0** | `workflow-Gj77F9041Ky3Vp045gpKx0B4` | **dias_cnvreports_v1.2.0** | `workflow-Gj77F9041Ky3Vp045gpKx0B4` |
+| workflow | dias_reports | **dias_reports_v2.2.3** | `workflow-J2j7GzQ432PYvJ9P270bfj88` | **dias_reports_v2.2.3** | `workflow-J2j7GzQ432PYvJ9P270bfj88` |
+| workflow | dias_cnvreports | **dias_cnvreports_v1.2.1** | `workflow-J2j7XYj432PQ6YBBX341bQJk` | **dias_cnvreports_v1.2.1** | `workflow-J2j7XYj432PQ6YBBX341bQJk` |
 | app | eggd_GATKgCNV_call | **eggd_GATKgCNV_call_v2.0.0** | `app-GvZB5p846Vg69fBg0Fq10938` | **eggd_GATKgCNV_call_v2.0.0** | `app-GvZB5p846Vg69fBg0Fq10938` |
 | app | eggd_artemis | **eggd_artemis_v1.7.1** | `app-J2pjgJQ4Qg0gk1pQJqqQ6KPz` | **eggd_artemis_v1.5.0** | `app-GkbJ7p0463bjk9VKv3x8G5F8` |
 | file | genepanels | **250711_genepanels.tsv** | `file-J1jXFZj4XG7Qvj0PGZGg96Pg` | **241024_genepanels.tsv** | `file-GvJ5fbQ4qQYq73gjGyP57zFB` |
