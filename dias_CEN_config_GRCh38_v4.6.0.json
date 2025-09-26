@@ -1,6 +1,6 @@
 {
     "assay": "CEN",
-    "version": "4.5.0",
+    "version": "4.6.0",
     "cnv_call_app_id": "app-GvZB5p846Vg69fBg0Fq10938",
     "artemis_app_id": "app-J2pjgJQ4Qg0gk1pQJqqQ6KPz",
     "snv_report_workflow_id": "workflow-J2j7GzQ432PYvJ9P270bfj88",
@@ -129,14 +129,14 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-J2Xpy6j4z6jPXXV9YYVykXbg"
+                        "id": "file-J36VzkQ4z6j76FjvJK4g61bj"
                     }
                 },
                 "stage-rpt_vep.vcf": {
                     "folder": "eggd_additional_regions_calling",
                     "name": "^[^\\.]*(?!\\.g)\\.vcf(\\.gz)?$"
                 },
-                "stage-rpt_optimised_filtering.filter_string": "bcftools filter --soft-filter \"EXCLUDE\" -m + -e '(CSQ_ClinVar_CLNSIGCONF!~ \"pathogenic/i\" & CSQ_HGMD_CLASS!= \"DM\" & CSQ_ClinVar_CLNSIG!~\"Pathogenic\" & CSQ_ClinVar_CLNSIG!~\"Likely_pathogenic/i\" & CSQ_IncludeVariant_IncludeList!=\"INCLUDE\") & (((MOI=\"AR\" | MOI=\"AD/AR\" | MOI=\"XLR\" | MOI=\"XLD\" | MOI=\"MITOCHONDRIAL\" | MOI=\"UNKNOWN\" | MOI=\"OTHER\" | MOI=\"NONE\") & (CSQ_gnomADg_AF>0.01 | CSQ_gnomADe_AF>0.01)) | (MOI=\"AD\" & (CSQ_gnomADg_AF>0.001 |CSQ_gnomADe_AF>0.001)) | CSQ_CEN_AF>0.05 | ((CSQ_Consequence=\"synonymous_variant\" | CSQ_Consequence=\"intron_variant\" | CSQ_Consequence=\"upstream_gene_variant\" | CSQ_Consequence=\"downstream_gene_variant\" | CSQ_Consequence=\"intergenic_variant\" | CSQ_Consequence=\"5_prime_UTR_variant\" | CSQ_Consequence=\"3_prime_UTR_variant\") & CSQ_HGMD_CLASS!= \"DM?\")) | CSQ_ExcludeVariant_ExcludeList=\"EXCLUDE\" | (CHROM=\"1\" & POS=55039879 & REF=\"A\" & ALT=\"ACTG\")'",
+                "stage-rpt_optimised_filtering.filter_string": "bcftools filter --soft-filter \"EXCLUDE\" -m + -e '(CSQ_ClinVar_CLNSIGCONF!~ \"pathogenic/i\" & CSQ_ClinVar_CLNSIGCONF!~ \"Established_risk_allele/i\" & CSQ_HGMD_CLASS!= \"DM\" & CSQ_ClinVar_CLNSIG!~\"Pathogenic\" & CSQ_ClinVar_CLNSIG!~\"Likely_pathogenic/i\" & CSQ_ClinVar_CLNSIG!~\"Established_risk_allele/i\" & CSQ_IncludeVariant_IncludeList!=\"INCLUDE\") & (((MOI=\"AR\" | MOI=\"AD/AR\" | MOI=\"XLR\" | MOI=\"XLD\" | MOI=\"MITOCHONDRIAL\" | MOI=\"UNKNOWN\" | MOI=\"OTHER\" | MOI=\"NONE\") & (CSQ_gnomADg_AF>0.01 | CSQ_gnomADe_AF>0.01)) | (MOI=\"AD\" & (CSQ_gnomADg_AF>0.001 |CSQ_gnomADe_AF>0.001)) | CSQ_CEN_AF>0.05 | ((CSQ_Consequence=\"synonymous_variant\" | CSQ_Consequence=\"intron_variant\" | CSQ_Consequence=\"upstream_gene_variant\" | CSQ_Consequence=\"downstream_gene_variant\" | CSQ_Consequence=\"intergenic_variant\" | CSQ_Consequence=\"5_prime_UTR_variant\" | CSQ_Consequence=\"3_prime_UTR_variant\") & CSQ_HGMD_CLASS!= \"DM?\")) | CSQ_ExcludeVariant_ExcludeList=\"EXCLUDE\" | (CHROM=\"1\" & POS=55039879 & REF=\"A\" & ALT=\"ACTG\")'",
                 "stage-rpt_optimised_filtering.panel_string": "INPUT-clinical_indications",
                 "stage-rpt_optimised_filtering.genepanels": "INPUT-genepanels",
                 "stage-rpt_optimised_filtering.panel_dump": {
@@ -155,7 +155,7 @@
                 "stage-rpt_generate_workbook.keep_tmp": true,
                 "stage-rpt_generate_workbook.summary": "dias",
                 "stage-rpt_generate_workbook.filter": "bcftools filter -e 'FILTER==\"EXCLUDE\"'",
-                "stage-rpt_generate_workbook.human_filter": "Variants with ClinVar individual or aggregate classifications of Likely pathogenic/Pathogenic are always included, regardless of any other filtering rules. Variants with an HGMD variant class of DM are always included, regardless of other filtering rules. Variants with gnomAD exomes or genomes AF exceeding the threshold associated with the mode of inheritance of the gene are excluded. These thresholds are 0.1% for monoallelic inheritance, 1.0% for all other modes of inheritance. Variants with CEN cohort AF exceeding 5.0% are excluded. Variants with consequences equal to one of the following Sequence Ontology terms are excluded, unless they also have an HGMD variant class of DM?: synonymous_variant\\intron_variant\\upstream_gene_variant\\downstream_gene_variant\\intergenic_variant\\5_prime_UTR_variant\\3_prime_UTR_variant. Variants specified in the include list are always included, regardless of other filtering rules. Variants specified in the exclude list are always excluded, regardless of other filtering rules.",
+                "stage-rpt_generate_workbook.human_filter": "Variants with ClinVar individual or aggregate classifications of Likely pathogenic/Pathogenic/Established_risk_allele are always included, regardless of any other filtering rules. Variants with an HGMD variant class of DM are always included, regardless of other filtering rules. Variants with gnomAD exomes or genomes AF exceeding the threshold associated with the mode of inheritance of the gene are excluded. These thresholds are 0.1% for monoallelic inheritance, 1.0% for all other modes of inheritance. Variants with CEN cohort AF exceeding 5.0% are excluded. Variants with consequences equal to one of the following Sequence Ontology terms are excluded, unless they also have an HGMD variant class of DM?: synonymous_variant\\intron_variant\\upstream_gene_variant\\downstream_gene_variant\\intergenic_variant\\5_prime_UTR_variant\\3_prime_UTR_variant. Variants specified in the include list are always included, regardless of other filtering rules. Variants specified in the exclude list are always excluded, regardless of other filtering rules.",
                 "stage-rpt_generate_workbook.reorder_columns": "CHROM POS REF ALT GT GQ DP_FMT AD CSQ_SYMBOL CSQ_EXON CSQ_INTRON CSQ_HGVSc CSQ_HGVSp CSQ_Consequence CSQ_IMPACT CSQ_VARIANT_CLASS CSQ_gnomADe_AF CSQ_gnomADe_AF_grpmax CSQ_gnomADe_AC CSQ_gnomADe_AN CSQ_gnomADe_nhomalt CSQ_gnomADg_AF CSQ_gnomADg_AF_grpmax CSQ_gnomADg_AC CSQ_gnomADg_AN CSQ_gnomADg_nhomalt CSQ_CEN_AF CSQ_CEN_AC_Hom CSQ_CEN_AC_Het CSQ_CEN_AN CSQ_TWE_AF CSQ_TWE_AC_Hom CSQ_TWE_AC_Het CSQ_TWE_AN CSQ_HGMD CSQ_HGMD_CLASS CSQ_HGMD_RANKSCORE CSQ_HGMD_PHEN CSQ_Existing_variation CSQ_ClinVar CSQ_ClinVar_CLNDN CSQ_ClinVar_CLNSIG CSQ_Mastermind_MMID3 CSQ_CADD_PHRED CSQ_REVEL CSQ_SpliceAI_pred_DS_AG CSQ_SpliceAI_pred_DS_AL CSQ_SpliceAI_pred_DS_DG CSQ_SpliceAI_pred_DS_DL decipher CSQ_HGVS_OFFSET CSQ_STRAND CSQ_Feature MOI",
                 "stage-rpt_generate_workbook.keep_filtered": false,
                 "stage-rpt_generate_workbook.freeze_column": "N2",
