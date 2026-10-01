@@ -129,7 +129,7 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-JB2jyPj4z6jF883q9BQ8p4ZV"
+                        "id": "file-JBk4KG84z6j4B9qy1q0q90xq"
                     }
                 },
                 "stage-rpt_vep.vcf": {
@@ -190,7 +190,7 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-JB2jyPj4z6jF883q9BQ8p4ZV"
+                        "id": "file-JBk4KG84z6j4B9qy1q0q90xq"
                     }
                 },
                 "stage-rpt_vep.vcf": {
