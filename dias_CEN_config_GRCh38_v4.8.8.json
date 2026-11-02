@@ -15,7 +15,7 @@
         "Epic": "^[\\d\\w]+-[\\d\\w]+",
         "Gemini": "^X[\\d]+"
     },
-    "file_mode_patterns": {
+    "mode_file_patterns": {
         "cnv_reports": {
             "sample": ["_segments.vcf$", "_segments_annotated.seg$"],
             "run": ["_excluded_intervals.bed$"]
