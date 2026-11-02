@@ -30,7 +30,7 @@
         },
         "mosaic_reports": {
             "sample": [
-                "_markdup_recalibrated_tnhaplotyper2.vcf.gz",
+                "_markdup_recalibrated_tnhaplotyper2.vcf.gz$",
                 "per-base.bed.gz$",
                 "reference_build.txt$"
             ],
@@ -43,7 +43,7 @@
                 "_copy_ratios.gcnv.bed.gz$",
                 "_copy_ratios.gcnv.bed.gz.tbi$"
             ],
-            "run": ["-multiqc.html"]
+            "run": ["-multiqc.html$"]
         }
     },
     "modes": {
