@@ -31,6 +31,7 @@
         "mosaic_reports": {
             "sample": [
                 "_markdup_recalibrated_tnhaplotyper2.vcf.gz$",
+                "_markdup_recalibrated_tnhaplotyper2.vcf.gz.tbi$",
                 "per-base.bed.gz$",
                 "reference_build.txt$"
             ],
