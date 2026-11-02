@@ -15,6 +15,38 @@
         "Epic": "^[\\d\\w]+-[\\d\\w]+",
         "Gemini": "^X[\\d]+"
     },
+    "mode_file_patterns": {
+        "cnv_reports": {
+            "sample": ["_segments.vcf$", "_segments_annotated.seg$"],
+            "run": ["_excluded_intervals.bed$"]
+        },
+        "snv_reports": {
+            "sample": [
+                "_markdup_additional_regions.vcf.gz$",
+                "per-base.bed.gz$",
+                "reference_build.txt$"
+            ],
+            "run": []
+        },
+        "mosaic_reports": {
+            "sample": [
+                "_markdup_recalibrated_tnhaplotyper2.vcf.gz$",
+                "_markdup_recalibrated_tnhaplotyper2.vcf.gz.tbi$",
+                "per-base.bed.gz$",
+                "reference_build.txt$"
+            ],
+            "run": []
+        },
+        "artemis": {
+            "sample": [
+                "bam$",
+                "bam.bai$",
+                "_copy_ratios.gcnv.bed.gz$",
+                "_copy_ratios.gcnv.bed.gz.tbi$"
+            ],
+            "run": ["-multiqc.html$"]
+        }
+    },
     "modes": {
         "cnv_call": {
             "instance_type": "mem2_ssd1_v2_x16",
