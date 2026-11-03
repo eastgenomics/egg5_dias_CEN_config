@@ -1,6 +1,6 @@
 {
     "assay": "CEN",
-    "version": "4.8.7",
+    "version": "4.8.8",
     "cnv_call_app_id": "app-J2gK76Q4FqqkPxZBkJYBj632",
     "artemis_app_id": "app-J2pjgJQ4Qg0gk1pQJqqQ6KPz",
     "snv_report_workflow_id": "workflow-J2j7GzQ432PYvJ9P270bfj88",
@@ -14,6 +14,38 @@
     "name_patterns": {
         "Epic": "^[\\d\\w]+-[\\d\\w]+",
         "Gemini": "^X[\\d]+"
+    },
+    "mode_file_patterns": {
+        "cnv_reports": {
+            "sample": ["_segments.vcf$", "_segments_annotated.seg$"],
+            "run": ["_excluded_intervals.bed$"]
+        },
+        "snv_reports": {
+            "sample": [
+                "_markdup_additional_regions.vcf.gz$",
+                "per-base.bed.gz$",
+                "reference_build.txt$"
+            ],
+            "run": []
+        },
+        "mosaic_reports": {
+            "sample": [
+                "_markdup_recalibrated_tnhaplotyper2.vcf.gz$",
+                "_markdup_recalibrated_tnhaplotyper2.vcf.gz.tbi$",
+                "per-base.bed.gz$",
+                "reference_build.txt$"
+            ],
+            "run": []
+        },
+        "artemis": {
+            "sample": [
+                "bam$",
+                "bam.bai$",
+                "_copy_ratios.gcnv.bed.gz$",
+                "_copy_ratios.gcnv.bed.gz.tbi$"
+            ],
+            "run": ["-multiqc.html$"]
+        }
     },
     "modes": {
         "cnv_call": {
@@ -129,7 +161,7 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-JBk4KG84z6j4B9qy1q0q90xq"
+                        "id": "file-JFJbpK84z6j7BB34Q94xy1Vk"
                     }
                 },
                 "stage-rpt_vep.vcf": {
@@ -190,7 +222,7 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-JBk4KG84z6j4B9qy1q0q90xq"
+                        "id": "file-JFJbpK84z6j7BB34Q94xy1Vk"
                     }
                 },
                 "stage-rpt_vep.vcf": {
