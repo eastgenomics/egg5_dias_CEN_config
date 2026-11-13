@@ -31,7 +31,7 @@ The following table lists the versions of apps, files, and docker images used in
 | workflow | dias_cnvreports | **dias_cnvreports_v1.2.1** | `workflow-J2j7XYj432PQ6YBBX341bQJk` | **dias_cnvreports_v1.2.1** | `workflow-J2j7XYj432PQ6YBBX341bQJk` |
 | app | eggd_GATKgCNV_call | **eggd_GATKgCNV_call_v2.0.1** | `app-J2gK76Q4FqqkPxZBkJYBj632` | **eggd_GATKgCNV_call_v2.0.0** | `app-GvZB5p846Vg69fBg0Fq10938` |
 | app | eggd_artemis | **eggd_artemis_v1.7.1** | `app-J2pjgJQ4Qg0gk1pQJqqQ6KPz` | **eggd_artemis_v1.5.0** | `app-GkbJ7p0463bjk9VKv3x8G5F8` |
-| file | genepanels | **250711_genepanels.tsv** | `file-J1jXFZj4XG7Qvj0PGZGg96Pg` | **241024_genepanels.tsv** | `file-GvJ5fbQ4qQYq73gjGyP57zFB` |
+| file | genepanels | **261106_genepanels.tsv** | `file-JFfyxy048bv9pkb7kzPjXB97` | **241024_genepanels.tsv** | `file-GvJ5fbQ4qQYq73gjGyP57zFB` |
 | file | exons | **GCF_000001405.39_GRCh38.p13_genomic_20211119.exon_5bp.tsv** | `file-GyFfgpQ4fJPv132574bFQfV5` | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
 | file | genes2transcripts | **g2t_grch38_v2.1.0.tsv** | `file-J1q297j4J0b3V741GxbX0Q14` | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
 | file | exons_with_symbols for eggd_athena | **GCF_000001405.39_GRCh38.p13_genomic_20211119.symbols.exon_5bp.tsv** | `file-Gyb29P84fJPqZJ37pfjz1vZB` | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
