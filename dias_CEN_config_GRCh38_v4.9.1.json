@@ -1,14 +1,14 @@
 {
     "assay": "CEN",
-    "version": "4.9.0",
+    "version": "4.9.1",
     "cnv_call_app_id": "app-J2gK76Q4FqqkPxZBkJYBj632",
     "artemis_app_id": "app-J2pjgJQ4Qg0gk1pQJqqQ6KPz",
     "snv_report_workflow_id": "workflow-J2j7GzQ432PYvJ9P270bfj88",
     "cnv_report_workflow_id": "workflow-J2j7XYj432PQ6YBBX341bQJk",
     "reference_files": {
-        "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-J1jXFZj4XG7Qvj0PGZGg96Pg",
+        "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-JFfyxy048bv9pkb7kzPjXB97",
         "exons": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GyFfgpQ4fJPv132574bFQfV5",
-        "genes2transcripts": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-J1q297j4J0b3V741GxbX0Q14",
+        "genes2transcripts": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-JFp8XP04Qkg6zPGFFYyfZkGv",
         "exons_with_symbols": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-Gyb29P84fJPqZJ37pfjz1vZB",
         "cnv_indications": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GXGx8q0433GgKqx52Jqz1p47"
     },
@@ -175,7 +175,7 @@
                 "stage-rpt_optimised_filtering.panel_dump": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-J0yk3V04VVYxJ9bz3QPPzxPg"
+                        "id": "file-JFkY4jQ49bJPz0Pfp67jF724"
                     }
                 },
                 "stage-rpt_generate_workbook.clinical_indication": "INPUT-clinical_indications",

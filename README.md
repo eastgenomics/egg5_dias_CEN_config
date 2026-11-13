@@ -31,14 +31,14 @@ The following table lists the versions of apps, files, and docker images used in
 | workflow | dias_cnvreports | **dias_cnvreports_v1.2.1** | `workflow-J2j7XYj432PQ6YBBX341bQJk` | **dias_cnvreports_v1.2.1** | `workflow-J2j7XYj432PQ6YBBX341bQJk` |
 | app | eggd_GATKgCNV_call | **eggd_GATKgCNV_call_v2.0.1** | `app-J2gK76Q4FqqkPxZBkJYBj632` | **eggd_GATKgCNV_call_v2.0.0** | `app-GvZB5p846Vg69fBg0Fq10938` |
 | app | eggd_artemis | **eggd_artemis_v1.7.1** | `app-J2pjgJQ4Qg0gk1pQJqqQ6KPz` | **eggd_artemis_v1.5.0** | `app-GkbJ7p0463bjk9VKv3x8G5F8` |
-| file | genepanels | **250711_genepanels.tsv** | `file-J1jXFZj4XG7Qvj0PGZGg96Pg` | **241024_genepanels.tsv** | `file-GvJ5fbQ4qQYq73gjGyP57zFB` |
+| file | genepanels | **261106_genepanels.tsv** | `file-JFfyxy048bv9pkb7kzPjXB97` | **241024_genepanels.tsv** | `file-GvJ5fbQ4qQYq73gjGyP57zFB` |
 | file | exons | **GCF_000001405.39_GRCh38.p13_genomic_20211119.exon_5bp.tsv** | `file-GyFfgpQ4fJPv132574bFQfV5` | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
-| file | genes2transcripts | **g2t_grch38_v2.1.0.tsv** | `file-J1q297j4J0b3V741GxbX0Q14` | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
+| file | genes2transcripts | **g2t_grch38_v2.2.0.tsv** | `file-JFp8XP04Qkg6zPGFFYyfZkGv` | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
 | file | exons_with_symbols for eggd_athena | **GCF_000001405.39_GRCh38.p13_genomic_20211119.symbols.exon_5bp.tsv** | `file-Gyb29P84fJPqZJ37pfjz1vZB` | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
 | file | cnv_indications (R codes for CNV analysis) | **230626-r-codes-cnv-only-TDv5.1.txt** | `file-GXGx8q0433GgKqx52Jqz1p47` | - | - |
 | config | cen_vep_config for SNV/mosaic reports | **cen_vep_config_GRCh38_v1.2.8.json** | `file-JFJbpK84z6j7BB34Q94xy1Vk` | **cen_vep_config_v1.2.1.json** | `file-J04Kfv04z6j02Jz1Zj9VvK7k` |
 | config | cen_vep_config for CNV reports | **cen-cnv_config_GRCh38_v1.0.0.json** | `file-GyXyyp04Q8Xpj5fJ8v45by9k` | **cen-cnv_config_v1.1.0.json** | `file-GQGJ3Z84xyx0jp1q65K1Q1jY` |
-| file | panel_dump for eggd_optimised_filtering | **250530_panelapp_dump.json** | `file-J0yk3V04VVYxJ9bz3QPPzxPg` | **241030_panelapp_dump.json** | `file-GvVg3qj4Y54jBF8bgX62gkfQ` |
+| file | panel_dump for eggd_optimised_filtering | **261109_panelapp_dump.json** | `file-JFkY4jQ49bJPz0Pfp67jF724` | **241030_panelapp_dump.json** | `file-GvVg3qj4Y54jBF8bgX62gkfQ` |
 | file | additional_regions for CNVs | **CEN_CNV_additional_regions_b38_v1.0.0.tsv** | `file-GfKb08j4679f4jbfxf8XP7JZ` | **CEN_CNV_additional_regions_b37_v1.0.1.tsv** | `file-GJZQvg0433GkyFZg13K6VV6p` |
 | file | additional_regions for SNVs | **CEN_SNV_additional_regions_GRCh38_v1.0.0.tsv** | `file-J0zJ06Q4Pp80Q73204yZkzvz` | **CEN_SNV_additional_regions_b37_v1.0.0.tsv** | `file-Gpy96q04PKYjjg9kbQy692bF` |
 | docker | gatk_docker | **GATK_v4.6.0.0.tar.gz** | `file-GpZz87Q4ZbZkxJJGx9b02gyV` | **GATK_v4.6.0.0.tar.gz** | `file-GpZz87Q4ZbZkxJJGx9b02gyV` |
